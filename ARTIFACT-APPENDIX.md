@@ -53,7 +53,7 @@ This is not a human-subjects study (no participants, no IRB).
 
 ## Accessibility
 
-Public GitHub repository: `<GITHUB_REPO_URL>` (evaluate the latest `main` commit). 
+Public GitHub repository: `https://github.com/wi-pi/webspeval_code` (evaluate the latest `main` commit). 
 
 Project website:
 https://wiscprivacy.com/webspeval_website/.
@@ -61,7 +61,7 @@ https://wiscprivacy.com/webspeval_website/.
 ## Setup
 
 ```bash
-git clone <GITHUB_REPO_URL>
+git clone https://github.com/wi-pi/webspeval_code.git
 cd webspeval_code
 conda create -n webspeval python=3.10 -y
 conda activate webspeval
