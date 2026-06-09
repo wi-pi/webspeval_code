@@ -1,0 +1,177 @@
+{
+  "taskId": "Grammarly_task-16",
+  "sessionId": "session_2026-01-30T03-20-15",
+  "startUrl": "https://account.grammarly.com/security/privacy",
+  "domain": "account_grammarly_com",
+  "viewportWidth": 1280,
+  "viewportHeight": 1024,
+  "initialFormStates": {
+    "input#react-aria7484967250-6": {
+      "selectorPath": "input#react-aria7484967250-6",
+      "xpath": "//*[@id=\"react-aria7484967250-6\"]",
+      "framePath": [],
+      "type": "search",
+      "name": null,
+      "value": null,
+      "checked": false,
+      "tagName": "input",
+      "role": null,
+      "typeAttr": "search",
+      "ariaLabel": null,
+      "ariaLabelledby": "react-aria7484967250-7",
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": "Search page",
+      "title": null,
+      "labelText": "Search page. Press Enter to search.",
+      "innerText": null,
+      "textContent": null,
+      "id": "react-aria7484967250-6",
+      "classList": [
+        "gds-text-field-input"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": null
+    },
+    "input#react-aria7484967250-31": {
+      "selectorPath": "input#react-aria7484967250-31",
+      "xpath": "//*[@id=\"react-aria7484967250-31\"]",
+      "framePath": [],
+      "type": "checkbox",
+      "name": null,
+      "value": "on",
+      "checked": true,
+      "tagName": "input",
+      "role": "switch",
+      "typeAttr": "checkbox",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": "Disable Data Training Settings",
+      "innerText": null,
+      "textContent": null,
+      "id": "react-aria7484967250-31",
+      "classList": [
+        "gds-switch-input"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": null
+    },
+    "input#react-aria7484967250-29": {
+      "selectorPath": "input#react-aria7484967250-29",
+      "xpath": "//*[@id=\"react-aria7484967250-29\"]",
+      "framePath": [],
+      "type": "checkbox",
+      "name": null,
+      "value": "on",
+      "checked": true,
+      "tagName": "input",
+      "role": "switch",
+      "typeAttr": "checkbox",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": "Opt out",
+      "innerText": null,
+      "textContent": null,
+      "id": "react-aria7484967250-29",
+      "classList": [
+        "gds-switch-input"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": null
+    }
+  },
+  "events": [
+    {
+      "type": "change",
+      "timestamp": "2026-01-30T03:20:30.105Z",
+      "site": "https://account.grammarly.com/security/privacy",
+      "selectorPath": "input#react-aria7484967250-29",
+      "xpath": "//*[@id=\"react-aria7484967250-29\"]",
+      "framePath": [],
+      "elementType": "input",
+      "inputType": "switch",
+      "checked": true,
+      "value": null,
+      "webspIndex": 25,
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<input id=\"react-aria7484967250-29\" tabindex=\"0\" role=\"switch\" class=\"gds-switch-input\" type=\"checkbox\" data-size=\"medium\" value=\"on\" data-websp-index=\"25\">",
+      "innerHTML": null,
+      "targetOnClick": null,
+      "tagName": "input",
+      "role": "switch",
+      "typeAttr": "checkbox",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": "Opt out",
+      "innerText": null,
+      "textContent": null,
+      "id": "react-aria7484967250-29",
+      "name": null,
+      "classList": [
+        "gds-switch-input"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": null,
+      "headingText": null,
+      "controlLabelText": null,
+      "sectionText": "Targeted advertising control\n\nWe work with advertising partners to translate your email address into a unique identifier, which they use to show ads promoting Grammarly to you on third-party sites and services.This may be considered \"sales,\"\"sharing,\" or \"targeted advertising\" under local privacy laws. To opt out, move the toggle to the left so that it appears gray.\n\nOpt out"
+    }
+  ],
+  "screenshots": [
+    {
+      "timestamp": "2026-01-30T03:20:15.599Z",
+      "eventType": "initial",
+      "index": 0,
+      "filename": "screenshots/screenshot_000_initial.png"
+    },
+    {
+      "timestamp": "2026-01-30T03:20:30.106Z",
+      "eventType": "toggle",
+      "index": 1,
+      "filename": "screenshots/screenshot_001_toggle.png"
+    },
+    {
+      "timestamp": "2026-01-30T03:20:35.809Z",
+      "eventType": "final",
+      "index": 2,
+      "filename": "screenshots/screenshot_002_final.png"
+    }
+  ],
+  "metadata": {
+    "totalEvents": 1,
+    "totalScreenshots": 3,
+    "recordingDate": "2026-01-30T03:20:36.543Z"
+  }
+}

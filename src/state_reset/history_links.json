@@ -1,0 +1,147 @@
+{
+    "NVIDIA": [
+        "https://www.nvidia.com/en-us/omniverse/cloud/",
+        "https://www.nvidia.com/en-us/gpu-cloud/",
+        "https://www.nvidia.com/en-us/data-center/products/",
+        "https://www.nvidia.com/en-us/data-center/dgx-platform/",
+        "https://www.nvidia.com/en-us/data-center/grace-cpu/",
+        "https://www.nvidia.com/en-us/data-center/hgx/",
+        "https://www.nvidia.com/en-us/edge-computing/products/igx/",
+        "https://www.nvidia.com/en-us/data-center/products/mgx/",
+        "https://www.nvidia.com/en-us/data-center/products/ovx/",
+        "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/"
+    ],
+    "Docker": [
+        "https://www.docker.com/products/model-runner/",
+        "https://www.docker.com/blog/build-ai-agents-with-docker-compose/",
+        "https://www.docker.com/products/",
+        "https://www.docker.com/products/docker-desktop/",
+        "https://www.docker.com/products/docker-hub/",
+        "https://www.docker.com/products/docker-scout/",
+        "https://www.docker.com/products/build-cloud/",
+        "https://www.docker.com/products/hardened-images/",
+        "https://www.docker.com/blog/docker-desktop-4-50/",
+        "https://www.docker.com/developers/sdk/"
+    ],
+    "USAToday": [
+        "https://www.usatoday.com/news/nation/",
+        "https://www.usatoday.com/news/politics/",
+        "https://www.usatoday.com/sports/",
+        "https://www.usatoday.com/entertainment/",
+        "https://www.usatoday.com/life/",
+        "https://www.usatoday.com/money/",
+        "https://www.usatoday.com/travel/",
+        "https://www.usatoday.com/opinion/",
+        "https://www.usatoday.com/for-subscribers/",
+        "https://www.usatoday.com/news/from-the-archives/"
+    ],
+    "BBC": [
+        "https://www.bbc.com/sport",
+        "https://www.bbc.com/business",
+        "https://www.bbc.com/innovation",
+        "https://www.bbc.com/culture",
+        "https://www.bbc.com/arts",
+        "https://www.bbc.com/travel",
+        "https://www.bbc.com/future-planet",
+        "https://www.bbc.com/audio",
+        "https://www.bbc.com/video",
+        "https://www.bbc.com/live"
+    ],
+    "AllRecipes": [
+        "https://www.allrecipes.com/recipes/15436/everyday-cooking/one-pot-meals/",
+        "https://www.allrecipes.com/recipes/1947/everyday-cooking/quick-and-easy/",
+        "https://www.allrecipes.com/recipes/455/everyday-cooking/more-meal-ideas/30-minute-meals/",
+        "https://www.allrecipes.com/recipes/17889/everyday-cooking/family-friendly/family-dinners/",
+        "https://www.allrecipes.com/recipes/94/soups-stews-and-chili/",
+        "https://www.allrecipes.com/recipes/16099/everyday-cooking/comfort-food/",
+        "https://www.allrecipes.com/recipes/80/main-dish/",
+        "https://www.allrecipes.com/recipes/22992/everyday-cooking/sheet-pan-dinners/",
+        "https://www.allrecipes.com/recipes-a-z-6735880",
+        "https://www.allrecipes.com/recipes/78/breakfast-and-brunch/"
+    ],
+    "Airbnb": [
+        "https://www.airbnb.com/homes",
+        "https://www.airbnb.com/experiences",
+        "https://www.airbnb.com/services",
+        "https://www.airbnb.com/aircover",
+        "https://www.airbnb.com/neighbors",
+        "https://www.airbnb.com/resources",
+        "https://www.airbnb.com/refer",
+        "https://www.airbnb.com/release",
+        "https://www.airbnb.com/press/news",
+        "https://www.airbnb.com/careers"
+    ],
+    "Shein": [
+        "https://us.shein.com/Shipping-Info-a-280.html",
+        "https://us.shein.com/Return-Policy-a-281.html",
+        "https://us.shein.com/refund-a-1703.html",
+        "https://us.shein.com/How-to-order-a-276.html",
+        "https://us.shein.com/How-to-track-my-order-a-496.html",
+        "https://us.shein.com/SHEIN-VIP-a-1009.html",
+        "https://seller-us.shein.com/",
+        "https://us.shein.com/contact-us.html",
+        "https://us.shein.com/How-to-Pay-a-278.html",
+        "https://us.shein.com/bonus-point-program-a-371.html"
+    ], 
+    "HuggingFace": [
+    "https://huggingface.co/",               
+    "https://huggingface.co/models",         
+    "https://huggingface.co/datasets",       
+    "https://huggingface.co/spaces",         
+    "https://huggingface.co/docs",           
+    "https://huggingface.co/blog",           
+    "https://huggingface.co/learn",          
+    "https://huggingface.co/openai/gpt-oss-safeguard-20b", 
+    "https://huggingface.co/docs/inference-providers/index", 
+    "https://huggingface.co/docs/inference-endpoints/index"  
+    ],
+    "Walmart": [
+    "https://www.walmart.com/",                                           
+    "https://www.walmart.com/all-departments",                             
+    "https://www.walmart.com/cp/weekly-ad-sales",                         
+    "https://www.walmart.com/cp/food/976759",                              
+    "https://www.walmart.com/cp/pharmacy/5431",                            
+    "https://www.walmart.com/help",                                        
+    "https://www.walmart.com/store/directory",                             
+    "https://www.walmart.com/grocery",                                      
+    "https://www.walmart.com/cp/walmart-plus/2735825",                     
+    "https://www.walmart.com/cp/savings-centers/1102307"                    
+], 
+"Amazon": [
+    "https://www.amazon.com/",                                 
+    "https://www.amazon.com/LEGO-Technic-Ferrari-SF-24-Model/dp/B0DHLG5BTD/ref=hw_25_a_dag_g_6abb?pf_rd_p=4fe8fed3-d844-44e9-b194-018e6dc3f852&pf_rd_r=HN17PX9T8RYA3C28XXKN&sr=1-1-969f4cb0-824d-4648-acec-369c6cfab238",   
+    "https://amazon.jobs/",                                   
+    "https://affiliate-program.amazon.com/",                  
+    "https://sell.amazon.com/sell",                           
+    "https://sell.amazon.com/advertising",                    
+    "https://sell.amazon.com/programs/buy-with-prime",        
+    "https://developer.amazon.com/",                          
+    "https://advertising.amazon.com/",                         
+    "https://www.amazon.com/gift-cards/b?ie=UTF8&node=2238192011" 
+], 
+"BuzzFeed": [
+    "https://www.buzzfeed.com/",  
+    "https://www.buzzfeed.com/about",                      
+    "https://www.buzzfeed.com/shopping",                    
+    "https://www.buzzfeed.com/celebrity",             
+    "https://www.buzzfeed.com/news",                       
+    "https://www.buzzfeed.com/buzzchat",                  
+    "https://www.buzzfeed.com/entertainment",               
+    "https://www.buzzfeed.com/food",                       
+    "https://www.buzzfeed.com/quizzes",                    
+    "https://www.buzzfeed.com/videos"                      
+], 
+"CNN": [
+    "https://www.cnn.com/",  
+    "https://www.cnn.com/privacy",                          
+    "https://www.cnn.com/business/videos",                    
+    "https://edition.cnn.com/",                             
+    "https://www.cnn.com/world",                            
+    "https://www.cnn.com/business",                         
+    "https://www.cnn.com/sport",                            
+    "https://www.cnn.com/health",                           
+    "https://www.cnn.com/style",                            
+    "https://www.cnn.com/videos"                            
+]
+
+}

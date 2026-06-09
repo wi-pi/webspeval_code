@@ -1,0 +1,266 @@
+{
+  "taskId": "task-215-ON",
+  "sessionId": "session_2026-01-12T09-18-16",
+  "startUrl": "https://calendly.com/app/availability/calendar_settings",
+  "domain": "calendly_com",
+  "viewportWidth": 2560,
+  "viewportHeight": 1024,
+  "initialFormStates": {},
+  "events": [
+    {
+      "type": "click",
+      "timestamp": "2026-01-12T09:18:19.666Z",
+      "site": "https://calendly.com/app/availability/calendar_settings",
+      "selectorPath": "div#root > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(3) > main:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) > button:nth-of-type(1)",
+      "xpath": "//*[@id=\"root\"]/div[1]/div[1]/div[1]/div[2]/div[3]/main[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/button[1]",
+      "framePath": [],
+      "elementType": "button",
+      "href": null,
+      "webspIndex": 21,
+      "clickCoordinates": {
+        "x": 1306,
+        "y": 414.3333435058594
+      },
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<button aria-describedby=\"header-google-calendar\" class=\"uvkj3lh b15h8fme bzua8jl dyxacjh soq3ksa\" type=\"button\" data-websp-index=\"21\"><span class=\"t1850o97 t7sc041\">Connect</span></button>",
+      "innerHTML": "<span class=\"t1850o97 t7sc041\">Connect</span>",
+      "targetOnClick": null,
+      "tagName": "button",
+      "role": null,
+      "typeAttr": "button",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": "header-google-calendar",
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": "Connect",
+      "textContent": "Connect",
+      "id": null,
+      "name": null,
+      "classList": [
+        "uvkj3lh",
+        "b15h8fme",
+        "bzua8jl",
+        "dyxacjh",
+        "soq3ksa"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": "These calendars will be used to prevent double bookingsGoogle CalendarGmail, G SuiteConnectOutlook CalendarOffice 365, Outlook.com, live.com, or hotma"
+    },
+    {
+      "type": "click",
+      "timestamp": "2026-01-12T09:18:22.395Z",
+      "site": "https://accounts.google.com/v3/signin/accountchooser?access_type=offline&client_id=797340822162.apps.googleusercontent.com&include_granted_scopes=true&prompt=select_account+consent&redirect_uri=https%3A%2F%2Fcalendly.com%2Fusers%2Fauth%2Fgoogle_oauth2%2Fcallback&response_type=code&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar&state=d118204d05bc2265fccdcd5c01ba990d148a4cbd5fbdf422&dsh=S-1139936179%3A1768209500460975&o2v=1&service=lso&flowName=GeneralOAuthFlow&opparams=%253F&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAOR5nkdgp_1FK8jmT-DO901-qmIRdnlHKLLwTOw9zArWvCzoeOM9CayYOtMiY_d2pqAMPpc0tzKCqay-JXzm_tGhOSGjOMSo5okqhLyraiE-sl8-AZkHDNLm6dpDvmnop2dxgJ0Z2EGGJXpccJ-6EJqBm1WMgHct1VtSzriUQ1wijMqgxA5qRZIysi-oaECEWGniMAVHIhdt3hhKx_7lGrdIntT5nk-sVGhD57E-1zniu5PyANKN53IKvltDatRqC5S_b8JVUBwCbRWC0y_ZD29djdSQp8r5FSyV019wWEZocCJ0j8Tmrk9DLyEF1XZyrLeUuh6A08O5J2zhJeRLxiYyM8k6yk6_zpYocxmAK8JoZTjlKsdW-9tOdZZ2PODT6i2IJzqWfN4B0z44GQEIJAGkyR1reIc2sWPq0sqByt8RwBv2-Y%26flowName%3DGeneralOAuthFlow%26as%3DS-1139936179%253A1768209500460975%26client_id%3D797340822162.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=https%3A%2F%2Fcalendly.com",
+      "selectorPath": "div#yDmH0d > c-wiz:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > form:nth-of-type(1) > span:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > div:nth-of-type(1)",
+      "xpath": "//*[@id=\"yDmH0d\"]/c-wiz[1]/main[1]/div[2]/div[1]/div[1]/div[1]/form[1]/span[1]/section[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/div[1]",
+      "framePath": [],
+      "elementType": "div",
+      "href": null,
+      "webspIndex": 2,
+      "clickCoordinates": {
+        "x": 1356.666748046875,
+        "y": 563.6666870117188
+      },
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<div class=\"VV3oRb YZVTmd SmR8\" role=\"link\" tabindex=\"0\" jsname=\"MBVUVe\" data-authuser=\"-1\" data-identifier=\"{{WEBSP_ACCOUNT_EMAIL}}\" data-ogid=\"104564437364468868533\" data-item-index=\"0\" data-button-type=\"multipleChoiceIdentifier\" data-websp-index=\"2\"><div class=\"lPxAeb\"><div class=\"LbOduc\"><div class=\"JQ5tlb\" aria-hidden=\"true\"><img src=\"https://lh3.googleusercontent.com/-RKzOzbH_5k4/AAAAAAAAAAI/AAAAAAAAAAA/ALKGfkm-SGiZeyOJpdfgWx0mkhUAgRI6QQ/s128-c/photo.jpg\" alt=\"\" class=\"MnFlu TrZEUc\" data-atf=\"false\" data-iml=\"1308.199999988079\"></div><div class=\"DOLDDf\"><div class=\"pGzURd\" jsname=\"V1ur5d\" translate=\"no\">PSS Web Agent</div><div class=\"yAlK0b\" jsname=\"bQIQze\" data-email=\"{{WEBSP_ACCOUNT_EMAIL}}\" translate=\"no\">{{WEBSP_ACCOUNT_EMAIL}}</div></div></div></div><div class=\"X5U5I\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"Qk3oof\" fill=\"currentColor\" focusable=\"false\" width=\"24px\" height=\"24px\" viewBox=\"0 0 24 24\" xmlns=\"https://www.w3.org/2000/svg\"><path d=\"M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z\"></path></svg></div></div>",
+      "innerHTML": "<div class=\"lPxAeb\"><div class=\"LbOduc\"><div class=\"JQ5tlb\" aria-hidden=\"true\"><img src=\"https://lh3.googleusercontent.com/-RKzOzbH_5k4/AAAAAAAAAAI/AAAAAAAAAAA/ALKGfkm-SGiZeyOJpdfgWx0mkhUAgRI6QQ/s128-c/photo.jpg\" alt=\"\" class=\"MnFlu TrZEUc\" data-atf=\"false\" data-iml=\"1308.199999988079\"></div><div class=\"DOLDDf\"><div class=\"pGzURd\" jsname=\"V1ur5d\" translate=\"no\">PSS Web Agent</div><div class=\"yAlK0b\" jsname=\"bQIQze\" data-email=\"{{WEBSP_ACCOUNT_EMAIL}}\" translate=\"no\">{{WEBSP_ACCOUNT_EMAIL}}</div></div></div></div><div class=\"X5U5I\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"Qk3oof\" fill=\"currentColor\" focusable=\"false\" width=\"24px\" height=\"24px\" viewBox=\"0 0 24 24\" xmlns=\"https://www.w3.org/2000/svg\"><path d=\"M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z\"></path></svg></div>",
+      "targetOnClick": null,
+      "tagName": "div",
+      "role": "link",
+      "typeAttr": null,
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": "PSS Web Agent\n{{WEBSP_ACCOUNT_EMAIL}}",
+      "textContent": "PSS Web Agent{{WEBSP_ACCOUNT_EMAIL}}",
+      "id": null,
+      "name": null,
+      "classList": [
+        "VV3oRb",
+        "YZVTmd",
+        "SmR8"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": "PSS Web Agent{{WEBSP_ACCOUNT_EMAIL}}"
+    },
+    {
+      "type": "click",
+      "timestamp": "2026-01-12T09:18:25.295Z",
+      "site": "https://accounts.google.com/signin/oauth/id?authuser=0&part=AJi8hAMjp-Mj6W2dEZ8aehMt2Ytx8iGrrfWSPRM-IXFy29OOsbNjq5u4Ns2rZVvM9nFcdFY1zAO_f2xFdSuMNy7g9gsfEKYb3uY9xv31N20Z3-oA4G0R0OlpxOszITFJieS9WS4hv9E5cYVbfI2GJs-eAFjUuZA9Wl55sRD4fL0WC_NTB0PHiKjljLU4zM70R2ASa8HPCHCqvlGKmxqCYBimz804aDqwGFl1vb0-1EORTutveg_yLs7HGUP2B80LJFlhfk5Xxb2PTpQpRBM2oGYXp5L2rYTag58D4EyVx5brPh9wEntOU8iMf5GanBZ68yE5jD8TgcrwGwfeAOiAK161AOzK2T-2_gZ1HGYWdjzdcppbrQWu4qUBTUwoMl8hLrFIL8_4Q5GW-Upr80rCV68_stAN_NUVF9mIOF5HK4afd9YUwWJuT8s5zvzSML8wJKZPkPzzJopUGE4teZXB0Xj91ZIRjBg7SlmDT-ZVkkt1iIfKID5fLrP5e5kVTfb4yJK5xfhv0UaZ4zz83NxmIxtoFCnLLpVFr8dhT_k6dTT_YWi2GVLX57r3eyeHyoRUxi2xyOI9eeXBO67ONn3570tmes7QkcElAgKd6GQfDTnpZbIVwoU6o0li7QbuupRYteGO9B0cS1MG2kmyHMZzL3fn69mo63z--Ul3B0oO4KoCor8uZd4_uLYG7Y-49UFmbt_53d8YcotQncXAcJCRT4r8zF5TJGmvlx_FE1apJbEqsHLdgQhC_IsxUt3u9ZBsi_BJU3V_g5Yil2nvCgCnYe9Y5HFSe5aaCTqKAo-4ZEk-RcVCw_EM8098G9_y4OJaJjIyvo1VXIAs6MDSt2ov_QyPY-7LuuYKIO5qRweTS0gAXncEyV_eGpbv02rhKv543zH4XAf7DuZfflxIzmLEvzRScMhWAf3yM4wzYKijQ1JXJPGCrvTIvRCba8RfPEwfd717BwYcCvY_SFOp6o1U4uJz-ITPYHAZzx0fT3wPEv_wrpoi6HFUah1wz2JDxdE98-CNCjOcloCYC3na7fo6aRWfkCMLvfeV79F446GBbThWmsQYRlDkfaU&flowName=GeneralOAuthFlow&as=S-1139936179%3A1768209500460975&client_id=797340822162.apps.googleusercontent.com&rapt=AEjHL4Mihu4IHdfnc3vlnPOhI2lly3OYE5aSUVUod6wDzkslSRru6DXNvwQXWCBfT0I-i23KueM6R1twMWpLK2s69RdhdIE2662tYIFuzdAuYNBgRvUnsZY&requestPath=%2Fsignin%2Foauth%2Fconsent#",
+      "selectorPath": "div#yDmH0d > c-wiz:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(1)",
+      "xpath": "//*[@id=\"yDmH0d\"]/c-wiz[1]/main[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]",
+      "framePath": [],
+      "elementType": "button",
+      "href": null,
+      "webspIndex": 7,
+      "clickCoordinates": {
+        "x": 1648.666748046875,
+        "y": 781
+      },
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<button class=\"VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-INsAgc VfPpkd-LgbsSe-OWXEXe-dgl2Hf Rj2Mlf OLiIxf PDpWxe P62QJc LQeN7 BqKGqe pIzcPc TrZEUc lw1w4b\" jscontroller=\"soHxf\" jsaction=\"click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;mlnRJb:fLiPzd;\" data-idom-class=\"Rj2Mlf OLiIxf PDpWxe P62QJc LQeN7 BqKGqe pIzcPc TrZEUc lw1w4b\" jsname=\"LgbsSe\" type=\"button\" data-websp-index=\"7\"><div class=\"VfPpkd-Jh9lGc\"></div><div class=\"VfPpkd-J1Ukfc-LhBDec\"></div><div class=\"VfPpkd-RLmnJb\"></div><span jsname=\"V67aGc\" class=\"VfPpkd-vQzf8d\">Continue</span></button>",
+      "innerHTML": "<div class=\"VfPpkd-Jh9lGc\"></div><div class=\"VfPpkd-J1Ukfc-LhBDec\"></div><div class=\"VfPpkd-RLmnJb\"></div><span jsname=\"V67aGc\" class=\"VfPpkd-vQzf8d\">Continue</span>",
+      "targetOnClick": null,
+      "tagName": "button",
+      "role": null,
+      "typeAttr": "button",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": "Continue",
+      "textContent": "Continue",
+      "id": null,
+      "name": null,
+      "classList": [
+        "VfPpkd-LgbsSe",
+        "VfPpkd-LgbsSe-OWXEXe-INsAgc",
+        "VfPpkd-LgbsSe-OWXEXe-dgl2Hf",
+        "Rj2Mlf",
+        "OLiIxf",
+        "PDpWxe",
+        "P62QJc",
+        "LQeN7",
+        "BqKGqe",
+        "pIzcPc",
+        "TrZEUc",
+        "lw1w4b"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": null
+    },
+    {
+      "type": "click",
+      "timestamp": "2026-01-12T09:18:27.207Z",
+      "site": "https://accounts.google.com/signin/oauth/v2/consentsummary?as=S-1139936179%3A1768209500460975&authuser=0&client_id=797340822162.apps.googleusercontent.com&flowName=GeneralOAuthFlow&part=AJi8hAO6GJtaLaPzyvglxMXMwriV5S1yacldEesPMXzSiLcyG4MUG62XvBBXCJycqfuaRMMnaw820nq6nwXaNblfn6PNQe06y0eVaYaBQIerDkeEY7QEAy2IvMuJOLCDK8DGepWQTt4e9R3VCqOu_kJeAkJF_QFYoIOKsQ_iGgk1tdco3KP7Gr-eeBk4T4jnVmp5aby9XM2V0JdcAqiVxoQUvrmCu3IAGANCMJzb6lNnBwuUxKUm4O4Ql1cm56rTJ1mp66Sjg_SN1VRCEmoOSxvOe3Bv-G6FpIduwzDyb4j9MyHvn25KExElsWc3GctBEPYWXg_i_VboweouUx9u5S9M-wu0mnl_vtHmooq6afVXY5PGTGmTJp6kjQ1NqCTwxgsmBV_mBE8s4YjfOQcH2K46wa0toVNNOYwR0XrbDT8QM14rg9zO04c_VqK-ylwZw1tyyKKEK4gTduM526SYqG9GLEpNi7CeI6byBFRAXQzQZtS2zeFp8PD6sVa8mMZe62gUsFyMJ1PFfrweam9TgcoEa7468RryPpnwFU_H9Q2pSD9TeaKegx40Iyy1RM4Qdb6FDRixZsMWjPWHEGHmsfHY5l_ttpaza_3ME9Pt2X_6I8ZxKO4G0lTxffJ7fqRuDBEMxA29NLOdVCetEli-f-Qfv7wtKlSLNBDvkrAe6zkE9djy1dI_pDc8V94Mf-wbIGSmB77vNg09be9BVQ8rP065vvlNWd2i3HqgtiUNxo9TmTzER3Gghn8IrG0PntV_1V_BvuJ7ooqMdjqPcF6QvHiRhsynOR28GvyVyZEAyhvfhVPmxQfVX60WG3MmCxc-7Mjr3TNJQJHU661y95DMX4Ir_hIz_iiSdFx15BgJLDWEHf5XUNPEiCUbnd1XFqnKEUswQtTlQLahfHrznsD0j48urgPEwtJs-hkWnaijkcEyc2vWubhHRPeaKW62UCs5YnNArtxM0nv-ytvI1Mxzh7s5OfvvEr-ycHQprb13rZeN102f4n202JhZaH6hXrpN7fZpMdcnYJuMrXD2A9UmT_jZ6rqGkTiXfb7IAawWMm26i4qfDKGnl9uuUO06mWRN7ZPBkOwMHR2I&rapt=AEjHL4Mihu4IHdfnc3vlnPOhI2lly3OYE5aSUVUod6wDzkslSRru6DXNvwQXWCBfT0I-i23KueM6R1twMWpLK2s69RdhdIE2662tYIFuzdAuYNBgRvUnsZY&xsrf=AEMlUbY_HV7qKcb6cYUnDq0m8xOq%3A1768209504153",
+      "selectorPath": "div#submit_approve_access > div:nth-of-type(1) > button:nth-of-type(1)",
+      "xpath": "//*[@id=\"submit_approve_access\"]/div[1]/button[1]",
+      "framePath": [],
+      "elementType": "button",
+      "href": null,
+      "webspIndex": 7,
+      "clickCoordinates": {
+        "x": 1639.3333740234375,
+        "y": 812.3333740234375
+      },
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<button class=\"VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-INsAgc VfPpkd-LgbsSe-OWXEXe-dgl2Hf Rj2Mlf OLiIxf PDpWxe P62QJc LQeN7 BqKGqe pIzcPc TrZEUc lw1w4b\" jscontroller=\"soHxf\" jsaction=\"click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;mlnRJb:fLiPzd;\" data-idom-class=\"Rj2Mlf OLiIxf PDpWxe P62QJc LQeN7 BqKGqe pIzcPc TrZEUc lw1w4b\" jsname=\"LgbsSe\" type=\"button\" data-websp-index=\"7\"><div class=\"VfPpkd-Jh9lGc\"></div><div class=\"VfPpkd-J1Ukfc-LhBDec\"></div><div class=\"VfPpkd-RLmnJb\"></div><span jsname=\"V67aGc\" class=\"VfPpkd-vQzf8d\">Continue</span></button>",
+      "innerHTML": "<div class=\"VfPpkd-Jh9lGc\"></div><div class=\"VfPpkd-J1Ukfc-LhBDec\"></div><div class=\"VfPpkd-RLmnJb\"></div><span jsname=\"V67aGc\" class=\"VfPpkd-vQzf8d\">Continue</span>",
+      "targetOnClick": null,
+      "tagName": "button",
+      "role": null,
+      "typeAttr": "button",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": "Continue",
+      "textContent": "Continue",
+      "id": null,
+      "name": null,
+      "classList": [
+        "VfPpkd-LgbsSe",
+        "VfPpkd-LgbsSe-OWXEXe-INsAgc",
+        "VfPpkd-LgbsSe-OWXEXe-dgl2Hf",
+        "Rj2Mlf",
+        "OLiIxf",
+        "PDpWxe",
+        "P62QJc",
+        "LQeN7",
+        "BqKGqe",
+        "pIzcPc",
+        "TrZEUc",
+        "lw1w4b"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": null
+    }
+  ],
+  "screenshots": [
+    {
+      "timestamp": "2026-01-12T09:18:16.924Z",
+      "eventType": "initial",
+      "index": 0,
+      "filename": "screenshots/screenshot_000_initial.png"
+    },
+    {
+      "timestamp": "2026-01-12T09:18:19.666Z",
+      "eventType": "click",
+      "index": 1,
+      "filename": "screenshots/screenshot_001_click.png"
+    },
+    {
+      "timestamp": "2026-01-12T09:18:22.396Z",
+      "eventType": "click",
+      "index": 2,
+      "filename": "screenshots/screenshot_002_click.png"
+    },
+    {
+      "timestamp": "2026-01-12T09:18:25.296Z",
+      "eventType": "click",
+      "index": 3,
+      "filename": "screenshots/screenshot_003_click.png"
+    },
+    {
+      "timestamp": "2026-01-12T09:18:27.207Z",
+      "eventType": "click",
+      "index": 4,
+      "filename": "screenshots/screenshot_004_click.png"
+    },
+    {
+      "timestamp": "2026-01-12T09:18:37.394Z",
+      "eventType": "final",
+      "index": 5,
+      "filename": "screenshots/screenshot_005_final.png"
+    }
+  ],
+  "metadata": {
+    "totalEvents": 4,
+    "totalScreenshots": 6,
+    "recordingDate": "2026-01-12T09:18:38.878Z"
+  }
+}

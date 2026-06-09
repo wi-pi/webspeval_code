@@ -1,0 +1,140 @@
+{
+  "taskId": "Steam_task-191_state1",
+  "sessionId": "session_2026-02-24T08-56-52",
+  "startUrl": "https://store.steampowered.com/account/cookiepreferences",
+  "domain": "store_steampowered_com",
+  "viewportWidth": 1280,
+  "viewportHeight": 1024,
+  "initialFormStates": {
+    "html:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(7) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > form:nth-of-type(1) > input:nth-of-type(1)": {
+      "selectorPath": "html:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(7) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > form:nth-of-type(1) > input:nth-of-type(1)",
+      "xpath": "/html/body/div[1]/div[7]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/form[1]/input[1]",
+      "framePath": [],
+      "type": "hidden",
+      "name": "snr",
+      "value": "1_12_4__7",
+      "checked": false,
+      "tagName": "input",
+      "role": null,
+      "typeAttr": "hidden",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": null,
+      "textContent": null,
+      "id": null,
+      "classList": [],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": "BrowseRecommendationsCategoriesHardwareWays to PlaySpecial SectionsPopular searchesSuper Battle Golf-20%$7.99$6.39Isekai Sex Kingdom 👑-37%$14.99$9.44"
+    },
+    "html:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(7) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > form:nth-of-type(1) > div:nth-of-type(1) > input:nth-of-type(1)": {
+      "selectorPath": "html:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(7) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > form:nth-of-type(1) > div:nth-of-type(1) > input:nth-of-type(1)",
+      "xpath": "/html/body/div[1]/div[7]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/input[1]",
+      "framePath": [],
+      "type": "text",
+      "name": "term",
+      "value": null,
+      "checked": false,
+      "tagName": "input",
+      "role": "combobox",
+      "typeAttr": "text",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": "Search the store",
+      "title": null,
+      "labelText": null,
+      "innerText": null,
+      "textContent": null,
+      "id": null,
+      "classList": [
+        "_2tlUAG6WNyYFlk9caIiLj5"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": "BrowseRecommendationsCategoriesHardwareWays to PlaySpecial SectionsPopular searchesSuper Battle Golf-20%$7.99$6.39Isekai Sex Kingdom 👑-37%$14.99$9.44"
+    }
+  },
+  "events": [
+    {
+      "type": "click",
+      "timestamp": "2026-02-24T08:56:55.803Z",
+      "site": "https://store.steampowered.com/account/cookiepreferences",
+      "selectorPath": "div#main_content > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
+      "xpath": "//*[@id=\"main_content\"]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
+      "framePath": [],
+      "elementType": "div",
+      "href": null,
+      "webspIndex": 136,
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<div class=\"_24Y_0sMrz5EywcAsFUstI1 Focusable\" tabindex=\"0\" role=\"button\" data-websp-index=\"136\">Accept All</div>",
+      "innerHTML": "Accept All",
+      "targetOnClick": null,
+      "tagName": "div",
+      "role": "button",
+      "typeAttr": null,
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": "Accept All",
+      "textContent": "Accept All",
+      "id": null,
+      "name": null,
+      "classList": [
+        "_24Y_0sMrz5EywcAsFUstI1",
+        "Focusable"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": "Reject All",
+      "parentTextContext": "Reject AllAccept All"
+    }
+  ],
+  "screenshots": [
+    {
+      "timestamp": "2026-02-24T08:56:52.590Z",
+      "eventType": "initial",
+      "index": 0,
+      "filename": "screenshots/screenshot_000_initial.png"
+    },
+    {
+      "timestamp": "2026-02-24T08:56:55.803Z",
+      "eventType": "click",
+      "index": 1,
+      "filename": "screenshots/screenshot_001_click.png"
+    },
+    {
+      "timestamp": "2026-02-24T08:57:03.207Z",
+      "eventType": "final",
+      "index": 2,
+      "filename": "screenshots/screenshot_002_final.png"
+    }
+  ],
+  "metadata": {
+    "totalEvents": 1,
+    "totalScreenshots": 3,
+    "recordingDate": "2026-02-24T08:57:03.970Z"
+  }
+}

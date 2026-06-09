@@ -1,0 +1,83 @@
+{
+  "taskId": "task-51",
+  "sessionId": "session_2025-11-10T07-15-08",
+  "startUrl": "https://www.reddit.com/settings/privacy",
+  "domain": "www_reddit_com",
+  "viewportWidth": 256,
+  "viewportHeight": 60,
+  "initialFormStates": {},
+  "events": [
+    {
+      "type": "change",
+      "timestamp": "2025-11-10T07:15:17.270Z",
+      "site": "https://www.reddit.com/settings/privacy",
+      "selectorPath": "main#main-content > div:nth-of-type(1) > settings-privacy-section:nth-of-type(1) > ::shadow > div:nth-of-type(1) > label:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2) > span:nth-of-type(1) > faceplate-switch-input:nth-of-type(1)",
+      "xpath": "/label[1]/div[1]/span[2]/span[1]/faceplate-switch-input[1]",
+      "framePath": [],
+      "elementType": "faceplate-switch-input",
+      "inputType": "checkbox",
+      "checked": false,
+      "value": null,
+      "webspIndex": 18,
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<faceplate-switch-input aria-label=\"Allow people to follow you\" faceplate-validity=\"valid\" class=\"flex-col mr-xs \" role=\"checkbox\" tabindex=\"0\" aria-disabled=\"false\" data-websp-index=\"18\" aria-checked=\"false\"></faceplate-switch-input>",
+      "innerHTML": null,
+      "targetOnClick": null,
+      "tagName": "faceplate-switch-input",
+      "role": "checkbox",
+      "typeAttr": null,
+      "ariaLabel": "Allow people to follow you",
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": "Allow people to follow you Let people follow you to see your profile posts in their home feed",
+      "innerText": null,
+      "textContent": null,
+      "id": null,
+      "name": null,
+      "classList": [
+        "flex-col",
+        "mr-xs"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": null,
+      "headingText": null,
+      "controlLabelText": "Allow people to follow you\nLet people follow you to see your profile posts in their home feed",
+      "sectionText": "Allow people to follow you\nLet people follow you to see your profile posts in their home feed"
+    }
+  ],
+  "screenshots": [
+    {
+      "timestamp": "2025-11-10T07:15:08.777Z",
+      "eventType": "initial",
+      "index": 0,
+      "filename": "screenshots/screenshot_000_initial.png"
+    },
+    {
+      "timestamp": "2025-11-10T07:15:17.271Z",
+      "eventType": "toggle",
+      "index": 1,
+      "filename": "screenshots/screenshot_001_toggle.png"
+    },
+    {
+      "timestamp": "2025-11-10T07:15:20.428Z",
+      "eventType": "final",
+      "index": 2,
+      "filename": "screenshots/screenshot_002_final.png"
+    }
+  ],
+  "metadata": {
+    "totalEvents": 1,
+    "totalScreenshots": 3,
+    "recordingDate": "2025-11-10T07:15:21.208Z"
+  }
+}

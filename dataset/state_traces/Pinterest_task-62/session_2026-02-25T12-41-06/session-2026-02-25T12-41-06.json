@@ -1,0 +1,133 @@
+{
+  "taskId": "Pinterest_task-62",
+  "sessionId": "session_2026-02-25T12-41-06",
+  "startUrl": "https://www.pinterest.com/settings/privacy/",
+  "domain": "www_pinterest_com",
+  "viewportWidth": 1280,
+  "viewportHeight": 1024,
+  "initialFormStates": {},
+  "events": [
+    {
+      "type": "change",
+      "timestamp": "2026-02-25T12:41:09.338Z",
+      "site": "https://www.pinterest.com/settings/privacy/",
+      "selectorPath": "input#5300742455594082377",
+      "xpath": "//*[@id=\"5300742455594082377\"]",
+      "framePath": [],
+      "elementType": "input",
+      "inputType": "checkbox",
+      "value": "on",
+      "checked": true,
+      "webspIndex": 38,
+      "formContext": {
+        "formSelector": null,
+        "fieldName": "opt_out_gen_ai_model_training",
+        "groupName": null
+      },
+      "outerHTML": "<input aria-invalid=\"false\" class=\"ujEeh_ YaPS2v Tg2hoP\" id=\"5300742455594082377\" type=\"checkbox\" name=\"opt_out_gen_ai_model_training\" data-websp-index=\"38\">",
+      "innerHTML": null,
+      "targetOnClick": null,
+      "tagName": "input",
+      "role": null,
+      "typeAttr": "checkbox",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": "Use your data to train Pinterest Canvas\nAllow your data to be used to help train Pinterest Canvas. Learn more",
+      "innerText": null,
+      "textContent": null,
+      "id": "5300742455594082377",
+      "name": "opt_out_gen_ai_model_training",
+      "classList": [
+        "ujEeh_",
+        "YaPS2v",
+        "Tg2hoP"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": null,
+      "headingText": null,
+      "controlLabelText": null,
+      "sectionText": "Use your data to train Pinterest Canvas\nAllow your data to be used to help train Pinterest Canvas. Learn more"
+    },
+    {
+      "type": "click",
+      "timestamp": "2026-02-25T12:41:10.804Z",
+      "site": "https://www.pinterest.com/settings/privacy/",
+      "selectorPath": "div#__PWS_ROOT__ > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > button:nth-of-type(1)",
+      "xpath": "//*[@id=\"__PWS_ROOT__\"]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[5]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]",
+      "framePath": [],
+      "elementType": "button",
+      "href": null,
+      "webspIndex": null,
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<button class=\"G0yGFD ap8aAM Q3hcOU gwpqhu itmoZr GaMK1V O0u6sV\" type=\"button\" tabindex=\"0\"><div class=\"oxThCB\"><div class=\"lIkAnG eMU5i5 o5UlW_ hL1e7w\">Save</div></div></button>",
+      "innerHTML": "<div class=\"oxThCB\"><div class=\"lIkAnG eMU5i5 o5UlW_ hL1e7w\">Save</div></div>",
+      "targetOnClick": null,
+      "tagName": "button",
+      "role": null,
+      "typeAttr": "button",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": "Save",
+      "textContent": "Save",
+      "id": null,
+      "name": null,
+      "classList": [
+        "G0yGFD",
+        "ap8aAM",
+        "Q3hcOU",
+        "gwpqhu",
+        "itmoZr",
+        "GaMK1V",
+        "O0u6sV"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": null
+    }
+  ],
+  "screenshots": [
+    {
+      "timestamp": "2026-02-25T12:41:06.117Z",
+      "eventType": "initial",
+      "index": 0,
+      "filename": "screenshots/screenshot_000_initial.png"
+    },
+    {
+      "timestamp": "2026-02-25T12:41:10.805Z",
+      "eventType": "click",
+      "index": 1,
+      "filename": "screenshots/screenshot_001_click.png"
+    },
+    {
+      "timestamp": "2026-02-25T12:41:16.422Z",
+      "eventType": "final",
+      "index": 2,
+      "filename": "screenshots/screenshot_002_final.png"
+    }
+  ],
+  "metadata": {
+    "totalEvents": 2,
+    "totalScreenshots": 3,
+    "recordingDate": "2026-02-25T12:41:17.154Z"
+  }
+}

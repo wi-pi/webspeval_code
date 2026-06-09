@@ -1,0 +1,283 @@
+{
+  "taskId": "task-207-OFF",
+  "sessionId": "session_2025-12-28T08-55-54",
+  "startUrl": "https://moodle.org/user/profile.php",
+  "domain": "moodle_org",
+  "viewportWidth": 2560,
+  "viewportHeight": 1305,
+  "initialFormStates": {},
+  "events": [
+    {
+      "type": "click",
+      "timestamp": "2025-12-28T08:55:56.398Z",
+      "site": "https://moodle.org/user/profile.php",
+      "selectorPath": "div#region-main > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > span:nth-of-type(1) > a:nth-of-type(1)",
+      "xpath": "//*[@id=\"region-main\"]/div[1]/div[1]/div[1]/section[1]/div[1]/ul[1]/li[1]/span[1]/a[1]",
+      "framePath": [],
+      "elementType": "a",
+      "href": "https://moodle.org/user/edit.php?id=7770864&returnto=profile",
+      "webspIndex": 33,
+      "clickCoordinates": {
+        "x": 1213.3333740234375,
+        "y": 384.3333435058594
+      },
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<a href=\"https://moodle.org/user/edit.php?id=7770864&amp;returnto=profile\" data-websp-index=\"33\">Edit profile</a>",
+      "innerHTML": "Edit profile",
+      "targetOnClick": null,
+      "tagName": "a",
+      "role": null,
+      "typeAttr": null,
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": "Edit profile",
+      "textContent": "Edit profile",
+      "id": null,
+      "name": null,
+      "classList": [],
+      "parentContext": "User details",
+      "nearbyLabelText": null,
+      "parentTextContext": "Edit profile"
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-12-28T08:55:58.319Z",
+      "site": "https://moodle.org/user/edit.php?id=7770864&returnto=profile",
+      "selectorPath": "select#id_maildisplay",
+      "xpath": "//*[@id=\"id_maildisplay\"]",
+      "framePath": [],
+      "elementType": "select",
+      "href": null,
+      "webspIndex": 39,
+      "clickCoordinates": {
+        "x": 1178.666748046875,
+        "y": 606.3333740234375
+      },
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<select class=\"form-select\n                       \n                       \" name=\"maildisplay\" id=\"id_maildisplay\" data-websp-index=\"39\">\n            <option value=\"0\">Hidden</option>\n            <option value=\"1\">Visible to everyone</option>\n            <option value=\"2\" selected=\"\">Visible to course participants</option>\n        </select>",
+      "innerHTML": "\n            <option value=\"0\">Hidden</option>\n            <option value=\"1\">Visible to everyone</option>\n            <option value=\"2\" selected=\"\">Visible to course participants</option>\n        ",
+      "targetOnClick": null,
+      "tagName": "select",
+      "role": null,
+      "typeAttr": null,
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": "Email visibility",
+      "innerText": "Hidden\nVisible to everyone\nVisible to course participants",
+      "textContent": "Hidden\n            Visible to everyone\n            Visible to course participants",
+      "id": "id_maildisplay",
+      "name": "maildisplay",
+      "classList": [
+        "form-select"
+      ],
+      "parentContext": "General",
+      "nearbyLabelText": null,
+      "parentTextContext": "Hidden\n            Visible to everyone\n            Visible to course participants"
+    },
+    {
+      "type": "change",
+      "timestamp": "2025-12-28T08:55:59.734Z",
+      "site": "https://moodle.org/user/edit.php?id=7770864&returnto=profile",
+      "selectorPath": "select#id_maildisplay",
+      "xpath": "//*[@id=\"id_maildisplay\"]",
+      "framePath": [],
+      "elementType": "select",
+      "inputType": "select-one",
+      "value": "0",
+      "webspIndex": 39,
+      "formContext": {
+        "formSelector": "form#[object RadioNodeList]",
+        "fieldName": "maildisplay",
+        "groupName": null
+      },
+      "outerHTML": "<select class=\"form-select\n                       \n                       \" name=\"maildisplay\" id=\"id_maildisplay\" data-websp-index=\"39\" data-initial-value=\"2\">\n            <option value=\"0\">Hidden</option>\n            <option value=\"1\">Visible to everyone</option>\n            <option value=\"2\" selected=\"\">Visible to course participants</option>\n        </select>",
+      "innerHTML": "\n            <option value=\"0\">Hidden</option>\n            <option value=\"1\">Visible to everyone</option>\n            <option value=\"2\" selected=\"\">Visible to course participants</option>\n        ",
+      "targetOnClick": null,
+      "tagName": "select",
+      "role": null,
+      "typeAttr": null,
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": "Email visibility",
+      "innerText": "Hidden\nVisible to everyone\nVisible to course participants",
+      "textContent": "Hidden\n            Visible to everyone\n            Visible to course participants",
+      "id": "id_maildisplay",
+      "name": "maildisplay",
+      "classList": [
+        "form-select"
+      ],
+      "parentContext": "General",
+      "nearbyLabelText": null,
+      "parentTextContext": "Hidden\n            Visible to everyone\n            Visible to course participants"
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-12-28T08:56:01.057Z",
+      "site": "https://moodle.org/user/edit.php?id=7770864&returnto=profile",
+      "selectorPath": "input#id_submitbutton",
+      "xpath": "//*[@id=\"id_submitbutton\"]",
+      "framePath": [],
+      "elementType": "input",
+      "href": null,
+      "webspIndex": 90,
+      "clickCoordinates": {
+        "x": 1183.3333740234375,
+        "y": 1587.6666870117188
+      },
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<input type=\"submit\" class=\"btn\n                        btn-primary\n                        \n                    \n                    \" name=\"submitbutton\" id=\"id_submitbutton\" value=\"Update profile\" data-websp-index=\"90\">",
+      "innerHTML": null,
+      "targetOnClick": null,
+      "tagName": "input",
+      "role": null,
+      "typeAttr": "submit",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": null,
+      "textContent": null,
+      "id": "id_submitbutton",
+      "name": "submitbutton",
+      "classList": [
+        "btn",
+        "btn-primary"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": null
+    },
+    {
+      "type": "change",
+      "timestamp": "2025-12-28T08:56:01.302Z",
+      "site": "https://moodle.org/user/edit.php?id=7770864&returnto=profile",
+      "selectorPath": "select#id_interests",
+      "xpath": "//*[@id=\"id_interests\"]",
+      "framePath": [],
+      "elementType": "select",
+      "inputType": "select-multiple",
+      "value": null,
+      "webspIndex": null,
+      "formContext": {
+        "formSelector": "form#[object RadioNodeList]",
+        "fieldName": "interests[]",
+        "groupName": null
+      },
+      "outerHTML": "<select class=\"form-select \" name=\"interests[]\" id=\"id_interests\" multiple=\"\" aria-hidden=\"true\" data-aria-hidden-tab-index=\"\" tabindex=\"-1\" style=\"visibility: hidden; display: none;\">\n            <option value=\"Conference\">Conference</option>\n            <option value=\"Documentation\">Documentation</option>\n            <option value=\"GSOC\">GSOC</option>\n            <option value=\"Moodle\">Moodle</option>\n            <option value=\"Usability\">Usability</option>\n        </select>",
+      "innerHTML": "\n            <option value=\"Conference\">Conference</option>\n            <option value=\"Documentation\">Documentation</option>\n            <option value=\"GSOC\">GSOC</option>\n            <option value=\"Moodle\">Moodle</option>\n            <option value=\"Usability\">Usability</option>\n        ",
+      "targetOnClick": null,
+      "tagName": "select",
+      "role": null,
+      "typeAttr": null,
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": "Conference\n            Documentation\n            GSOC\n            Moodle\n            Usability",
+      "textContent": "Conference\n            Documentation\n            GSOC\n            Moodle\n            Usability",
+      "id": "id_interests",
+      "name": "interests[]",
+      "classList": [
+        "form-select"
+      ],
+      "parentContext": "Interests",
+      "nearbyLabelText": "Selected items:\n\n\n\n\n        No selection\n\n\n    \n    ▼\n\n\n        \n            Conference\n        \n   ",
+      "parentTextContext": "Conference\n            Documentation\n            GSOC\n            Moodle\n            Usability\n        \n        \n            \n        \n    Selected it"
+    }
+  ],
+  "screenshots": [
+    {
+      "timestamp": "2025-12-28T08:55:54.029Z",
+      "eventType": "initial",
+      "index": 0,
+      "filename": "screenshots/screenshot_000_initial.png"
+    },
+    {
+      "timestamp": "2025-12-28T08:55:56.399Z",
+      "eventType": "click",
+      "index": 1,
+      "filename": "screenshots/screenshot_001_click.png"
+    },
+    {
+      "timestamp": "2025-12-28T08:55:58.320Z",
+      "eventType": "click",
+      "index": 2,
+      "filename": "screenshots/screenshot_002_click.png"
+    },
+    {
+      "timestamp": "2025-12-28T08:55:59.734Z",
+      "eventType": "change",
+      "index": 3,
+      "filename": "screenshots/screenshot_003_change.png"
+    },
+    {
+      "timestamp": "2025-12-28T08:56:01.058Z",
+      "eventType": "click",
+      "index": 4,
+      "filename": "screenshots/screenshot_004_click.png"
+    },
+    {
+      "timestamp": "2025-12-28T08:56:01.303Z",
+      "eventType": "change",
+      "index": 5,
+      "filename": "screenshots/screenshot_005_change.png"
+    },
+    {
+      "timestamp": "2025-12-28T08:56:05.071Z",
+      "eventType": "final",
+      "index": 6,
+      "filename": "screenshots/screenshot_006_final.png"
+    }
+  ],
+  "metadata": {
+    "totalEvents": 5,
+    "totalScreenshots": 7,
+    "recordingDate": "2026-01-12T08:56:06.814Z"
+  }
+}

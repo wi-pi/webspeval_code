@@ -1,0 +1,32 @@
+# --- secrets ---
+*.env
+!/.env
+
+# --- user-recorded data that may contain PII ---
+# Login traces are recorded by each user themselves (see docs/RECORDING_GUIDE.md);
+# never commit them. The directory + its README is kept, contents are ignored.
+/login_traces/*
+!/login_traces/README.md
+**/screenshots/
+
+# --- chrome profiles / runtime browser state ---
+Profile*/
+test_profile*/
+chrome_profile*/
+
+# --- run outputs / results ---
+outputs/
+results/
+*.log
+
+# --- python ---
+__pycache__/
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- os / editor ---
+.DS_Store
+.vscode/
+.cursor/
+.claude/

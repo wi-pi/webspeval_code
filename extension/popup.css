@@ -1,0 +1,99 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  width: 250px;
+  padding: 15px;
+  background-color: #f0f2f5;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 18px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #005a9e;
+}
+
+.input-group input:invalid {
+  border-color: #dc3545;
+}
+
+.status {
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.status.recording {
+  background-color: #e4f2ff;
+  color: #005a9e;
+  border: 1px solid #b3d7ff;
+}
+
+.status.stopped {
+  background-color: #fdeaea;
+  color: #9e2a2b;
+  border: 1px solid #f5c6cb;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#startRecording {
+  background-color: #28a745;
+  color: white;
+}
+
+#stopRecording {
+  background-color: #dc3545;
+  color: white;
+}

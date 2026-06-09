@@ -1,0 +1,180 @@
+{
+  "taskId": "Duolingo_task-103",
+  "sessionId": "session_2025-11-11T00-26-17",
+  "startUrl": "https://www.duolingo.com/settings/privacy",
+  "domain": "www_duolingo_com",
+  "viewportWidth": 1280,
+  "viewportHeight": 883,
+  "initialFormStates": {},
+  "events": [
+    {
+      "type": "click",
+      "timestamp": "2025-11-11T00:26:19.852Z",
+      "site": "https://www.duolingo.com/settings/privacy",
+      "selectorPath": "div#root > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > section:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(1)",
+      "xpath": "//*[@id=\"root\"]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/section[1]/ul[1]/li[1]/div[1]/button[1]",
+      "framePath": [],
+      "elementType": "button",
+      "href": null,
+      "webspIndex": 19,
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<button class=\"_1gEmM _7jW2t _2mkWS\" aria-pressed=\"false\" type=\"button\" aria-labelledby=\"1\" data-test=\"privacy-public-profile\" data-websp-index=\"19\"><span class=\"_1gwYP _9lHjd\"></span></button>",
+      "innerHTML": "<span class=\"_1gwYP _9lHjd\"></span>",
+      "targetOnClick": null,
+      "tagName": "button",
+      "role": null,
+      "typeAttr": "button",
+      "ariaLabel": null,
+      "ariaLabelledby": "1",
+      "ariaDescribedby": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": "Make my profile public",
+      "innerText": null,
+      "textContent": null,
+      "id": null,
+      "name": null,
+      "classList": [
+        "_1gEmM",
+        "_7jW2t",
+        "_2mkWS"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": "Make my profile publicAllow others to find your profile and follow you. Allows you to follow others.",
+      "parentTextContext": "Make my profile publicAllow others to find your profile and follow you. Allows you to follow others. Enrolls you in public leaderboards."
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-11-11T00:26:21.483Z",
+      "site": "https://www.duolingo.com/settings/privacy",
+      "selectorPath": "div#root > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > section:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(1)",
+      "xpath": "//*[@id=\"root\"]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/section[1]/ul[1]/li[2]/div[1]/button[1]",
+      "framePath": [],
+      "elementType": "button",
+      "href": null,
+      "webspIndex": 20,
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<button class=\"_1gEmM _7jW2t _2mkWS\" aria-pressed=\"true\" type=\"button\" aria-labelledby=\"2\" data-test=\"privacy-personalized-ads\" data-websp-index=\"20\"><span class=\"_1gwYP XIyeO _9lHjd\"></span></button>",
+      "innerHTML": "<span class=\"_1gwYP XIyeO _9lHjd\"></span>",
+      "targetOnClick": null,
+      "tagName": "button",
+      "role": null,
+      "typeAttr": "button",
+      "ariaLabel": null,
+      "ariaLabelledby": "2",
+      "ariaDescribedby": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": "Personalized ads",
+      "innerText": null,
+      "textContent": null,
+      "id": null,
+      "name": null,
+      "classList": [
+        "_1gEmM",
+        "_7jW2t",
+        "_2mkWS"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": "Personalized adsTracking and personalization for advertising",
+      "parentTextContext": "Personalized adsTracking and personalization for advertising"
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-11-11T00:26:22.651Z",
+      "site": "https://www.duolingo.com/settings/privacy",
+      "selectorPath": "div#root > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > section:nth-of-type(1) > button:nth-of-type(1)",
+      "xpath": "//*[@id=\"root\"]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/section[1]/button[1]",
+      "framePath": [],
+      "elementType": "button",
+      "href": null,
+      "webspIndex": null,
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<button class=\"_3q--f _20olS _1VYyp _1ursp _7jW2t _1OEsk\" data-test=\"save-button\"><span class=\"_9lHjd\">Save changes</span></button>",
+      "innerHTML": "<span class=\"_9lHjd\">Save changes</span>",
+      "targetOnClick": null,
+      "tagName": "button",
+      "role": null,
+      "typeAttr": null,
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": "SAVE CHANGES",
+      "textContent": "Save changes",
+      "id": null,
+      "name": null,
+      "classList": [
+        "_3q--f",
+        "_20olS",
+        "_1VYyp",
+        "_1ursp",
+        "_7jW2t",
+        "_1OEsk"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": "Make my profile publicAllow others to find your profile and follow you. Allows you to follow others.",
+      "parentTextContext": "Make my profile publicAllow others to find your profile and follow you. Allows you to follow others. Enrolls you in public leaderboards.Personalized a"
+    }
+  ],
+  "screenshots": [
+    {
+      "timestamp": "2025-11-11T00:26:17.250Z",
+      "eventType": "initial",
+      "index": 0,
+      "filename": "screenshots/screenshot_000_initial.png"
+    },
+    {
+      "timestamp": "2025-11-11T00:26:19.853Z",
+      "eventType": "click",
+      "index": 1,
+      "filename": "screenshots/screenshot_001_click.png"
+    },
+    {
+      "timestamp": "2025-11-11T00:26:21.484Z",
+      "eventType": "click",
+      "index": 2,
+      "filename": "screenshots/screenshot_002_click.png"
+    },
+    {
+      "timestamp": "2025-11-11T00:26:22.652Z",
+      "eventType": "click",
+      "index": 3,
+      "filename": "screenshots/screenshot_003_click.png"
+    },
+    {
+      "timestamp": "2025-11-11T00:26:28.750Z",
+      "eventType": "final",
+      "index": 4,
+      "filename": "screenshots/screenshot_004_final.png"
+    }
+  ],
+  "metadata": {
+    "totalEvents": 3,
+    "totalScreenshots": 5,
+    "recordingDate": "2025-11-11T00:26:29.598Z"
+  }
+}

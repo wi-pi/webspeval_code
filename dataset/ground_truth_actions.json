@@ -1,0 +1,1435 @@
+{
+    "Docker_task-1_OFF": [
+        "CLICK 'Settings Dropdown'",
+        "CLICK 'Privacy' tab",
+        "CLICK the 'Opt out of sharing anonymized usage data' CHECKBOX",
+        "CLICK 'Save'"
+    ],
+    "Docker_task-1_ON": [
+        "CLICK 'Settings Dropdown'",
+        "CLICK 'Privacy' tab",
+        "the 'Opt out of sharing anonymized usage data' CHECKBOX already checked",
+        "CLICK 'Save'"
+    ],
+    "Docker_task-4": [
+        "CLICK 'Settings Dropdown'",
+        "CLICK 'Personal Access Tokens' ",
+        "CLICK 'Generate new token' ",
+        "ENTER 'Full_Permissions_Token'~(or a similar string) into 'Access token description input field'",
+        "SELECT 'Read, Write, Delete' from 'Access Permissions dropdown'",
+        "CLICK 'Generate' button"
+    ],
+    "Docker_task-2": [
+        "CLICK 'Settings Dropdown'",
+        "CLICK 'Personal Access Tokens' ",
+        "CLICK 'Generate new token' ",
+        "ENTER 'Read-only 30-day token'~(or a similar string) into 'Access Token Description' text input",
+        "SELECT 'Read-only' from 'Access Permissions' dropdown",
+        "SELECT '30 Days' from 'Expiration date' dropdown",
+        "CLICK 'Generate' button"
+    ],
+    "Docker_task-3": [
+        "CLICK 'Settings Dropdown'",
+        "CLICK 'Personal Access Tokens' ",
+        "CLICK 'Generate new token' ",
+        "ENTER 'primary developer token'~(or a similar string) into 'Access Token Description' text input",
+        "SELECT 'Read & Write' from 'Access Permissions' dropdown",
+        "SELECT '90 Days' from 'Expiration date' dropdown",
+        "CLICK 'Generate' button"
+    ],
+    "Wolfram_task-8_ON": [
+        "CLICK 'Manage' button beside 'Communication Preferences'",
+        "CLICK 'Wolfram Research' toggle",
+        "DISABLE all toggles present",
+        "CLICK 'Wolfram Alpha' toggle",
+        "DISABLE all toggles present"
+    ],
+    "Wolfram_task-8_OFF": [
+        "CLICK 'Manage' button beside 'Communication Preferences'",
+        "CLICK 'Wolfram Research' toggle",
+        "all toggles present should already be disabled",
+        "CLICK 'Wolfram Alpha' toggle",
+        "all toggles present should already be disabled"
+    ],
+    "Wolfram_task-7_OFF": [
+        "CLICK 'Manage' button beside 'Communication Preferences'",
+        "CLICK 'Wolfram Research ' toggle",
+        "The 'Newsletters and Announcements' toggle is currently OFF. ENABLE the 'Newsletters and Announcements' toggle.",
+        "CLICK the 'Wolfram Alpha' tab.",
+        "The 'Product Updates' toggle is currently OFF. ENABLE the 'Product Updates' toggle."
+    ],
+    "Wolfram_task-7_ON": [
+        "CLICK 'Manage' button beside 'Communication Preferences'",
+        "CLICK 'Wolfram Research ' toggle",
+        "The 'Newsletters and Announcements' toggle is currently ON. DISABLE the other toggles",
+        "CLICK the 'Wolfram Alpha' tab.",
+        "The 'Product Updates' toggle is currently ON.  DISABLE the other toggles"
+    ],
+    "Wolfram_task-9_ON": [
+        "CLICK 'Manage' button beside 'Communication Preferences'",
+        "CLICK 'Wolfram Research ' toggle",
+        "DISABLE all toggles present",
+        "CLICK 'Wolfram Alpha ' toggle",
+        "all toggles present should already be ENABLED"
+    ],
+    "Grammarly_task-16_OFF": [
+        "CLICK Account button",
+        "CLICK Settings button",
+        "CLICK Privacy  button",
+        "Targeted advertising control toggle should already be disabled"
+    ],
+    "Grammarly_task-16_ON": [
+        "CLICK Account button",
+        "CLICK Settings button",
+        "CLICK Privacy  button",
+        "DISABLE the 'Targeted advertising control' toggle switch"
+    ],
+    "Grammarly_task-17_OFF": [
+        "CLICK the Account button in the left sidebar",
+        "CLICK the Settings link in the left sidebar",
+        "CLICK the Feature customization button",
+        "Personalized insights switch should be disabled"
+    ],
+    "Grammarly_task-17_ON": [
+        "CLICK the Account button in the left sidebar menu",
+        "CLICK the Settings button in the sidebar menu",
+        "CLICK the Feature customization tab",
+        "DISABLE the Personalized insights switch"
+    ],
+    "Grammarly_task-18_OFF": [
+        "CLICK the Account button in the left sidebar menu",
+        "CLICK the Settings button in the sidebar menu",
+        "CLICK the Feature customization button",
+        "'show generative AI on text selection' switch should already be disabled"
+    ],
+    "Grammarly_task-18_ON": [
+        "CLICK the Account button in the left sidebar menu",
+        "CLICK the Settings button in the sidebar menu",
+        "CLICK the Feature customization button",
+        "DISABLE 'show generative AI on text selection' switch"
+    ],
+    "Grammarly_task-19_ON": [
+        "CLICK the 'Account' button in the left sidebar menu",
+        "CLICK the 'Settings' button in the left sidebar menu",
+        "CLICK the 'Security Overview' button in the left sidebar menu",
+        "DISABLE the 'Product Improvement and Training' switch"
+    ],
+    "Wolfram_task-10_OFF": [
+        "CLICK 'Profile' icon dropdown",
+        "CLICK 'Account' option in dropdown",
+        "CLICK 'Wolfram ID' ",
+        "CLICK 'Manage' button beside 'Communication Preferences'",
+        "CLICK 'Wolfram Research ' toggle",
+        "ENABLE 'Webinars & Training' toggle",
+        "CLICK 'Wolfram Alpha ' toggle",
+        "all toggles present should be disabled"
+    ],
+    "Wolfram_task-10_ON": [
+        "CLICK 'Profile' icon dropdown",
+        "CLICK 'Account' option in dropdown",
+        "CLICK 'Wolfram ID' ",
+        "CLICK 'Manage' button beside 'Communication Preferences'",
+        "CLICK 'Wolfram Research ' toggle",
+        "DISABLE all toggles except 'Webinars & Training'",
+        "CLICK 'Wolfram Alpha ' toggle",
+        "DISABLE all toggles present"
+    ],
+    "Wolfram_task-9_OFF": [
+        "CLICK 'Profile' icon dropdown",
+        "CLICK 'Account' option in dropdown",
+        "CLICK 'Wolfram ID' ",
+        "CLICK 'Manage' button beside 'Communication Preferences'",
+        "CLICK 'Wolfram Research ' toggle",
+        "all toggles present should already be ENABLED",
+        "CLICK 'Wolfram Alpha ' toggle",
+        "DISABLE all toggles present"
+    ],
+    "Grammarly_task-19_OFF": [
+        "CLICK the 'Account' button in the left sidebar menu",
+        "CLICK the 'Settings' button in the left sidebar menu",
+        "CLICK the 'Security Overview' button in the left sidebar menu",
+        "DISABLE the 'Product Improvement and Training' if ENABLED, otherwise leave it DISABLED"
+    ],
+    "Grammarly_task-20": [
+        "CLICK the 'Account' button in the left sidebar menu",
+        "CLICK the 'Settings' button in the left sidebar menu",
+        "CLICK the 'Security Overview' button in the left sidebar menu",
+        "CLICK 'Submit request button' next to Personal Data report title"
+    ],
+    "Grammarly_task-24": [
+        "CLICK the 'Account' button in the left sidebar menu",
+        "CLICK the 'Settings' button in the left sidebar menu",
+        "CLICK the 'Your devices' button in the left sidebar menu",
+        "CLICK 'Sign out of all other devices' button next to devices title",
+        "CLICK 'Sign out' button in the pop-up"
+    ],
+    "OldReddit_task-56_OFF": [
+        "CLICK [preferences link]",
+        "CLICK [unsubscribe from all emails Checkbox]",
+        "CLICK 'Save options'"
+    ],
+    "OldReddit_task-56_ON": [
+        "CLICK preferences link",
+        "CLICK options tab",
+        "unsubscribe from all emails CHECKBOX should already be checked"
+    ],
+    "OldReddit_task-57_OFF": [
+        "CLICK the 'preferences' link",
+        "'let others see my online status' CHECKBOX should already be disabled",
+        "CLICK the 'save options' button"
+    ],
+    "OldReddit_task-57_ON": [
+        "CLICK the 'preferences' link.",
+        "DISABLE the 'let others see my online status' CHECKBOX.",
+        "CLICK the 'save options' button."
+    ],
+    "OldReddit_task-58_OFF": [
+        "CLICK preferences link",
+        "'show user flair' CHECKBOX should already be disabled"
+    ],
+    "OldReddit_task-58_ON": [
+        "CLICK the 'preferences' link ",
+        "DISABLE the 'show user flair' CHECKBOX",
+        "CLICK the 'save options' button."
+    ],
+    "OldReddit_task-59": [
+        "CLICK [preferences] link",
+        "DISABLE [Autoplay Reddit videos on the desktop comments page] CHECKBOX",
+        "CLICK [save options] button"
+    ],
+    "AllRecipes_task-154": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK 'Your Privacy Choices' link in the footer",
+        "CLICK 'Your Targetting cookies' tab in the popup",
+        "DISABLE 'Targeted Cookies' toggle",
+        "CLICK 'Confirm my Choices' button in the footer"
+    ],
+    "Coursera_task-155": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK 'Do Not Sell/Share' link in the page footer",
+        "DISABLE 'Functional Cookies' switch",
+        "DISABLE 'Marketing Cookies' switch",
+        "DISABLE 'Analytics Cookies' switch",
+        "CLICK 'Confirm my Choices' button in the popup"
+    ],
+    "Coursera_task-156": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK 'Do Not Sell/Share' link in the page footer",
+        "'Functional cookies' toggle switch should already be enabled",
+        "DISABLE 'Marketing cookies' toggle switch",
+        "DISABLE 'Analytics cookies' toggle switch",
+        "CLICK 'Confirm my choices' button in the popup"
+    ],
+    "Coursera_task-157": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK 'Do Not Sell/Share' link in the page footer",
+        " 'Marketing cookies' toggle switch should already be enabled",
+        " 'Analytics cookies' toggle switch should already be enabled",
+        "DISABLE 'Functional cookies' toggle switch",
+        "CLICK 'Confirm my choices' button in the popup"
+    ],
+    "Docker_task-142": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK 'Do Not Sell/Share' link in the page footer",
+        "DISABLE Performance Cookies toggle",
+        "DISABLE Targeting Cookies toggle",
+        " Functional Cookies toggle should already be enabled",
+        "CLICK Confirm My Choices button"
+    ],
+    "Docker_task-143": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK 'Do Not Sell/Share' link in the page footer",
+        "'Targeting Cookies' toggle switch should already be enabled",
+        "DISABLE 'Functional Cookies' toggle switch",
+        "DISABLE 'Performance Cookies' toggle switch",
+        "CLICK Confirm my choices button"
+    ],
+    "Docker_task-144": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK 'Do Not Sell/Share' link in the page footer",
+        "DISABLE Functional Cookies toggle",
+        "DISABLE Performance Cookies toggle",
+        "DISABLE Targeting Cookies toggle",
+        "CLICK Confirm my choices button"
+    ],
+    "Goodreads_task-100": [
+        "CLICK 'Profile icon button'",
+        "CLICK 'Account settings link'",
+        "CLICK 'Apps tab'",
+        "CLICK 'Disconnect Amazon Account 'link",
+        "CLICK 'Disconnect Amazon Account 'button"
+    ],
+    "Goodreads_task-101": [
+        "CLICK 'Profile icon button'",
+        "CLICK the 'Account settings' link",
+        "CLICK the 'profile' tab",
+        "SELECT 'no one' from the 'Who can see my last name' radio buttons",
+        "CLICK the 'Save Profile Settings' button"
+    ],
+    "Goodreads_task-102_OFF": [
+        "CLICK 'Profile icon button'",
+        "CLICK the 'Account settings' link",
+        "CLICK the 'account & notifcation' tab",
+        "CLICK the ' Allow non-friends to comment on my reviews or notes and highlights' CHECKBOX to ensure it is checked",
+        "CLICK the 'Save Profile Settings' button"
+    ],
+    "Goodreads_task-102_ON": [
+        "CLICK 'Profile icon button'",
+        "CLICK the 'Account settings' link",
+        "CLICK the 'account & notifcation' tab",
+        "CLICK to check the 'Allow non-friends to comment on my reviews or notes and highlights' if not already checked",
+        "CLICK the 'Save Profile Settings' button"
+    ],
+    "Goodreads_task-75": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK 'Interest-Based Ads' link",
+        "CLICK 'Advertising Preferences' link",
+        "CLICK RADIO-BUTTON with label 'Do Not show my interest-based ads provided by Goodreads'",
+        "CLICK 'Submit' button"
+    ],
+    "Goodreads_task-99": [
+        "CLICK the Profile icon button",
+        "CLICK the 'Account settings' link",
+        "CLICK the 'account & notifcations' tab",
+        "SELECT 'just my Friends ' from the 'Who can view my profile:' set of radio buttons",
+        "CLICK the 'Save Account Settings' button"
+    ],
+    "IKEA_task-158": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK 'Cookie settings' link in the footer",
+        "DISABLE 'analytic cookies' toggle switch",
+        "CLICK 'Confirm my choices' button "
+    ],
+    "IKEA_task-159": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK 'YCookie settings' link in the footer",
+        "ENABLE 'Analytic cookies' toggle",
+        "CLICK 'Confirm my choices' button "
+    ],
+    "NVIDIA_task-145": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK the 'Your Privacy choices' link in the page footer",
+        "CLICK the 'Cookie Settings' link",
+        "CLICK the 'nvidia.com cookie settings' link",
+        "DISABLE the 'Performance Cookies' toggle switch",
+        "DISABLE the 'Personalization Cookies' toggle switch",
+        "DISABLE the 'Advertising Cookies' toggle switch",
+        "CLICK 'Save and Accept' button in the sidebar"
+    ],
+    "NVIDIA_task-146": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK the 'Your Privacy choices' link in the page footer",
+        "CLICK the 'Cookie Settings' link",
+        "CLICK the 'nvidia.com cookie settings' link",
+        "the 'Personalization Cookies' toggle switch should already be enabled",
+        "DISABLE the 'Performance Cookies' toggle switch",
+        "DISABLE the 'Advertising Cookies' toggle switch",
+        "CLICK 'Save and Accept' button in the sidebar"
+    ],
+    "NVIDIA_task-147": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK the 'Your Privacy choices' link in the page footer",
+        "CLICK the 'Cookie Settings' link",
+        "CLICK the 'nvidia.com cookie settings' link",
+        " 'Performance Cookies' toggle should already be enabled",
+        " 'Advertising Cookies' toggle should already be enabled",
+        "DISABLE 'Personalization Cookies' toggle",
+        "CLICK 'Confirm My Choices' button"
+    ],
+    "OldReddit_task-60": [
+        "CLICK the 'preferences' link",
+        "CLICK the 'don't show thumbnails next to links' RADIO-BUTTON under the media section",
+        "CLICK the 'save options' button"
+    ],
+    "Shein_task-161": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK the 'Manage cookies' link",
+        "DISABLE the 'Performance Cookies' toggle switch",
+        "DISABLE the 'Functional Cookies' toggle switch",
+        "DISABLE the 'Targeting Cookies' toggle switch",
+        "CLICK the 'Confirm My Choices' button"
+    ],
+    "Shein_task-162": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK the 'Manage cookies' link",
+        "ENABLE 'Functional Cookies' toggle switch",
+        "DISABLE 'Social Media Cookies' toggle switch",
+        "DISABLE 'Targeting Cookies' toggle switch",
+        "CLICK the 'Confirm My Choices' button"
+    ],
+    "Shein_task-163": [
+        "SCROLL to the bottom of the page to find the footer",
+        "CLICK the 'Manage cookies' link",
+        "ENABLE the 'Targeting Cookies' toggle switch",
+        "DISABLE the 'Performance Cookies' toggle switch",
+        "DISABLE the 'Functional Cookies' toggle switch",
+        "CLICK the 'Confirm My Choices' button"
+    ],
+    "Airbnb_task-180": [
+        "SCROLL to the page footer",
+        "CLICK the 'Your Privacy Choices' link",
+        "CLICK the 'I WANT TO OPT OUT' Button "
+    ],
+    "AlJazeera_task-179": [
+        "SCROLL to the page footer",
+        "CLICK the 'Cookie Preferences' link",
+        "ENABLE 'Opt out of sale of Sharing/ Targeted Advertising' toggle",
+        "CLICK the 'Confirm my choices' button"
+    ],
+    "BBC_task-167": [
+        "SCROLL to footer",
+        "CLICK Cookies link",
+        "CLICK Cookie settings button",
+        "SELECT ' Do not use functional cookies' RADIO-BUTTON",
+        "SELECT  'Do not use performance cookies' RADIO-BUTTON"
+    ],
+    "BBC_task-168": [
+        "SCROLL to page footer",
+        "CLICK 'Cookies' link",
+        "CLICK 'How can I change my BBC cookie settings' link",
+        "SELECT '  use functional cookies' RADIO-BUTTON",
+        "SELECT  'Do not use performance cookies' RADIO-BUTTON"
+    ],
+    "BBC_task-169": [
+        "SCROLL to page footer",
+        "CLICK 'Cookies' link",
+        "CLICK 'How can I change my BBC cookie settings' link",
+        "SELECT ' Do not use functional cookies' RADIO-BUTTON",
+        "SELECT  'use performance cookies' RADIO-BUTTON"
+    ],
+    "Coursera_task-182": [
+        "CLICK the 'Profile' icon button",
+        "CLICK the 'Settings button'",
+        "CLICK the 'Communication Preferences tab'",
+        "CLICK the 'Opt-out of all Coursera emails (Optional)' CHECKBOX"
+    ],
+    "Coursera_task-183": [
+        "CLICK the 'Profile' icon button",
+        "CLICK the 'Settings button'",
+        "CLICK the 'account tab'",
+        "CLICK the 'send report' button under 'learner data report' title"
+    ],
+    "Coursera_task-203": [
+        "CLICK the 'Profile' icon button",
+        "CLICK the 'Settings button'",
+        "CLICK the 'Communication Preferences tab'",
+        "ENABLE the 'Weekly personalized course recommendations' CHECKBOX.",
+        "DISABLE the 'Announcements and updates from courses I'm taking' CHECKBOX.",
+        "DISABLE the 'Marketing messages from Coursera about new content and features' CHECKBOX.",
+        "DISABLE the 'Coursera research' CHECKBOX.",
+        "DISABLE the 'Partner research' CHECKBOX.",
+        "CLICK 'SAVE' button"
+    ],
+    "GitHub_task-126": [
+        "CLICK the 'c2rust-conversion' repository link",
+        "CLICK the 'Settings' tab in the repository navigation bar",
+        "SCROLL to the 'Danger Zone' section at the bottom of the page",
+        "CLICK the 'Change visibility' button",
+        "CLICK the  'Change to private' button",
+        "CLICK the  'I want to make this repositry private' button",
+        "CLICK the 'I have read and understand these effects' button",
+        "CLICK the 'Make this repositry private' button"
+    ],
+    "GitHub_task-127_OFF": [
+        "CLICK the profile ICON in the top right corner",
+        "CLICK the 'Settings' link from the profile dropdown menu",
+        "CLICK the 'Public profile' link in the left-hand navigation menu",
+        "ENABLE the 'Make profile private and hide activity' CHECKBOX",
+        "CLICK 'update prefrences' button"
+    ],
+    "GitHub_task-127_ON": [
+        "CLICK the profile ICON in the top right corner",
+        "CLICK the 'Settings' link from the profile dropdown menu",
+        "CLICK 'Public profile' from the side navigation",
+        "ENABLE the 'Make profile private and hide activity' CHECKBOX if not already ENABLED."
+    ],
+    "GitHub_task-129_OFF": [
+        "CLICK the profile ICON in the top right corner",
+        "CLICK the 'Settings' link",
+        "CLICK the 'Notifications' link in the side navigation",
+        "ENABLE the ' pull request Reviews' email notifications CHECKBOX under 'Customize email updates'",
+        "ENABLE the 'Pushes' email notifications CHECKBOX under 'Customize email updates'",
+        "The 'Comments' email notifications CHECKBOX is already DISABLED"
+    ],
+    "GitHub_task-129_ON": [
+        "CLICK the profile ICON in the top right corner",
+        "CLICK 'Settings' link",
+        "CLICK 'Notifications' link",
+        "The 'pull request Reviews' email notifications CHECKBOX under 'Customize email updates' should already be checked",
+        "The 'Pushes' email notifications CHECKBOX under 'Customize email updates' should already be checked",
+        "DISABLED The 'Comments' email notifications CHECKBOX"
+    ],
+    "GitHub_task-130_OFF": [
+        "CLICK the profile ICON in the top right corner",
+        "CLICK Settings link",
+        "CLICK Notifications link",
+        "ENABLE In-product messages toggle switch"
+    ],
+    "GitHub_task-130_ON": [
+        "CLICK the profile ICON in the top right corner",
+        "CLICK 'Settings link'",
+        "CLICK 'Notifications link'",
+        " 'In-product messages 'toggle switch should already be enabled"
+    ],
+    "GitHub_task-131": [
+        "CLICK the profile ICON in the top right corner",
+        "CLICK the 'Settings' link",
+        "CLICK the 'Notifications' link in the side navigation",
+        "SELECT 'send weekly ' from the 'Email digest' dropdown under the 'Dependabot alerts' section"
+    ],
+    "GitHub_task-132": [
+        "CLICK the profile ICON in the top right corner",
+        "CLICK 'Settings link'",
+        "CLICK 'Developer settings link' in the left sidebar",
+        "CLICK 'Personal access tokens link' in the left sidebar",
+        "CLICK 'Tokens (classic) tab'",
+        "CLICK 'Generate new token dropdown button'",
+        "CLICK 'Generate new token (classic) menu item'",
+        "ENTER 'New Token for repo and org access'~(or a similar string) into 'Note text input'",
+        "ENABLE 'read:org scope CHECKBOX'",
+        "CLICK 'Generate token button'"
+    ],
+    "GitHub_task-133": [
+        "CLICK the profile ICON in the top right corner",
+        "CLICK 'Settings link'",
+        "CLICK 'Sessions'",
+        "CLICK 'Deatils on a arbitary session'",
+        "CLICK 'revoke session button'"
+    ],
+    "GitHub_task-134_OFF": [
+        "CLICK the profile ICON in the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Code security' from the left sidebar",
+        "The 'Push protection for yourself' setting is currently OFF.",
+        "CLICK the 'Enable' button for 'Push protection for yourself' in the 'User' section",
+        "CLICK Enable in the popup"
+    ],
+    "Quora_task-76_OFF": [
+        "CLICK the 'Profile' icon in the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK the 'Privacy' link in the left-hand navigation menu",
+        " 'Allow search engines to index your name.' switch should already be disabled"
+    ],
+    "Quora_task-76_ON": [
+        "CLICK the 'Profile' icon",
+        "CLICK 'Settings'",
+        "CLICK 'Privacy'",
+        "DISABLE the 'Allow search engines to index your name' toggle switch"
+    ],
+    "Quora_task-77": [
+        "CLICK the profile icon",
+        "CLICK the 'Settings' option",
+        "CLICK the 'Privacy' navigation link",
+        "SELECT 'Only allow people you follow to comment on your answers and posts' RADIO-BUTTON from the 'Comment Preferences' options"
+    ],
+    "Quora_task-78_OFF": [
+        "CLICK the 'Profile' icon in the top right corner",
+        "CLICK the 'Settings' link from the dropdown menu",
+        "CLICK the 'Email & notifications' link from the left-hand navigation menu",
+        "ENABLE the 'Comments and replies' toggle switch",
+        "ENABLE the 'New followers' toggle switch",
+        "The 'Upvotes' toggle is already DISABLED"
+    ],
+    "Quora_task-78_ON": [
+        "CLICK the 'Profile' icon in the navigation bar",
+        "CLICK the 'Settings' link from the dropdown menu",
+        "CLICK the 'Email & Notifications' link in the side navigation menu",
+        "CONFIRM the 'Comments and replies' toggle switch is already in the desired ENABLED state",
+        "CONFIRM the 'New followers' toggle switch is already in the desired ENABLED state",
+        "DISABLE the 'Upvotes' toggle switch"
+    ],
+    "Quora_task-79": [
+        "CLICK the user profile icon in the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Email & Notifications' from the left-hand navigation menu",
+        "DISABLE the 'Spaces for you' toggle switch",
+        "SELECT 'Weekly' from the 'Quora Digest' RADIO-BUTTON dropdown options"
+    ],
+    "Quora_task-80": [
+        "CLICK 'Profile icon'",
+        "CLICK 'Settings'",
+        "CLICK 'Privacy'",
+        "SELECT 'Only allow people you follow to comment on your answers and posts' from 'comment preferences'"
+    ],
+    "Quora_task-81_OFF": [
+        "CLICK the Profile picture icon",
+        "CLICK Settings in the dropdown menu",
+        "CLICK Privacy in the left-hand navigation menu",
+        "DISABLE the 'Allow language models to be trained on your content' toggle switch if not already DISABLED"
+    ],
+    "Quora_task-81_ON": [
+        "CLICK 'Profile icon'",
+        "CLICK 'Settings'",
+        "CLICK 'Privacy' link",
+        "DISABLE 'Allow language models to be trained on your content' toggle switch"
+    ],
+    "Duolingo_task-103_OFF": [
+        "CLICK the more option in sidebar ",
+        "CLICK Settings option",
+        "CLICK the Privacy settings tab",
+        "DISABLE the 'Make my profile public' toggle if not already DISABLED"
+    ],
+    "Duolingo_task-103_ON": [
+        "CLICK More tab",
+        "CLICK Settings link",
+        "CLICK Privacy link",
+        "DISABLE Make my profile public toggle switch",
+        "CLICK Save changes button"
+    ],
+    "Duolingo_task-104_OFF": [
+        "CLICK 'More button' in sidebar",
+        "CLICK 'Settings link'",
+        "CLICK 'Privacy settings link'",
+        "DISABLE the 'Personalized ads toggle' if not already DISABLED"
+    ],
+    "Duolingo_task-104_ON": [
+        "CLICK 'More button' in sidebar",
+        "CLICK 'Settings link'",
+        "CLICK 'Privacy settings link'",
+        "DISABLE Personalized ads toggle switch"
+    ],
+    "Duolingo_task-105_OFF": [
+        "CLICK the 'More' button in the side navigation bar",
+        "CLICK the 'Settings' link from the dropdown menu",
+        "CLICK the 'Notifications' link in the right-hand side navigation",
+        "CHECK the 'Weekly progress' CHECKBOX ",
+        "CHECK the 'Daily reminders' CHECKBOX"
+    ],
+    "Duolingo_task-105_ON": [
+        "CLICK the 'More' button in the side navigation bar",
+        "CLICK the 'Settings' link from the dropdown menu",
+        "CLICK the 'Notifications' link in the right-hand side navigation",
+        "UNCHECK all the CHECKBOX's ",
+        "CHECK the 'Weekly progress' CHECKBOX ",
+        "CHECK the 'Daily reminders' CHECKBOX"
+    ],
+    "GitHub_task-134_ON": [
+        "CLICK user profile icon in the header",
+        "CLICK Settings link",
+        "CLICK Code security in the side navigation",
+        "STATE 'Push protection for yourself' is already enabled."
+    ],
+    "GitHub_task-135_OFF": [
+        "CLICK user profile icon in the header",
+        "CLICK Settings link",
+        "CLICK 'Code security ' link in the sidebar",
+        "CLICK 'Enable  all' button for the 'Private vulnerability reporting' feature",
+        "CLICK 'Enable  Private vulnerability reporting' button in the confirmation modal"
+    ],
+    "GitHub_task-135_ON": [
+        "CLICK user profile icon in the header",
+        "CLICK Settings link",
+        "CLICK 'Code security ' link in the sidebar",
+        "STATE 'Private vulnerability reporting' is already enabled as the initial state is ON."
+    ],
+    "Goal_task-93_OFF": [
+        "CLICK the Profile avatar",
+        "CLICK the Preferences link",
+        "DISABLE the Marketing toggle switch if not already DISABLED",
+        "DISABLE the Customer Research toggle switch if not already DISABLED",
+        "DISABLE the Goal Newsletters toggle switch if not already DISABLED"
+    ],
+    "Goal_task-93_ON": [
+        "CLICK User profile icon",
+        "CLICK Preferences link",
+        "DISABLE Marketing communications toggle",
+        "DISABLE Customer Research toggle",
+        "DISABLE Goal Newsletters toggle"
+    ],
+    "Goal_task-94_OFF": [
+        "CLICK on the 'Profile' icon",
+        "CLICK on the 'Preferences' link",
+        "ENABLE 'Goal Newsletters' toggle switch",
+        "DISABLE the 'Marketing' toggle switch if not already DISABLED",
+        "DISABLE the 'Customer Research' toggle switch if not already DISABLED"
+    ],
+    "Goal_task-94_ON": [
+        "CLICK the User profile button",
+        "CLICK the Preferences tab",
+        "CONFIRM 'Goal Newsletters' toggle is already enabled",
+        "DISABLE 'Marketing' toggle",
+        "DISABLE 'Customer Research' toggle"
+    ],
+    "Goal_task-95_OFF": [
+        "CLICK the user profile icon",
+        "CLICK the 'Preferences' link",
+        "ENABLE the 'Customer Research' toggle",
+        "ENABLE the 'Goal Newsletters' toggle",
+        "The 'Marketing' toggle is already disabled."
+    ],
+    "Goal_task-95_ON": [
+        "CLICK the 'User Profile' icon",
+        "CLICK the 'Preferences' tab",
+        "ENABLE the 'Customer Research' toggle if not already ENABLED",
+        "ENABLE the 'Goal Newsletters' toggle if not already ENABLED",
+        "DISABLE the 'Marketing' toggle"
+    ],
+    "GoogleAdCenter_task-138_OFF": [
+        "CLICK 'Customize ads'",
+        "CLICK the 'TOPICS' tab",
+        "SCROLL to the 'Pets & animals' topic",
+        "CLICK the '+' button for 'Pets & animals'",
+        "SCROLL to the 'Music & audio' topic",
+        "CLICK the '+' button for 'Music & audio'",
+        "SCROLL to the 'Clothing' topic",
+        "CLICK the '-' button for 'Clothing'"
+    ],
+    "GoogleAdCenter_task-138_ON": [
+        "CLICK 'Customize ads'",
+        "CLICK the 'TOPICS' tab",
+        "The plus icon button should already be pressed about 'Pets & animals', if not CLICK it",
+        "The plus icon button should already be pressed about 'Music & audio', if not CLICK it",
+        "The minus icon button should already be pressed about 'Clothing', if not CLICK it"
+    ],
+    "GoogleAdCenter_task-139": [
+        "CLICK 'Customize ads'",
+        "CLICK the 'Brand' tab",
+        "CLICK the '-' button for the first brand in the 'Your brands' list"
+    ],
+    "GoogleAdCenter_task-140": [
+        "CLICK 'Customize ads'",
+        "CLICK the 'Brand' tab",
+        "CLICK the '+' button for the first brand in the 'Your brands' list"
+    ],
+    "GoogleAdCenter_task-141": [
+        "CLICK the 'Manage Privacy' link",
+        "CLICK the 'My activity' link",
+        "CLICK the three dots in the header",
+        "CLICK the 'Delete ALL' button in the dropdown",
+        "CLICK the 'Delete' button"
+    ],
+    "GoogleAdCenter_task-82_OFF": [
+        "CLICK on the 'Customize ads' tab",
+        "CLICK the 'Sensitive topics' tab",
+        "OBSERVE that the 'Dating' toggle is already in the OFF position",
+        "OBSERVE that the 'Gambling' toggle is already in the OFF position"
+    ],
+    "GoogleAdCenter_task-82_ON": [
+        "CLICK on the 'Customize ads' tab",
+        "CLICK the 'Sensitive topics' tab",
+        "DISABLE the toggle switch  for the 'Dating' topic",
+        "DISABLE the toggle switch for the 'Gambling' topic"
+    ],
+    "HuggingFace_task-113": [
+        "CLICK the user profile icon in the top right corner",
+        "CLICK the 'Profile' link from the dropdown menu",
+        "CLICK the 'random-bu-agent-data2' dataset link",
+        "CLICK the 'Settings' tab",
+        "SCROLL to the 'Dataset visibility' section",
+        "CLICK the 'Make private' button"
+    ],
+    "HuggingFace_task-114": [
+        "CLICK the user profile icon in the header",
+        "CLICK the 'Profile' link in the dropdown menu",
+        "CLICK the 'cancer-classification1' dataset card",
+        "CLICK the 'Settings' tab",
+        "CLICK the 'Make private' button under change data set visiblity",
+        "CLICK the user profile button in the header",
+        "CLICK the 'Profile' link in the dropdown menu",
+        "CLICK the 'buagent-best-sota2' model card",
+        "CLICK the 'Settings' tab",
+        "CLICK the 'Make private' button under change data set visiblity"
+    ],
+    "HuggingFace_task-116": [
+        "CLICK the profile ICON in the top right corner",
+        "CLICK the 'Profile' link from the dropdown",
+        "CLICK the 'random-bu-agent-data2' dataset card",
+        "CLICK the 'Edit dataset card' button",
+        "EDIT the 'license ' textbox",
+        "ENTER 'cc' into the 'text field'",
+        "CLICK the 'Commit changes to main' button"
+    ],
+    "HuggingFace_task-117": [
+        "CLICK the user profile ICON in the top right corner",
+        "CLICK the 'New Dataset' link from the dropdown menu",
+        "ENTER 'random-bu-agent-data-2025-09-22' into the 'Dataset name' text input",
+        "SELECT 'gpl-3.0' from the 'License' dropdown or enter it manually",
+        "CLICK the 'Private' RADIO-BUTTON to set the dataset visibility",
+        "CLICK the 'Create dataset' button"
+    ],
+    "HuggingFace_task-118": [
+        "CLICK the profile ICON in the top right corner",
+        "CLICK the 'Your profile' link from the dropdown",
+        "CLICK on the 'cancer-classification2' dataset link",
+        "CLICK the 'Settings' tab",
+        "CLICK the 'enable access requests' button in gated user access"
+    ],
+    "HuggingFace_task-120": [
+        "CLICK on the user profile ICON in the top right corner",
+        "CLICK on the 'Settings' link from the dropdown menu",
+        "CLICK on the 'Access Tokens' link in the left sidebar menu",
+        "CLICK on the 'create new token' button",
+        "SELECT 'Read' from the 'token type' tab  menu",
+        "ENTER 'read_token_8761' into the 'Name' token text input",
+        "CLICK the 'Generate a token' button"
+    ],
+    "HuggingFace_task-121": [
+        "CLICK User profile ICON in the top right corner",
+        "CLICK Settings link",
+        "CLICK Access Tokens link",
+        "CLICK New token button",
+        "SELECT 'write' from the 'token type' tab  menu",
+        "ENTER 'write_token8761' into Name text input",
+        "CLICK Generate a token button"
+    ],
+    "HuggingFace_task-122": [
+        "CLICK the user profile ICON in the top right corner",
+        "CLICK the 'Settings' link from the dropdown menu",
+        "CLICK the 'Access Tokens' link in the left-hand navigation menu",
+        "CLICK the 'New token' button",
+        "ENTER 'fine_grained_token_8761' into the 'Name' input field",
+        "CHECK 'Read access to contents of all repos under your personal namespace' CHECKBOX",
+        "CHECK 'Read access to contents of all public gated repos you can access' CHECKBOX",
+        "CHECK 'Read access to all collections under your personal namespace' CHECKBOX",
+        "CHECK 'Access webhooks data' under the 'Webhooks' section",
+        "CHECK 'Create and manage webhooks' under the 'Webhooks' section",
+        "CHECK 'Read access to your billing usage and know if a payment method is set' from the 'Billing' checkboxes",
+        "CLICK the 'Generate a token' button"
+    ],
+    "OpenStreetMap_task-91": [
+        "CLICK the profile button in the top right corner",
+        "CLICK the 'MY profile' button",
+        "CLICK the 'Edit description' button",
+        "CLEAR the 'Description' text area",
+        "CLICK the 'update profile' button",
+        "CLICK the 'edit profile details ' button",
+        "CLICK the 'edit location' button",
+        "ENTER 'USA' into the 'Home Location Name' text field",
+        "CLICK the 'update profile ' button"
+    ],
+    "OpenStreetMap_task-92": [
+        "CLICK the user profile button in the top right corner",
+        "CLICK the 'My Account' link from the dropdown menu",
+        "ENTER 'good_devil_buddy' into the 'Display Name' input field",
+        "CLICK the 'Save changes' button"
+    ],
+    "Pinterest_task-61_OFF": [
+        "CLICK the 'Settings' icon on the bottom left corner",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Privacy and data' link from the left-hand navigation panel",
+        "CHECK the 'Use of partner info: Allow Pinterest to use information from our partners to improve ads you see on Pinterest' Checkbox",
+        "CHECK the 'Ads about Pinterest: Allow Pinterest to use your activity to improve the ads about Pinterest you\u2019re shown on other sites or apps' CHECKBOX",
+        "CONFIRM all other checkboxes are unchecked",
+        "CLICK the save button"
+    ],
+    "Pinterest_task-61_ON": [
+        "CLICK the 'Settings' icon on the bottom left corner",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Privacy and data' link from the left-hand navigation panel",
+        "ENSURE the 'Use of partner info: Allow Pinterest to use information from our partners to improve ads you see on Pinterest' Checkbox is already ticked",
+        "ENSURE the 'Ads about Pinterest: Allow Pinterest to use your activity to improve the ads about Pinterest you\u2019re shown on other sites or apps' Checkbox is already ticked",
+        "UNCHECK all other checkboxes are unchecked",
+        "CLICK the save button"
+    ],
+    "Pinterest_task-62_OFF": [
+        "CLICK the 'Settings' icon on the bottom left corner",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Privacy and data' link from the left-hand navigation panel",
+        "ENSURE the 'Use your data to train Pinterest Canvas: Allow your data to be used to help train Pinterest Canvas' is uncheked"
+    ],
+    "Pinterest_task-62_ON": [
+        "CLICK the 'Settings' icon on the bottom left corner",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Privacy and data' link from the left-hand navigation panel",
+        "UNCHECK the 'Use your data to train Pinterest Canvas: Allow your data to be used to help train Pinterest Canvas' CHECKBOX",
+        "CLICK the save button"
+    ],
+    "Pinterest_task-63": [
+        "CLICK the 'Settings' icon on the bottom left corner",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Privacy and data' link from the left-hand navigation panel",
+        "CLICK the Request data button"
+    ],
+    "Pinterest_task-64_OFF": [
+        "CLICK the 'Settings' icon on the bottom left corner",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Privacy and data' link from the left-hand navigation panel",
+        "ENSURE the 'Use of partner info: Allow Pinterest to use information from our partners to improve ads you see on Pinterest' Checkbox is already unchecked",
+        "ENSURE the 'Sharing info with partners: Allow Pinterest to share your information and Pinterest activity with partners to improve the third-party ads you\u2019re shown on Pinterest. ' Checkbox is already unchecked",
+        "CLICK the save button"
+    ],
+    "Pinterest_task-64_ON": [
+        "CLICK the 'Settings' icon on the bottom left corner",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Privacy and data' link from the left-hand navigation panel",
+        "UNCHECK the 'Use of partner info: Allow Pinterest to use information from our partners to improve ads you see on Pinterest' Checkbox ",
+        "UNCHECK the 'Sharing info with partners: Allow Pinterest to share your information and Pinterest activity with partners to improve the third-party ads you\u2019re shown on Pinterest. ' Checkbox ",
+        "CLICK the save button"
+    ],
+    "Airbnb_task-106_OFF": [
+        "CLICK the hamburger menu button",
+        "CLICK the Account settings button",
+        "CLICK the Privacy button",
+        "VERIFY that the Read receipts toggle switch is already disabled"
+    ],
+    "Airbnb_task-106_ON": [
+        "CLICK the hamburger menu button",
+        "CLICK the Account settings button",
+        "CLICK the Privacy button",
+        "DISABLE the 'Read receipts' toggle"
+    ],
+    "Airbnb_task-107_OFF": [
+        "CLICK the hamburger menu button",
+        "CLICK the Account settings button",
+        "CLICK the Privacy button",
+        "CONFIRM that the 'Include my listing(s) in search engines' toggle is already disabled"
+    ],
+    "Airbnb_task-107_ON": [
+        "CLICK the hamburger menu button",
+        "CLICK the Account settings button",
+        "CLICK the Privacy button",
+        "DISABLE the 'Include my listing(s) in search engines' toggle"
+    ],
+    "Airbnb_task-108_OFF": [
+        "CLICK the hamburger menu button",
+        "CLICK the Account settings button",
+        "CLICK the Privacy button",
+        "ENABLE 'Show my trip type toggle switch'"
+    ],
+    "Airbnb_task-108_ON": [
+        "CLICK the hamburger menu button",
+        "CLICK the Account settings button",
+        "CLICK the Privacy button",
+        "DISABLE all other toggle switches",
+        "CONFIRM the 'Trip type' toggle switch is already ENABLED"
+    ],
+    "Airbnb_task-111": [
+        "CLICK the hamburger menu button",
+        "CLICK the Account settings button",
+        "CLICK the 'Login & security' link",
+        "CLICK the 'Shared access' tab",
+        "CLICK the 'Remove' button for any account listed in the section"
+    ],
+    "Amazon_task-86_OFF": [
+        "CLICK the 'Account & Lists' dropdown",
+        "CLICK the ' Account' link",
+        "CLICK the 'Email subscriptions' link",
+        "CLICK the 'Browse all subscriptions' link",
+        "ENABLE the 'Kindle Flash' CHECKBOX",
+        "ENABLE the 'Best of Books' CHECKBOX",
+        "ENABLE the 'E-reader Newsletters' CHECKBOX"
+    ],
+    "Amazon_task-86_ON": [
+        "CLICK the 'Account & Lists' dropdown",
+        "CLICK the ' Account' link",
+        "CLICK the 'Email subscriptions' link",
+        "CLICK the 'Browse all subscriptions' link",
+        "ENABLE the 'Kindle Flash' CHECKBOX if not already ENABLED",
+        "ENABLE the 'Best of Books' CHECKBOX if not already ENABLED",
+        "ENABLE the 'E-reader Newsletters' CHECKBOX if not already ENABLED"
+    ],
+    "Amazon_task-87_OFF": [
+        "CLICK the 'Account & Lists' dropdown",
+        "CLICK the ' Account' link",
+        "CLICK the 'Email subscriptions' link",
+        "CLICK the 'Browse all subscriptions' link",
+        "ENABLE the 'Amazon Fresh grocery store weekly savings email - Southern CA' subscription toggle switch.",
+        "STATE that the 'Arts, Crafts, and Saving' subscription toggle switch is already disabled.",
+        "STATE that the 'Men's Fashion' subscription toggle switch is already disabled."
+    ],
+    "Amazon_task-87_ON": [
+        "CLICK the 'Account & Lists' dropdown",
+        "CLICK the ' Account' link",
+        "CLICK the 'Email subscriptions' link",
+        "CLICK the 'Browse all subscriptions' link",
+        "ENABLE the 'Amazon Fresh grocery store weekly savings email - Southern CA' toggle.",
+        "DISABLE the 'Arts, Crafts, and Sewing' toggle.",
+        "DISABLE the 'Men's Fashion' toggle."
+    ],
+    "Pinterest_task-65_OFF": [
+        "CLICK the 'Settings' icon on the bottom right",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Profile visibility' link from the side navigation.",
+        "ENABLE the 'Private profile' toggle.",
+        "No action needed. 'Search privacy' would be stale, so no need to enable it.",
+        "CLICK the 'Save' button."
+    ],
+    "Pinterest_task-65_ON": [
+        "CLICK the 'Settings' icon on the bottom right",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Profile visibility' tab",
+        "ENABLE the 'Private profile' toggle switch if not already ENABLED",
+        "No action needed. 'Search privacy' would be stale, so no need to enable it."
+    ],
+    "Pinterest_task-66_OFF": [
+        "CLICK the 'Settings' icon on the bottom right",
+        "CLICK the 'Settings' option in the menu",
+        "CLICK the 'Refine your recommendations' link in the left-hand navigation menu.",
+        "CLICK the 'GenAI interests' or `AI Content' tab.",
+        "DISABLE all toggle switches if not already DISABLED"
+    ],
+    "Pinterest_task-66_ON": [
+        "CLICK the 'Settings' icon on the bottom right",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Refine your recommendations' link in the left-hand navigation menu.",
+        "CLICK the 'GenAi interests' or `AI Content' tab.",
+        "DISABLE all toggle switches"
+    ],
+    "Pinterest_task-67": [
+        "CLICK the 'Settings' icon on the bottom right",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Social permissions' link in the left-hand navigation",
+        "CLICK the 'Turn off' option in the radio buttons"
+    ],
+    "Pinterest_task-68": [
+        "CLICK the 'Settings' icon on the bottom right",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Security link' from the left-hand navigation menu.",
+        "CLICK  'show sessions' button.",
+        "CLICK the 'End activity button on the first other session appearing at the top' and press revoke session when prompted'."
+    ],
+    "Pinterest_task-69": [
+        "CLICK the 'Settings' icon on the bottom right",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the Social permissions link in the left-hand menu",
+        "ENABLE the Filter comments on your Pins toggle switch",
+        "ENTER 'bad, wrong, terrible' into the Define a list of words or phrases to filter from comments on your Pins text input",
+        "CLICK the Save button"
+    ],
+    "Pinterest_task-70_OFF": [
+        "CLICK the 'Settings' icon on the bottom right",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Social permissions' link in the left-hand navigation.",
+        "CONFIRM the 'Autoplay videos on desktop' Toggle is already DISABLED."
+    ],
+    "Pinterest_task-70_ON": [
+        "CLICK the 'Settings' icon on the bottom right",
+        "CLICK the 'Settings' option in the menu ",
+        "CLICK the 'Social permissions' link in the left-hand navigation.",
+        "DISABLE the 'Autoplay videos on desktop' toggle switch"
+    ],
+    "Amazon_task-190": [
+        "CLICK the 'Account & Lists' dropdown",
+        "CLICK the ' Account' link",
+        "CLICK 'Advertising preferences' link.",
+        "CLICK 'Do not show me interest-based ads provided by Amazon' RADIO-BUTTON.",
+        "CLICK 'Submit' button."
+    ],
+    "Amazon_task-88": [
+        "CLICK the 'Account & Lists' dropdown",
+        "CLICK the ' Account' link",
+        "CLICK 'advertising preferences' link",
+        "CLICK 'Delete ad data' button"
+    ],
+    "Amazon_task-89": [
+        "CLICK the 'Account & Lists' dropdown",
+        "CLICK the 'switch profile link",
+        "CLICK the 'Edit your profile' button",
+        "CLICK the profile 'White' from the pop up "
+    ],
+    "Moodle_task-205_ON": [
+        "CLICK 'User icon' dropdown",
+        "CLICK 'prefrences' link",
+        "CLICK 'Message preferences'",
+        "No action needed. Already restricted message requests from 'my contacts only'."
+    ],
+    "Moodle_task-205_OFF": [
+        "CLICK 'User icon' dropdown",
+        "CLICK 'prefrences' link",
+        "CLICK 'Message preferences'",
+        "CLICK 'My contacts only' RADIO-BUTTON"
+    ],
+    "Moodle_task-206_OFF": [
+        "CLICK the 'User icon' dropdown in the top right corner",
+        "CLICK the 'Preferences' link from the dropdown menu",
+        "CLICK the 'Notification preferences' link",
+        "ENABLE the 'Email' toggle switch for 'Welcome message for new course enrollments'",
+        "CONFIRM the 'Mobile' toggle switch for 'Welcome message for new course enrollments' is DISABLED",
+        "CONFIRM the 'Web' toggle switch for 'Welcome message for new course enrollments' is DISABLED",
+        "ENABLE the 'Email' toggle switch for 'Grade notifications'",
+        "CONFIRM the 'Mobile' toggle switch for 'Grade notifications' is DISABLED",
+        "CONFIRM the 'Web' toggle switch for 'Grade notifications' is DISABLED"
+    ],
+    "Moodle_task-206_ON": [
+        "CLICK the user menu in the top right corner",
+        "CLICK 'Preferences' from the dropdown menu",
+        "CLICK 'Notification preferences'",
+        "DISABLE the Web notification toggle for 'Welcome message for new course enrollments'",
+        "DISABLE the Mobile notification toggle for 'Welcome message for new course enrollments'",
+        "ENABLE the Email notification toggle for 'Welcome message for new course enrollments' if not already ENABLED",
+        "DISABLE the Web notification toggle for 'Grade notifications'",
+        "DISABLE the Mobile notification toggle for 'Grade notifications'",
+        "ENABLE the Email notification toggle for 'Grade notifications' if not already ENABLED"
+    ],
+    "Moodle_task-209": [
+        "CLICK User icon dropdown in the top right corner",
+        "CLICK Profile in the dropdown menu",
+        "CLICK Browser sessions under the Reports section",
+        "CLICK the Log out for each devices"
+    ],
+    "Steam_task-191_OFF": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK the 'Account details' link",
+        "CLICK the 'cookies and browsing' link in the left navigation sidebar",
+        "DISABLE the 'Valve's Content Customization Cookies' toggle if not already DISABLED",
+        "DISABLE that the 'Valve's Analytics Cookies' toggle if not already DISABLED"
+    ],
+    "Steam_task-191_ON": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK the 'Account details' link",
+        "CLICK the 'cookies and browsing' link in the left navigation sidebar",
+        "DISABLE 'Valve's Content Customization Cookies' toggle switch",
+        "DISABLE 'Valve's Analytics Cookies' toggle switch"
+    ],
+    "Steam_task-192_OFF": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK the 'Account details' link",
+        "CLICK the 'cookies and browsing' link in the left navigation sidebar",
+        "SCROLL down to the 'Third Party Media Sharing Cookies' section",
+        "ENABLE the 'YouTube' toggle switch",
+        "DISABLE the 'Vimeo' toggle switch if not already DISABLED",
+        "DISABLE the 'Sketchfab' toggle switch if not already DISABLED"
+    ],
+    "Steam_task-192_ON": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK the 'Account details' link",
+        "CLICK the 'cookies and browsing' link in the left navigation sidebar",
+        "ENABLE the 'YouTube' toggle under the 'Third Party Media Sharing Cookies' section.",
+        "DISABLE the 'Vimeo' toggle under the 'Third Party Media Sharing Cookies' section.",
+        "DISABLE the 'Sketchfab' toggle under the 'Third Party Media Sharing Cookies' section."
+    ],
+    "Steam_task-193_OFF": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK the 'Account details' link",
+        "CLICK the 'cookies and browsing' link in the left navigation sidebar",
+        "TOGGLE the 'Valve's Content Customization Cookies' switch to the OFF position if not already OFF",
+        "TOGGLE the 'Valve's Analytics Cookies' switch to the OFF position if not already OFF",
+        "TOGGLE the 'Third Party Media Sharing Cookies' switches to the OFF position if not already OFF"
+    ],
+    "Steam_task-193_ON": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK the 'Account details' link",
+        "CLICK the 'cookies and browsing' link in the left navigation sidebar",
+        "CLICK the 'Reject All' button in the cookie settings dialog",
+        "OR",
+        "TOGGLE the 'Valve's Content Customization Cookies' switch to the OFF position if not already OFF",
+        "TOGGLE the 'Valve's Analytics Cookies' switch to the OFF position if not already OFF",
+        "TOGGLE the 'Third Party Media Sharing Cookies' switches to the OFF position if not already OFF"
+    ],
+    "Steam_task-194": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK the 'Account details' link",
+        "CLICK 'Store Preferences' from the dropdown menu",
+        "UNCHECK 'General Mature Content' CHECKBOX under the Community Content section",
+        "UNCHECK 'Frequent Violence or Gore' CHECKBOX under the Community Content section",
+        "UNCHECK 'Some Nudity or Sexual Content' CHECKBOX under the Community Content section",
+        "UNCHECK 'Nudity or Sexual Content' CHECKBOX under the Community Content section",
+        "UNCHECK 'Adult Only Sexual Content' CHECKBOX under the Community Content section",
+        "CHECK 'General Mature Content' CHECKBOX under the store Content section",
+        "CHECK 'Frequent Violence or Gore' CHECKBOX under the store Content section",
+        "CHECK 'Some Nudity or Sexual Content' CHECKBOX under the store Content section",
+        "CHECK 'Nudity or Sexual Content' CHECKBOX under the store Content section",
+        "CHECK 'Adult Only Sexual Content' CHECKBOX under the store Content section"
+    ],
+    "Steam_task-195": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK 'Store Preferences' from the dropdown menu.",
+        "CHECK 'Frequent Nudity or Sexual Content' CHECKBOX for store section",
+        "UNCHECK 'Adult Only Sexual Content' CHECKBOX for store section",
+        "UNCHECK 'Adult Only Sexual Content' CHECKBOX for community section"
+    ],
+    "Steam_task-196_OFF": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK 'Store Preferences' from the dropdown menu.",
+        "SCROLL to the 'Community Content Preferences' subsection",
+        "CLICK 'Allow strong profanity, but filter slurs' from the radio buttons under the 'Chat Filtering' subsection.",
+        "DISABLE the 'Do not filter text from my Steam Friends' CHECKBOX if not already DISABLED"
+    ],
+    "Steam_task-196_ON": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK 'Store Preferences' from the dropdown menu.",
+        "CLICK the 'Allow strong profanity, but filter slurs' RADIO-BUTTON under the 'Chat Filtering' setting",
+        "DISABLE the 'Do not filter text from my Steam Friends' CHECKBOX"
+    ],
+    "Steam_task-197_OFF": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK 'Store Preferences' from the dropdown menu.",
+        "SCROLL to the 'Community Content Preferences' section",
+        "ENTER 'scam, spoiler' into the 'Always filter these words' text area under 'Additional Custom Filtered Words'",
+        "CLICK the 'Add' button"
+    ],
+    "Steam_task-197_ON": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK 'Store Preferences' from the dropdown menu.",
+        "SCROLL to the 'Community Content Preferences' section",
+        "ENSURE 'scam, spoiler' are visible under 'Always filter these words' text area under the 'Additional Custom Filtered Words' subsection."
+    ],
+    "Steam_task-198_OFF": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK Account details link",
+        "CLICK Manage Email Preferences link",
+        "ENABLE 'A discount is applied to an item on my wishlist.' email notifications CHECKBOX",
+        "ENABLE 'Steam Next Fest is beginning' email notifications CHECKBOX",
+        "ENABLE 'A Steam sponsored Theme fest is beginning' email notifications CHECKBOX",
+        "CLICK 'save' button"
+    ],
+    "Steam_task-198_ON": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK Account details link",
+        "CLICK Manage Email Preferences link",
+        "CHECK 'A discount is applied to an item on my wishlist.' email notifications CHECKBOX (should be already checked)",
+        "CHECK 'Steam Next Fest is beginning' email notification CHECKBOX (should be already checked)",
+        "CHECK 'A Steam sponsored Theme fest is beginning' email notification CHECKBOX (should be already checked)",
+        "CLICK 'save' button"
+    ],
+    "Steam_task-199": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK 'Account details' from the dropdown menu.",
+        "CLICK 'Manage Email Preferences' under the Contact Info section.",
+        "DISABLE the 'A seasonal promotion is beginning' CHECKBOX.",
+        "DISABLE the 'Game-specific event notifications' CHECKBOX.",
+        "CLICK 'Save' button"
+    ],
+    "Steam_task-200_OFF": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK Account details link",
+        "CLICK Manage my email preferences link",
+        "VERIFY that the 'Opt out of all email marketing communication.' RADIO-BUTTON is already selected"
+    ],
+    "Steam_task-200_ON": [
+        "CLICK the user's profile name dropdown menu",
+        "CLICK the 'Account details' link",
+        "CLICK the 'Manage email preferences' link",
+        "CLICK the 'Opt out of all email marketing communication' RADIO-BUTTON",
+        "CLICK 'Save' button"
+    ],
+    "USAToday_task-36_OFF": [
+        "CLICK the user name drodown",
+        "CLICK the 'Email Preferences' link from the  menu",
+        "CHECK that the 'unsubscribe from all ormotional emails' CHECKBOX ",
+        "CLICK 'Save changes' button "
+    ],
+    "USAToday_task-36_ON": [
+        "CLICK the user name dropdown",
+        "CLICK the 'Email Preferences' link from the  menu",
+        "CHECK that the 'unsubscribe from all promotional emails' CHECKBOX is checked "
+    ],
+    "USAToday_task-37_OFF": [
+        "CLICK the user name drodown",
+        "CLICK the 'Email Preferences' link from the  menu",
+        "CHECK 'eNewspaper Daily' CHECKBOX",
+        "CONFIRM that all other email checkboxes remain unchecked as per the initial state",
+        "CLICK 'save changes' button "
+    ],
+    "USAToday_task-37_ON": [
+        "CLICK the user name drodown",
+        "CLICK the 'Email Preferences' link from the  menu",
+        "CHECK the eNewspaper Daily email preferences CHECKBOX button.",
+        "UNCHECK all other checkboxes",
+        "CLICK the Save Changes button."
+    ],
+    "Reddit_task-50_ON": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Privacy' from the tab bar",
+        "DISABLE the toggle 'Personalize ads on Reddit based on information and activity from our partners'"
+    ],
+    "Reddit_task-50_OFF": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Privacy' from the tab bar",
+        "No action needed. Toggle is already disabled."
+    ],
+    "Reddit_task-51_ON": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Privacy' from the tab bar",
+        "DISABLE the toggle 'Allow people to follow you'"
+    ],
+    "Reddit_task-51_OFF": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Privacy' from the tab bar",
+        "No action needed. Toggle is already disabled."
+    ],
+    "Reddit_task-52_ON": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Privacy' from the tab bar",
+        "DISABLE the toggle 'Show up in search results'"
+    ],
+    "Reddit_task-52_OFF": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Privacy' from the tab bar",
+        "No action needed. Toggle is already enabled."
+    ],
+    "Reddit_task-53_ON": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Preferences' from the tab bar",
+        "DISABLE the toggle 'Show mature content (I'm over 18)'"
+    ],
+    "Reddit_task-53_OFF": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Preferences' from the tab bar",
+        "No action needed. Toggle is already enabled."
+    ],
+    "Reddit_task-54_ON": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Notifications' from the tab bar",
+        "CLICK 'New followers' list item under Activity",
+        "CLICK 'Inbox' button on the modal that appears",
+        "CLICK 'Save' button on the modal"
+    ],
+    "Reddit_task-55_ON": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Notifications' from the tab bar",
+        "CLICK 'Cake day' list item under Updates",
+        "CLICK 'All Off' button on the modal that appears",
+        "CLICK 'Save' button on the modal"
+    ],
+    "Pinterest_task-218": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Log out' from the dropdown menu"
+    ],
+    "Airbnb_task-219": [
+        "CLICK 'Hamburger menu icon Dropdown' on the top right corner",
+        "CLICK 'Log out' from the dropdown menu"
+    ],
+    "HuggingFace_task-220": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Sign out' from the dropdown menu"
+    ],
+    "Amazon_task-221": [
+        "CLICK 'Profile Dropdown' saying 'Hello, [username]' on the top right corner",
+        "CLICK 'Sign out' from the dropdown menu"
+    ],
+    "Duolingo_task-222": [
+        "CLOSE any lesson modals that appear",
+        "CLICK 'Meatball icon Dropdown' on the left sidebar",
+        "CLICK 'Log out' from the dropdown menu"
+    ],
+    "Wattpad_task-223_ON": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Notifications' from the tab bar",
+        "CLICK 'Conversation Replies' list item",
+        "DISABLE the toggle 'Push'",
+        "DISABLE the toggle 'Feed'",
+        "DISABLE the toggle 'Email'"
+    ],
+    "Wattpad_task-223_OFF": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Notifications' from the tab bar",
+        "CLICK 'Conversation Replies' list item",
+        "No action needed. All toggles are already disabled."
+    ],
+    "Wattpad_task-224_ON": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Notifications' from the tab bar",
+        "CLICK 'Conversation Replies' list item",
+        "DISABLE the toggle 'Push'",
+        "GOBACK to the previous page",
+        "No action needed. Push notification is already enabled for 'Story Published'"
+    ],
+    "Wattpad_task-224_OFF": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Notifications' from the tab bar",
+        "CLICK 'Story Published' list item",
+        "ENABLE the toggle 'Push'",
+        "GOBACK to the previous page",
+        "No action needed. Push notification is already disabled for 'Conversation Replies'"
+    ],
+    "Wattpad_task-225_ON": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Notifications' from the tab bar",
+        "CLICK 'Coin Promotions' list item",
+        "DISABLE the toggle 'Push', if not already DISABLED",
+        "DISABLE the toggle 'Feed', if not already DISABLED",
+        "GOBACK to the previous page",
+        "No action needed. Push notification is already enabled for 'Story Published'"
+    ],
+    "Wattpad_task-225_OFF": [
+        "CLICK 'Profile' icon dropdown on the top right corner",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Notifications' from the tab bar",
+        "CLICK 'Story Published' list item",
+        "ENABLE the toggle 'Push'",
+        "ENABLE the toggle 'EMAIL'",
+        "GOBACK to the previous page",
+        "CLICK 'Coin Promotions' list item",
+        "ENABLE the toggle 'Email'"
+    ],
+    "Twitch_task-226": [
+        "CLICK 'Profile' icon dropdown",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Security and Privacy' option from the tab bar",
+        "CLICK on button 'Show Blocked Users' under Privacy section",
+        "CLICK on button 'unblock' next to the user 'crazybuddy'"
+    ],
+    "Twitch_task-227_ON": [
+        "CLICK 'Profile icon Dropdown'",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Security and Privacy' option from the tab bar",
+        "DISABLE the toggle for 'Hide Founder Badge'",
+        "ENABLE 'Block Whispers from Strangers' toggle if it is not enabled already"
+    ],
+    "Twitch_task-227_OFF": [
+        "CLICK 'Profile icon Dropdown'",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Security and Privacy' option from the tab bar",
+        "ENABLE the 'Block Whispers from Strangers' toggle.",
+        "DISABLE 'Hide Founders Badge' if it is not disabled already"
+    ],
+    "Twitch_task-228_ON": [
+        "CLICK 'Profile' icon dropdown",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Security and Privacy' option from the tab bar",
+        "ENABLE the 'Block Receiving Gifts on Channels You don't Follow' toggle if it is not already ENABLED",
+        "ENABLE the 'Hide Progressive Gifter Badge and Gifts Given Count' toggle if it is not already ENABLED"
+    ],
+    "Twitch_task-228_OFF": [
+        "CLICK 'Profile' icon dropdown",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Security and Privacy' option from the tab bar",
+        "ENABLE the 'Block Receiving Gifts on Channels You don't Follow' toggle.",
+        "ENABLE the 'Hide Progressive Gifter Badge and Gifts Given Count' toggle."
+    ],
+    "Twitch_task-230": [
+        "CLICK 'Profile' icon dropdown",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Security and Privacy' option from the tab bar",
+        "CLICK on radion button 'Nobody can mention me in Stories' under 'Story Mention' section",
+        "CLICK on RADIO-BUTTON 'Nobody can reshare my stories' under 'Story Resharing' section"
+    ],
+    "Twitch_task-231": [
+        "CLICK 'Profile' icon dropdown",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Security and Privacy' option from the tab bar",
+        "CLICK on the 'People I follow can share my Clips in Stories' RADIO-BUTTON under 'Story Clip Sharing' section"
+    ],
+    "Twitch_task-232_ON": [
+        "CLICK 'Profile' icon dropdown",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Content Preferences' option from the tab bar",
+        "ENABLE all toggles on the CONTENT PREFERENCES page, if not already ENABLED"
+    ],
+    "Twitch_task-232_OFF": [
+        "CLICK 'Profile' icon dropdown",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Content Preferences' option from the tab bar",
+        "ENABLE all toggles on the CONTENT PREFERENCES page"
+    ],
+    "Twitch_task-233_ON": [
+        "CLICK 'Profile' icon dropdown",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Content Preferences' option from the tab bar",
+        "ENABLE 'Hide Sexual Themes' toggle if it is not already ENABLED",
+        "No action needed. The 'Blur Sexual Themes' toggle would be stale automatically when `Hide Sexual Themes' is ENABLED."
+    ],
+    "Twitch_task-233_OFF": [
+        "CLICK 'Profile' icon dropdown",
+        "CLICK 'Settings' from the dropdown menu",
+        "CLICK 'Content Preferences' option from the tab bar",
+        "ENABLE 'Hide Sexual Themes' toggle",
+        "No action needed. The 'Blur Sexual Themes' toggle would be stale automatically when `Hide Sexual Themes' is ENABLED."
+    ]
+}

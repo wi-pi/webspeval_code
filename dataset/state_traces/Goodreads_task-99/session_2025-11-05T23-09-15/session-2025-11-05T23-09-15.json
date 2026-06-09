@@ -1,0 +1,122 @@
+{
+  "taskId": "GoodReads_task-99",
+  "sessionId": "session_2025-11-05T23-09-15",
+  "startUrl": "https://www.goodreads.com/user/edit?tab=settings",
+  "domain": "www_goodreads_com",
+  "viewportWidth": 1280,
+  "viewportHeight": 885,
+  "initialFormStates": {},
+  "events": [
+    {
+      "type": "click",
+      "timestamp": "2025-11-05T23:09:21.185Z",
+      "site": "https://www.goodreads.com/user/edit?tab=settings",
+      "selectorPath": "input#user_preference_visibility_e",
+      "xpath": "//*[@id=\"user_preference_visibility_e\"]",
+      "framePath": [],
+      "elementType": "input",
+      "href": null,
+      "webspIndex": 356,
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<input onclick=\"$('user_preference_allow_followers').disabled=false;\n                  $('user_preference_allow_followers').checked = true;\n                  $('allowFollowersPreference').className = '';\n                  $('user_preference_api_reviews_flag').disabled = false;\n                  $('user_preference_api_reviews_flag').checked = true;\n                  $('apiReviewsPreference').className = '';\n                  $('user_preference_message_e').checked = 'true';\" type=\"radio\" value=\"E\" name=\"user_preference[visibility]\" id=\"user_preference_visibility_e\" data-websp-index=\"356\">",
+      "innerHTML": null,
+      "targetOnClick": null,
+      "tagName": "input",
+      "role": null,
+      "typeAttr": "radio",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": "anyone (including search engines)",
+      "innerText": null,
+      "textContent": null,
+      "id": "user_preference_visibility_e",
+      "name": "user_preference[visibility]",
+      "classList": [],
+      "parentContext": null,
+      "nearbyLabelText": "anyone (including search engines)",
+      "parentTextContext": "anyone (including search engines)\n                  (?)"
+    },
+    {
+      "type": "click",
+      "timestamp": "2025-11-05T23:09:24.634Z",
+      "site": "https://www.goodreads.com/user/edit?tab=settings",
+      "selectorPath": "form#userSettingsForm > div:nth-of-type(1) > div:nth-of-type(7) > p:nth-of-type(1) > input:nth-of-type(1)",
+      "xpath": "//*[@id=\"userSettingsForm\"]/div[1]/div[7]/p[1]/input[1]",
+      "framePath": [],
+      "elementType": "input",
+      "href": null,
+      "webspIndex": 376,
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<input type=\"submit\" name=\"commit\" value=\"Save account settings\" class=\"gr-button\" data-websp-index=\"376\">",
+      "innerHTML": null,
+      "targetOnClick": null,
+      "tagName": "input",
+      "role": null,
+      "typeAttr": "submit",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": null,
+      "textContent": null,
+      "id": null,
+      "name": "commit",
+      "classList": [
+        "gr-button"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": null
+    }
+  ],
+  "screenshots": [
+    {
+      "timestamp": "2025-11-05T23:09:15.962Z",
+      "eventType": "initial",
+      "index": 0,
+      "filename": "screenshots/screenshot_000_initial.png"
+    },
+    {
+      "timestamp": "2025-11-05T23:09:21.186Z",
+      "eventType": "click",
+      "index": 1,
+      "filename": "screenshots/screenshot_001_click.png"
+    },
+    {
+      "timestamp": "2025-11-05T23:09:24.635Z",
+      "eventType": "click",
+      "index": 2,
+      "filename": "screenshots/screenshot_002_click.png"
+    },
+    {
+      "timestamp": "2025-11-05T23:09:29.128Z",
+      "eventType": "final",
+      "index": 3,
+      "filename": "screenshots/screenshot_003_final.png"
+    }
+  ],
+  "metadata": {
+    "totalEvents": 2,
+    "totalScreenshots": 4,
+    "recordingDate": "2025-11-05T23:09:29.926Z"
+  }
+}

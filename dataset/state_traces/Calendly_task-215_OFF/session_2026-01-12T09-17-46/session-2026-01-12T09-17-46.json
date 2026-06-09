@@ -1,0 +1,242 @@
+{
+  "taskId": "task-215-OFF",
+  "sessionId": "session_2026-01-12T09-17-46",
+  "startUrl": "https://calendly.com/app/scheduling/meeting_types/user/me",
+  "domain": "calendly_com",
+  "viewportWidth": 2560,
+  "viewportHeight": 1024,
+  "initialFormStates": {},
+  "events": [
+    {
+      "type": "click",
+      "timestamp": "2026-01-12T09:17:49.161Z",
+      "site": "https://calendly.com/app/scheduling/meeting_types/user/me",
+      "selectorPath": "div#root > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(6) > a:nth-of-type(1)",
+      "xpath": "//*[@id=\"root\"]/div[1]/div[1]/div[1]/div[1]/nav[1]/div[3]/div[1]/div[1]/span[6]/a[1]",
+      "framePath": [],
+      "elementType": "a",
+      "href": "https://calendly.com/integrations",
+      "webspIndex": 9,
+      "clickCoordinates": {
+        "x": 161.33334350585938,
+        "y": 397.66668701171875
+      },
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<a data-calendly-label=\"integrations-link\" class=\"n13u6av1\" href=\"/integrations\" data-websp-index=\"9\"><div class=\"ntces65\"><span class=\"wbvlnkx\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1 3C1 1.89543 1.89543 1 3 1H5C6.10457 1 7 1.89543 7 3V5C7 6.10457\n    6.10457 7 5 7H3C1.89543 7 1 6.10457 1 5V3ZM3 3H5V5H3L3 3Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9 3C9 1.89543 9.89543 1 11 1H13C14.1046 1 15 1.89543 15 3V5C15\n    6.10457 14.1046 7 13 7H11C9.89543 7 9 6.10457 9 5V3ZM11 3H13V5H11V3Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 9C1.89543 9 1 9.89543 1 11V13C1 14.1046 1.89543 15 3 15H5C6.10457\n    15 7 14.1046 7 13V11C7 9.89543 6.10457 9 5 9H3ZM5 11H3L3 13H5V11Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9 11C9 9.89543 9.89543 9 11 9H13C14.1046 9 15 9.89543 15 11V13C15\n    14.1046 14.1046 15 13 15H11C9.89543 15 9 14.1046 9 13V11ZM11 11H13V13H11V11Z\" fill=\"currentColor\"></path></svg></span></div><span class=\"n2wybsz\">Integrations &amp; apps</span></a>",
+      "innerHTML": "<div class=\"ntces65\"><span class=\"wbvlnkx\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1 3C1 1.89543 1.89543 1 3 1H5C6.10457 1 7 1.89543 7 3V5C7 6.10457\n    6.10457 7 5 7H3C1.89543 7 1 6.10457 1 5V3ZM3 3H5V5H3L3 3Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9 3C9 1.89543 9.89543 1 11 1H13C14.1046 1 15 1.89543 15 3V5C15\n    6.10457 14.1046 7 13 7H11C9.89543 7 9 6.10457 9 5V3ZM11 3H13V5H11V3Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 9C1.89543 9 1 9.89543 1 11V13C1 14.1046 1.89543 15 3 15H5C6.10457\n    15 7 14.1046 7 13V11C7 9.89543 6.10457 9 5 9H3ZM5 11H3L3 13H5V11Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9 11C9 9.89543 9.89543 9 11 9H13C14.1046 9 15 9.89543 15 11V13C15\n    14.1046 14.1046 15 13 15H11C9.89543 15 9 14.1046 9 13V11ZM11 11H13V13H11V11Z\" fill=\"currentColor\"></path></svg></span></div><span class=\"n2wybsz\">Integrations &amp; apps</span>",
+      "targetOnClick": null,
+      "tagName": "a",
+      "role": null,
+      "typeAttr": null,
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": "Integrations & apps",
+      "textContent": "Integrations & apps",
+      "id": null,
+      "name": null,
+      "classList": [
+        "n13u6av1"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": "Integrations & apps"
+    },
+    {
+      "type": "click",
+      "timestamp": "2026-01-12T09:17:50.885Z",
+      "site": "https://calendly.com/integrations",
+      "selectorPath": "div#root > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > nav:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(2) > button:nth-of-type(1)",
+      "xpath": "//*[@id=\"root\"]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/nav[1]/div[1]/ul[1]/li[2]/button[1]",
+      "framePath": [],
+      "elementType": "button",
+      "href": null,
+      "webspIndex": 18,
+      "clickCoordinates": {
+        "x": 976,
+        "y": 156.33334350585938
+      },
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<button class=\"uvkj3lh t5tkbaa\" type=\"button\" data-websp-index=\"18\"><div class=\"t5wl83z\">Manage (2) <span class=\"b15h8fme sv4h8px cy3eodl c1ofs1m3\" aria-hidden=\"true\"><svg viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><path d=\"M10 0a10 10 0 1 0 10 10A10.012 10.012 0 0 0 10 0Zm4.884 8.384-5.5 5.5a1.251 1.251 0 0 1-1.768 0l-2.5-2.5a1.25 1.25 0 0 1 1.768-1.768L8.5 11.232l4.616-4.616a1.25 1.25 0 1 1 1.768 1.768Z\" fill=\"currentColor\"></path></svg></span></div></button>",
+      "innerHTML": "<div class=\"t5wl83z\">Manage (2) <span class=\"b15h8fme sv4h8px cy3eodl c1ofs1m3\" aria-hidden=\"true\"><svg viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><path d=\"M10 0a10 10 0 1 0 10 10A10.012 10.012 0 0 0 10 0Zm4.884 8.384-5.5 5.5a1.251 1.251 0 0 1-1.768 0l-2.5-2.5a1.25 1.25 0 0 1 1.768-1.768L8.5 11.232l4.616-4.616a1.25 1.25 0 1 1 1.768 1.768Z\" fill=\"currentColor\"></path></svg></span></div>",
+      "targetOnClick": null,
+      "tagName": "button",
+      "role": null,
+      "typeAttr": "button",
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": "Manage (2)",
+      "textContent": "Manage (2)",
+      "id": null,
+      "name": null,
+      "classList": [
+        "uvkj3lh",
+        "t5tkbaa"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": "Discover (43)Manage (2)"
+    },
+    {
+      "type": "click",
+      "timestamp": "2026-01-12T09:17:52.356Z",
+      "site": "https://calendly.com/integrations?tab=manage",
+      "selectorPath": "div#root > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(3) > main:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+      "xpath": "//*[@id=\"root\"]/div[1]/div[1]/div[1]/div[2]/div[3]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+      "framePath": [],
+      "elementType": "a",
+      "href": "https://calendly.com/app/calendar_connections",
+      "webspIndex": 19,
+      "clickCoordinates": {
+        "x": 1030,
+        "y": 249
+      },
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<a href=\"/app/calendar_connections\" class=\"t77oj1r\" data-websp-index=\"19\"><div class=\"co1i0du\"><div class=\"piwubp8 p1w7lx7p\"><img src=\"//assets.calendly.com/mfe/mf-publisher/frontend/media/google-calendar-9d502e45f709b07b91a1.svg\" role=\"presentation\" class=\"bvmho95\"></div><div class=\"cyjpvkm\"><div class=\"t18d9t9g\"><p class=\"c18pvg3k cip1vwm c1a8y4oz\" style=\"color: currentcolor;\">Google Calendar</p><div class=\"it1za08\"><span class=\"b15h8fme skijigu cy3eodl c1ofs1m3\" aria-hidden=\"true\" style=\"color: var(--text-color-level2, rgba(26, 26, 26, 0.61));\"><svg viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><path d=\"M10 0a10 10 0 1 0 10 10A10.012 10.012 0 0 0 10 0Zm4.884 8.384-5.5 5.5a1.251 1.251 0 0 1-1.768 0l-2.5-2.5a1.25 1.25 0 0 1 1.768-1.768L8.5 11.232l4.616-4.616a1.25 1.25 0 1 1 1.768 1.768Z\" fill=\"currentColor\"></path></svg></span></div></div><p class=\"c18pvg3k cip1vwm c7jd249\" style=\"color: var(--colorTextSecondary, var(--coreColorNeutral600));\">Connected</p></div><div class=\"s1x2o1t1\"></div><div class=\"awuxrpq\">Settings<span class=\"b15h8fme cy3eodl c1ofs1m3\" aria-hidden=\"true\"><svg viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M6.51941 15.9941C6.1602 15.6529 6.1602 15.0998 6.51941 14.7586L11.5294 10L6.51941 5.24142C6.1602 4.90024 6.1602 4.34707 6.51941 4.00589C6.87862 3.66471 7.46101 3.66471 7.82022 4.00589L13.4806 9.38223C13.8398 9.72342 13.8398 10.2766 13.4806 10.6178L7.82022 15.9941C7.46101 16.3353 6.87862 16.3353 6.51941 15.9941Z\" fill=\"currentColor\"></path></svg></span></div></div></a>",
+      "innerHTML": "<div class=\"co1i0du\"><div class=\"piwubp8 p1w7lx7p\"><img src=\"//assets.calendly.com/mfe/mf-publisher/frontend/media/google-calendar-9d502e45f709b07b91a1.svg\" role=\"presentation\" class=\"bvmho95\"></div><div class=\"cyjpvkm\"><div class=\"t18d9t9g\"><p class=\"c18pvg3k cip1vwm c1a8y4oz\" style=\"color: currentcolor;\">Google Calendar</p><div class=\"it1za08\"><span class=\"b15h8fme skijigu cy3eodl c1ofs1m3\" aria-hidden=\"true\" style=\"color: var(--text-color-level2, rgba(26, 26, 26, 0.61));\"><svg viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><path d=\"M10 0a10 10 0 1 0 10 10A10.012 10.012 0 0 0 10 0Zm4.884 8.384-5.5 5.5a1.251 1.251 0 0 1-1.768 0l-2.5-2.5a1.25 1.25 0 0 1 1.768-1.768L8.5 11.232l4.616-4.616a1.25 1.25 0 1 1 1.768 1.768Z\" fill=\"currentColor\"></path></svg></span></div></div><p class=\"c18pvg3k cip1vwm c7jd249\" style=\"color: var(--colorTextSecondary, var(--coreColorNeutral600));\">Connected</p></div><div class=\"s1x2o1t1\"></div><div class=\"awuxrpq\">Settings<span class=\"b15h8fme cy3eodl c1ofs1m3\" aria-hidden=\"true\"><svg viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M6.51941 15.9941C6.1602 15.6529 6.1602 15.0998 6.51941 14.7586L11.5294 10L6.51941 5.24142C6.1602 4.90024 6.1602 4.34707 6.51941 4.00589C6.87862 3.66471 7.46101 3.66471 7.82022 4.00589L13.4806 9.38223C13.8398 9.72342 13.8398 10.2766 13.4806 10.6178L7.82022 15.9941C7.46101 16.3353 6.87862 16.3353 6.51941 15.9941Z\" fill=\"currentColor\"></path></svg></span></div></div>",
+      "targetOnClick": null,
+      "tagName": "a",
+      "role": null,
+      "typeAttr": null,
+      "ariaLabel": null,
+      "ariaLabelledby": null,
+      "ariaDescribedby": null,
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": "Google Calendar\n\nConnected\n\nSettings",
+      "textContent": "Google CalendarConnectedSettings",
+      "id": null,
+      "name": null,
+      "classList": [
+        "t77oj1r"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": "Google MeetConnectedSettings",
+      "parentTextContext": "Google CalendarConnectedSettingsGoogle MeetConnectedSettings"
+    },
+    {
+      "type": "click",
+      "timestamp": "2026-01-12T09:17:58.580Z",
+      "site": "https://calendly.com/app/availability/calendar_settings",
+      "selectorPath": "div#root > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(3) > main:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(4) > button:nth-of-type(1)",
+      "xpath": "//*[@id=\"root\"]/div[1]/div[1]/div[1]/div[2]/div[3]/main[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[4]/button[1]",
+      "framePath": [],
+      "elementType": "button",
+      "href": null,
+      "webspIndex": 24,
+      "clickCoordinates": {
+        "x": 1354.666748046875,
+        "y": 471.66668701171875
+      },
+      "formContext": {
+        "formSelector": null,
+        "fieldName": null,
+        "groupName": null
+      },
+      "outerHTML": "<button aria-describedby=\"header-google-calendar\" class=\"uvkj3lh b15h8fme b1udgwic s5oy6h8\" aria-label=\"Disconnect\" type=\"button\" data-websp-index=\"24\"><span class=\"b15h8fme cy3eodl c1ofs1m3\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><path fill=\"#fff\" fill-opacity=\"0.01\" d=\"M0 0h16v16H0z\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3.298 11.855c-.316.315-.381.76-.147.995.235.234.68.169.995-.146l3.855-3.856 3.855 3.855c.315.316.76.381.995.147.234-.234.169-.68-.147-.995L8.85 8l3.854-3.855c.316-.315.381-.76.147-.995-.235-.234-.68-.169-.995.147L8 7.15 4.146 3.297c-.315-.316-.76-.381-.995-.147-.234.235-.168.68.147.995L7.152 8l-3.854 3.855Z\" fill=\"currentColor\"></path></svg></span></button>",
+      "innerHTML": "<span class=\"b15h8fme cy3eodl c1ofs1m3\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><path fill=\"#fff\" fill-opacity=\"0.01\" d=\"M0 0h16v16H0z\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3.298 11.855c-.316.315-.381.76-.147.995.235.234.68.169.995-.146l3.855-3.856 3.855 3.855c.315.316.76.381.995.147.234-.234.169-.68-.147-.995L8.85 8l3.854-3.855c.316-.315.381-.76.147-.995-.235-.234-.68-.169-.995.147L8 7.15 4.146 3.297c-.315-.316-.76-.381-.995-.147-.234.235-.168.68.147.995L7.152 8l-3.854 3.855Z\" fill=\"currentColor\"></path></svg></span>",
+      "targetOnClick": null,
+      "tagName": "button",
+      "role": null,
+      "typeAttr": "button",
+      "ariaLabel": "Disconnect",
+      "ariaLabelledby": null,
+      "ariaDescribedby": "header-google-calendar",
+      "ariaSelected": null,
+      "dataTestId": null,
+      "dataCy": null,
+      "dataAutomation": null,
+      "placeholder": null,
+      "title": null,
+      "labelText": null,
+      "innerText": null,
+      "textContent": null,
+      "id": null,
+      "name": null,
+      "classList": [
+        "uvkj3lh",
+        "b15h8fme",
+        "b1udgwic",
+        "s5oy6h8"
+      ],
+      "parentContext": null,
+      "nearbyLabelText": null,
+      "parentTextContext": "Calendars to check for conflicts Connect calendar accountThese calendars will be used to prevent double bookingsGoogle Calendar{{WEBSP_ACCOUNT_EMAIL}}Ch"
+    }
+  ],
+  "screenshots": [
+    {
+      "timestamp": "2026-01-12T09:17:46.688Z",
+      "eventType": "initial",
+      "index": 0,
+      "filename": "screenshots/screenshot_000_initial.png"
+    },
+    {
+      "timestamp": "2026-01-12T09:17:49.162Z",
+      "eventType": "click",
+      "index": 1,
+      "filename": "screenshots/screenshot_001_click.png"
+    },
+    {
+      "timestamp": "2026-01-12T09:17:50.885Z",
+      "eventType": "click",
+      "index": 2,
+      "filename": "screenshots/screenshot_002_click.png"
+    },
+    {
+      "timestamp": "2026-01-12T09:17:52.357Z",
+      "eventType": "click",
+      "index": 3,
+      "filename": "screenshots/screenshot_003_click.png"
+    },
+    {
+      "timestamp": "2026-01-12T09:17:58.580Z",
+      "eventType": "click",
+      "index": 4,
+      "filename": "screenshots/screenshot_004_click.png"
+    },
+    {
+      "timestamp": "2026-01-12T09:18:03.619Z",
+      "eventType": "final",
+      "index": 5,
+      "filename": "screenshots/screenshot_005_final.png"
+    }
+  ],
+  "metadata": {
+    "totalEvents": 4,
+    "totalScreenshots": 6,
+    "recordingDate": "2026-01-12T09:18:05.084Z"
+  }
+}

@@ -1,0 +1,201 @@
+Task ID,With Navigation Instruction,Task Type
+Docker_task-1_ON,"Navigate to my account settings, then to privacy settings, and opt out of sharing anonymized usage data with Docker's partners.",User Privacy & Data Rights
+Docker_task-1_OFF,"Navigate to my account settings, then to privacy settings, and opt out of sharing anonymized usage data with Docker's partners.",User Privacy & Data Rights
+Docker_task-2,"Navigate to my account settings, then to the 'personal access token' page, and create a token with Read-only permissions and an expiration of 30 days.",Account Security & Access Control
+Docker_task-3,"Navigate to my account settings, then to the 'personal access token' page, and create a primary developer token with Read & Write permissions to expire in 90 days.",Account Security & Access Control
+Docker_task-4,"Navigate to my account settings, then to the 'personal access token' page, and create a token that requires full Read, Write, and Delete permissions, and set its expiration to None.",Account Security & Access Control
+Wolfram_task-7_ON,"Navigate to my communication preferences. Under the 'Wolfram Research' tab, enable only 'Newsletters and Announcements', and under the 'Wolfram Alpha' tab, enable only 'Product Updates'.",Notification & Communication Preferences
+Wolfram_task-7_OFF,"Navigate to my communication preferences. Under the 'Wolfram Research' tab, enable only 'Newsletters and Announcements', and under the 'Wolfram Alpha' tab, enable only 'Product Updates'.",Notification & Communication Preferences
+Wolfram_task-8_ON,Navigate to my communication preferences and disable all communication emails from both 'Wolfram Research' and 'Wolfram Alpha'.,Notification & Communication Preferences
+Wolfram_task-8_OFF,Navigate to my communication preferences and disable all communication emails from both 'Wolfram Research' and 'Wolfram Alpha'.,Notification & Communication Preferences
+Wolfram_task-9_ON,"Navigate to my communication preferences and disable all communications under the 'Wolfram Research' tab, but allow all communications from the 'Wolfram Alpha' tab.",Notification & Communication Preferences
+Wolfram_task-9_OFF,"Navigate to my communication preferences and disable all communications under the 'Wolfram Research' tab, but allow all communications from the 'Wolfram Alpha' tab.",Notification & Communication Preferences
+Wolfram_task-10_ON,"Navigate to my communication preferences and enable only updates about 'Webinars & Training', disabling all other options.",Notification & Communication Preferences
+Wolfram_task-10_OFF,"Navigate to my communication preferences and enable only updates about 'Webinars & Training', disabling all other options.",Notification & Communication Preferences
+Grammarly_task-16_ON,"Navigate to my account, then to privacy settings, and disable 'Targeted advertising control'.",Advertising & Personalization Control
+Grammarly_task-16_OFF,"Navigate to my account, then to privacy settings, and disable 'Targeted advertising control'.",Advertising & Personalization Control
+Grammarly_task-17_ON,"Navigate to my account, then to settings and then feature customization, and disable 'Personalized insights' in tailored assistance features.",User Privacy & Data Rights
+Grammarly_task-17_OFF,"Navigate to my account, then to settings and then feature customization, and disable 'Personalized insights' in tailored assistance features.",User Privacy & Data Rights
+Grammarly_task-18_ON,"Navigate to my account, then to settings and then privacy settings, and disable 'show generative AI on text selection' in feature customization section.",User Privacy & Data Rights
+Grammarly_task-18_OFF,"Navigate to my account, then to settings and then privacy settings, and disable 'show generative AI on text selection' in feature customization section.",User Privacy & Data Rights
+Grammarly_task-19_ON,"Navigate to my account, then to settings and then security overview, and disable 'Product Improvement and Training'.",User Privacy & Data Rights
+Grammarly_task-19_OFF,"Navigate to my account, then to settings and then security overview, and disable 'Product Improvement and Training'.",User Privacy & Data Rights
+Grammarly_task-20,"Navigate to my account, then to settings and then security overview, and submit a personal data report request.",User Privacy & Data Rights
+Grammarly_task-24,"Navigate to my account, then to my settings and then 'your devices', and sign out of all devices",Account Security & Access Control
+Reddit_task-50_ON,"Navigate to my account, then to the privacy settings page, and disable the option that allows Reddit to personalize the ads I see based on information from its third-party partners.",Advertising & Personalization Control
+Reddit_task-50_OFF,"Navigate to my account, then to the privacy settings page, and disable the option that allows Reddit to personalize the ads I see based on information from its third-party partners.",Advertising & Personalization Control
+Reddit_task-51_ON,"Navigate to my account, then to the privacy settings page, and don't allow people to follow me.",Social Safety & Content Moderation
+Reddit_task-51_OFF,"Navigate to my account, then to the privacy settings page, and don't allow people to follow me.",Social Safety & Content Moderation
+Reddit_task-52_ON,"Navigate to my account, then to the privacy settings page, and don't allow my profile to show up on searches.",Profile Visibility & Customization
+Reddit_task-52_OFF,"Navigate to my account, then to the privacy settings page, and don't allow my profile to show up on searches.",Profile Visibility & Customization
+Reddit_task-53_ON,"Navigate to the preferences page in my account settings, and make sure the option to show mature content is disabled.",Social Safety & Content Moderation
+Reddit_task-53_OFF,"Navigate to the preferences page in my account settings, and make sure the option to show mature content is disabled.",Social Safety & Content Moderation
+Reddit_task-54_ON,"Navigate to my notification page in my account settings, and change notifications for new followers and comments on my posts from 'all on' to 'Inbox'.",Notification & Communication Preferences
+Reddit_task-55_ON,Navigate to my notification page in my account settings and disable the notifications for cake day updates.,Notification & Communication Preferences
+OldReddit_task-56_ON,"Navigate to my profile preferences, and then to options, and unsubscribe me from all emails.",Notification & Communication Preferences
+OldReddit_task-56_OFF,"Navigate to my profile preferences, and then to options, and unsubscribe me from all emails.",Notification & Communication Preferences
+OldReddit_task-57_ON,"Navigate to my profile preferences, then to 'display options' in the options menu, and disable the option to let others see my online status.",Profile Visibility & Customization
+OldReddit_task-57_OFF,"Navigate to my profile preferences, then to 'display options' in the options menu, and disable the option to let others see my online status.",Profile Visibility & Customization
+OldReddit_task-58_ON,"Navigate to my profile preferences, then to 'display options' in the options menu, and then disable the option to show my flair.",Profile Visibility & Customization
+OldReddit_task-58_OFF,"Navigate to my profile preferences, then to 'display options' in the options menu, and then disable the option to show my flair.",Profile Visibility & Customization
+OldReddit_task-59,"Navigate to my profile preferences, and disable the option to autoplay reddit videos.",UI/UX Preferences
+OldReddit_task-60,Navigate to my feed settings and completely disable the option to show thumbnails next to links.,UI/UX Preferences
+Goodreads_task-75,"Navigate to the bottom of the page, find the 'interest based ads' page, and opt me out of interest-based ads provided by the website.",Advertising & Personalization Control
+Goodreads_task-99,"Navigate to the account and notifications page in my account settings, and only my friends to view my profile",Profile Visibility & Customization
+Goodreads_task-100,Navigate to the 'Apps' tab in my account settings and disconnect my Amazon account from my Goodreads profile.,Account Security & Access Control
+Goodreads_task-101,Navigate to my profile page in my account settings and change the 'show my last name' option to 'no one'.,Profile Visibility & Customization
+Goodreads_task-102_ON,Navigate to the account and notifications page in my account settings and disable the option to prevent non-friends from commenting on my reviews and reading updates.,Social Safety & Content Moderation
+Goodreads_task-102_OFF,Navigate to the account and notifications page in my account settings and disable the option to prevent non-friends from commenting on my reviews and reading updates.,Social Safety & Content Moderation
+Docker_task-142,"Navigate to the page footer, access the cookie settings, and disable 'performance cookies' and 'targeted cookies', while keeping 'functional cookies' enabled.",Cookie & Tracking Consent Management
+Docker_task-143,"Navigate to the page footer, access the cookie settings, and enable 'targeted cookies', but disable 'functional cookies' and 'performance cookies'.",Cookie & Tracking Consent Management
+Docker_task-144,"Navigate to the page footer, access the cookie settings, and disable all optional cookies, including 'functional cookies', 'performance cookies', and 'targeted cookies'.",Cookie & Tracking Consent Management
+NVIDIA_task-145,"Navigate to the page footer, click 'Manage my privacy', then open 'cookie settings'. Disable 'performance cookies', 'personalization cookies', and 'advertising cookies'.",Cookie & Tracking Consent Management
+NVIDIA_task-146,"Navigate to the page footer, click 'Manage my privacy', then open 'cookie settings'. Enable 'personalization cookies', but disable 'performance cookies' and 'advertising cookies'.",Cookie & Tracking Consent Management
+NVIDIA_task-147,"Navigate to the page footer, click 'Manage my privacy', then open 'cookie settings'. Enable 'performance cookies' and 'advertising cookies', but disable 'personalization cookies'.",Cookie & Tracking Consent Management
+AllRecipes_task-154,"Navigate to the page footer, click 'Your Privacy Choices', and disable 'targeted cookies'.",Cookie & Tracking Consent Management
+Coursera_task-155,"Navigate to the page footer, click 'Do Not Sell or Share My Personal Information', then 'Manage cookie preferences'. Disable 'functional cookies', 'marketing cookies', and 'analytics cookies'.",Cookie & Tracking Consent Management
+Coursera_task-156,"Navigate to the page footer, click 'Do Not Sell or Share My Personal Information', then 'Manage cookie preferences'. Enable 'functional cookies', but disable 'marketing cookies', and 'analytics cookies'.",Cookie & Tracking Consent Management
+Coursera_task-157,"Navigate to the page footer, click 'Do Not Sell or Share My Personal Information', then 'Manage cookie preferences'. Enable 'marketing cookies' and 'analytics cookies', but disable 'functional cookies'.",Cookie & Tracking Consent Management
+IKEA_task-158,"Navigate to the page footer, then click 'Your privacy choices', and disable 'analytic cookies'.",Cookie & Tracking Consent Management
+IKEA_task-159,"Navigate to the page footer, then click 'Your privacy choices', and enable 'analytic cookies'",Cookie & Tracking Consent Management
+Shein_task-161,"Navigate to the page footer, click 'Manage Cookies', and disable 'Performance Cookies', 'Functional Cookies', and 'Targeting Cookies'.",Cookie & Tracking Consent Management
+Shein_task-162,"Navigate to the page footer, click 'Manage Cookies', and enable 'Functional Cookies', but disable 'Social Media Cookies' and 'Targeting Cookies'.",Cookie & Tracking Consent Management
+Shein_task-163,"Navigate to the page footer, click 'Manage Cookies', and enable 'Targeting Cookies', but disable 'Performance Cookies' and 'Functional Cookies'.",Cookie & Tracking Consent Management
+BBC_task-167,"Navigate to the page footer, click 'Cookies', then find 'How can I change my BBC cookie settings', and disable both 'functional cookies' and 'performance cookies'.",Cookie & Tracking Consent Management
+BBC_task-168,"Navigate to the page footer, click 'Cookies', then find 'How can I change my BBC cookie settings', and enable 'functional cookies' but disable 'performance cookies'.",Cookie & Tracking Consent Management
+BBC_task-169,"Navigate to the page footer, click 'Cookies', then find 'How can I change my BBC cookie settings', and disable 'functional cookies' but enable 'performance cookies'.",Cookie & Tracking Consent Management
+AlJazeera_task-179,"Navigate to the page footer, click 'Cookie Preferences', and opt out of sale of personal data and targeted advertising",User Privacy & Data Rights
+Airbnb_task-180,"Navigate to the page footer, click 'Your Privacy Choices', and opt out of selling, sharing of data, and targeted advertising",User Privacy & Data Rights
+Coursera_task-182,"Navigate to my account settings and then communication preferences, and opt out of all coursera emails",Notification & Communication Preferences
+Coursera_task-183,Navigate to my account settings and access learner data report to request for a report of all the data collected by Coursera.,User Privacy & Data Rights
+Coursera_task-203,"Navigate to my account settings and then communication prefernces, and opt in only for Weekly personalized course recommendations",Notification & Communication Preferences
+Quora_task-76_ON,"Navigate to my account settings, then to the privacy settings page, and disable the option to allow search engines to index my name.",Profile Visibility & Customization
+Quora_task-76_OFF,"Navigate to my account settings, then to the privacy settings page, and disable the option to allow search engines to index my name.",Profile Visibility & Customization
+Quora_task-77,"Navigate to my account settings, then to the privacy settings page, and enable the option allowing only the people I follow to comment on my post.",Social Safety & Content Moderation
+Quora_task-78_ON,"Navigate to my account settings and then email & notifications settings, and enable notifications for 'Comments and replies' and 'New followers', but disable notifications for 'Upvotes'.",Notification & Communication Preferences
+Quora_task-78_OFF,"Navigate to my account settings and then email & notifications settings, and enable notifications for 'Comments and replies' and 'New followers', but disable notifications for 'Upvotes'.",Notification & Communication Preferences
+Quora_task-79,"Navigate to my account settings and then email & notifications settings. Disable notifications for 'Spaces for you', and then change the 'Quora Digest' frequency to 'Weekly'.",Notification & Communication Preferences
+Quora_task-80,"Navigate to my account settings, then to the privacy settings page, and allow only the people I follow to comment on my post.",Social Safety & Content Moderation
+Quora_task-81_ON,"Navigate to my account settings, then to the privacy settings page, and disable the option to allow language models to be trained off my content.",User Privacy & Data Rights
+Quora_task-81_OFF,"Navigate to my account settings, then to the privacy settings page, and disable the option to allow language models to be trained off my content.",User Privacy & Data Rights
+GitHub_task-126,"Navigate to my home page, find the repository 'c2rust-conversion', and change its visibility from public to private.",Data & Asset Management
+GitHub_task-127_ON,"Navigate to my account settings, then to my public profile settings, and enable the 'Make profile private and hide activity' option.",Profile Visibility & Customization
+GitHub_task-127_OFF,"Navigate to my account settings, then to my public profile settings, and enable the 'Make profile private and hide activity' option.",Profile Visibility & Customization
+GitHub_task-129_ON,"Navigate to my account settings, then to my notification settings, and under 'Customize email updates', enable email notifications for 'Reviews', enable for 'Pushes', and disable for 'Comments'.",Notification & Communication Preferences
+GitHub_task-129_OFF,"Navigate to my account settings, then to my notification settings, and under 'Customize email updates', enable email notifications for 'Reviews', enable for 'Pushes', and disable for 'Comments'.",Notification & Communication Preferences
+GitHub_task-130_ON,"Navigate to my account settings and then notification settings, find the 'In-product messages' setting in the 'System' section, and set it to 'On'.",Notification & Communication Preferences
+GitHub_task-130_OFF,"Navigate to my account settings and then notification settings, find the 'In-product messages' setting in the 'System' section, and set it to 'On'.",Notification & Communication Preferences
+GitHub_task-131,"Navigate to my account settings and then notification settings, find the 'Dependabot alerts: Email digest' setting, and change the email summary frequency to 'A weekly summary'.",Notification & Communication Preferences
+GitHub_task-132,"Navigate to my account settings, then to 'developer settings', and generate a new personal access token (classic) with 'repo' and 'read:org' scopes.",Account Security & Access Control
+GitHub_task-133,Navigate to my session management page in my account settings and revoke an active session from another browser or device.,Account Security & Access Control
+GitHub_task-134_OFF,Navigate to 'Code security' in my settings page and enable 'Push protection for yourself' in the 'User' section.,Account Security & Access Control
+GitHub_task-134_ON,Navigate to 'Code security' in my settings page and enable 'Push protection for yourself' in the 'User' section.,Account Security & Access Control
+GitHub_task-135_OFF,"Navigate to the 'Repositories' section of 'Code security' in my settings page, enable 'Private vulnerability reporting' for all repositories.",Account Security & Access Control
+GitHub_task-135_ON,"Navigate to the 'Repositories' section of 'Code security' in my settings page, enable 'Private vulnerability reporting' for all repositories.",Account Security & Access Control
+HuggingFace_task-113,"Navigate to my profile, find the dataset named 'random-bu-agent-data2', and make it private",Data & Asset Management
+HuggingFace_task-114,"Navigate to my profile, find the dataset named 'cancer-classification1' and make it private, and then find the model named 'buagent-best-sota2' and make it private.",Data & Asset Management
+HuggingFace_task-116,"Navigate to my profile, find the dataset 'random-bu-agent-data2', go to its dataset card, and add a 'cc' license to it.",Data & Asset Management
+HuggingFace_task-117,Navigate to my account and use the dropdown menu to create a new private dataset named 'random-bu-agent-data-2025-09-22' with the license 'gpl-3.0'.,Data & Asset Management
+HuggingFace_task-118,Navigate to my profile and find the dataset named 'cancer-classification2' and enable gated access to the dataset.,Data & Asset Management
+HuggingFace_task-120,"Navigate to my access token settings and create a new access token with just read access, giving it the name 'read_token_8761'.",Account Security & Access Control
+HuggingFace_task-121,Navigate to my access token settings and create a new access token with just write access and assign the name 'write_token8761'.,Account Security & Access Control
+HuggingFace_task-122,"Navigate to my access token settings and create a fine-grained access token with the name 'fine_grained_token_8761' and permissions for read access, webhooks access, billing access, and inference for my endpoints only.",Account Security & Access Control
+Goal_task-93_ON,"Navigate to my preferences in my user profile and opt-out of all communications: Disable all three toggles for 'Marketing', 'Customer Research', and 'Goal Newsletters'.",Notification & Communication Preferences
+Goal_task-93_OFF,"Navigate to my preferences in my user profile and opt-out of all communications: Disable all three toggles for 'Marketing', 'Customer Research', and 'Goal Newsletters'.",Notification & Communication Preferences
+Goal_task-94_ON,"Navigate to my preferences in my user profile and subscribe to 'Newsletters Only': Enable the toggle for 'Goal Newsletters', but ensure the toggles for 'Marketing' and 'Customer Research' are disabled.",Notification & Communication Preferences
+Goal_task-94_OFF,"Navigate to my preferences in my user profile and subscribe to 'Newsletters Only': Enable the toggle for 'Goal Newsletters', but ensure the toggles for 'Marketing' and 'Customer Research' are disabled.",Notification & Communication Preferences
+Goal_task-95_ON,"Navigate to my preferences in my user profile and 'Participate in Research Without Marketing': Enable the toggles for 'Customer Research' and 'Goal Newsletters', but disable the toggle for 'Marketing'.",Notification & Communication Preferences
+Goal_task-95_OFF,"Navigate to my preferences in my user profile and 'Participate in Research Without Marketing': Enable the toggles for 'Customer Research' and 'Goal Newsletters', but disable the toggle for 'Marketing'.",Notification & Communication Preferences
+GoogleAdCenter_task-138_ON,"Navigate to my Ad Center and increase ads for the topics 'Pets and Animals' and 'Music and Audio', and decrease ads for 'Clothing'.",Advertising & Personalization Control
+GoogleAdCenter_task-138_OFF,"Navigate to my Ad Center and increase ads for the topics 'Pets and Animals' and 'Music and Audio', and decrease ads for 'Clothing'.",Advertising & Personalization Control
+GoogleAdCenter_task-139,Navigate to 'customize Ads' in my Ad Center and reduce ads for the brand that appears on the top of my brands list.,Advertising & Personalization Control
+GoogleAdCenter_task-140,Navigate to 'customize Ads' in my Ad Center and increase the ads for the brand that appears on the bottom of my brands list.,Advertising & Personalization Control
+GoogleAdCenter_task-141,"Navigate to my 'Manage Privacy' in my Ad Center, find the option to access 'my activity', and delete all the activity I see about my ad preferences.",User Privacy & Data Rights
+GoogleAdCenter_task-82_ON,Navigate to 'customize Ads' in my Ad Center and disallow the ads for the sensitive topics 'Dating' and 'Gambling'.,Advertising & Personalization Control
+GoogleAdCenter_task-82_OFF,Navigate to 'customize Ads' in my Ad Center and disallow the ads for the sensitive topics 'Dating' and 'Gambling'.,Advertising & Personalization Control
+Duolingo_task-103_ON,"Navigate to the privacy settings page in my account settings, and make my profile private to remove myself from the weekly competitive leaderboards, and ensure friends streaks is disabled if visible.",Profile Visibility & Customization
+Duolingo_task-103_OFF,"Navigate to the privacy settings page in my account settings, and make my profile private to remove myself from the weekly competitive leaderboards, and ensure friends streaks is disabled if visible.",Profile Visibility & Customization
+Duolingo_task-104_ON,Navigate to the privacy settings page in my account settings and disable personalized ads.,Advertising & Personalization Control
+Duolingo_task-104_OFF,Navigate to the privacy settings page in my account settings and disable personalized ads.,Advertising & Personalization Control
+Duolingo_task-105_ON,Navigate to my notification settings in my account settings and disable all notifications except for 'weekly progress' and 'daily reminders'.,Notification & Communication Preferences
+Duolingo_task-105_OFF,Navigate to my notification settings in my account settings and disable all notifications except for 'weekly progress' and 'daily reminders'.,Notification & Communication Preferences
+OpenStreetMap_task-91,Navigate to my user profile and edit it to remove all information from the 'Description' box and set my location to 'USA' without specifying latitude or longitude,Profile Visibility & Customization
+OpenStreetMap_task-92,Navigate to my account settings and change my 'Display Name' into 'good_devil_buddy'.,Profile Visibility & Customization
+Pinterest_task-61_ON,"Navigate to the privacy and data settings page in my account settings. Under 'Ads personalization', enable the options 'Use of partner info' and 'Activity for ads reporting', but ensure all other ad-related options are disabled.",Advertising & Personalization Control
+Pinterest_task-61_OFF,"Navigate to the privacy and data settings page in my account settings. Under 'Ads personalization', enable the options 'Use of partner info' and 'Activity for ads reporting', but ensure all other ad-related options are disabled.",Advertising & Personalization Control
+Pinterest_task-62_ON,"Navigate to the privacy and data settings page in my account settings, find the 'GenAI' section, and disable the setting 'Use your data to train Pinterest Canvas'.",User Privacy & Data Rights
+Pinterest_task-62_OFF,"Navigate to the privacy and data settings page in my account settings, find the 'GenAI' section, and disable the setting 'Use your data to train Pinterest Canvas'.",User Privacy & Data Rights
+Pinterest_task-63,"Navigate to the privacy and data settings page in my account settings, find the 'Request your data' section and click the 'Request data' button.",User Privacy & Data Rights
+Pinterest_task-64_ON,"Navigate to the privacy and data settings page in my account settings. Under 'Ads personalization', disable the settings 'Use of partner info' and 'Sharing info with partners' to stop Pinterest from using and sharing data from its partners.",Advertising & Personalization Control
+Pinterest_task-64_OFF,"Navigate to the privacy and data settings page in my account settings. Under 'Ads personalization', disable the settings 'Use of partner info' and 'Sharing info with partners' to stop Pinterest from using and sharing data from its partners.",Advertising & Personalization Control
+Pinterest_task-65_ON,"Navigate to the profile visibility section in my account settings, and make it private and also hide it from search engines.",Profile Visibility & Customization
+Pinterest_task-65_OFF,"Navigate to the profile visibility section in my account settings, and make it private and also hide it from search engines.",Profile Visibility & Customization
+Pinterest_task-66_ON,"Navigate to the refine your recommendations page in my account settings, and ensure that all gen ai interests are turned off.",User Privacy & Data Rights
+Pinterest_task-66_OFF,"Navigate to the refine your recommendations page in my account settings, and ensure that all gen ai interests are turned off.",User Privacy & Data Rights
+Pinterest_task-67,"Navigate to the social permissions page in my account settings, and then ensure mentions are disabled.",Social Safety & Content Moderation
+Pinterest_task-68,"Navigate to the security settings page in my account settings, and log out from all connected devices.",Account Security & Access Control
+Pinterest_task-69,"Navigate to my account settings and then my social permissions to ensure comments that contain the phrases 'bad', 'wrong', 'terrible' are blocked.",Social Safety & Content Moderation
+Pinterest_task-70_ON,"Navigate to my account settings, and then social permissions, and disable autoplaying videos.",UI/UX Preferences
+Pinterest_task-70_OFF,"Navigate to my account settings, and then social permissions, and disable autoplaying videos.",UI/UX Preferences
+Airbnb_task-106_ON,Navigate to my account settings and then privacy settings to turn off read receipts.,Social Safety & Content Moderation
+Airbnb_task-106_OFF,Navigate to my account settings and then privacy settings to turn off read receipts.,Social Safety & Content Moderation
+Airbnb_task-107_ON,Navigate to my account settings and then privacy settings and turn off 'include my listing(s) in search engines'.,Profile Visibility & Customization
+Airbnb_task-107_OFF,Navigate to my account settings and then privacy settings and turn off 'include my listing(s) in search engines'.,Profile Visibility & Customization
+Airbnb_task-108_ON,Navigate to my account settings and then privacy settings and ensure only my trip type is enabled as viewable for my reviews.,Profile Visibility & Customization
+Airbnb_task-108_OFF,Navigate to my account settings and then privacy settings and ensure only my trip type is enabled as viewable for my reviews.,Profile Visibility & Customization
+Airbnb_task-111,"Navigate to my account settings, then to 'login and security' and 'shared access', and remove any other accounts from permitted accounts to access mine.",Account Security & Access Control
+Amazon_task-86_ON,"Navigate to email subscriptions in my account, then to 'browse all subscriptions', and find and turn on the email newsletters for topics 'Kindle Flash', 'Best of Books', and 'E-reader Newsletters'.",Notification & Communication Preferences
+Amazon_task-86_OFF,"Navigate to email subscriptions in my account, then to 'browse all subscriptions', and find and turn on the email newsletters for topics 'Kindle Flash', 'Best of Books', and 'E-reader Newsletters'.",Notification & Communication Preferences
+Amazon_task-87_ON,"Navigate to email subscriptions in my account, then to 'browse all subscriptions', turn on the newsletter for 'Amazon Fresh grocery store weekly savings email - Southern CA', and then turn off the subscriptions for 'Arts, Crafts, and Saving' and 'Men's Fashion'.",Notification & Communication Preferences
+Amazon_task-87_OFF,"Navigate to email subscriptions in my account, then to 'browse all subscriptions', turn on the newsletter for 'Amazon Fresh grocery store weekly savings email - Southern CA', and then turn off the subscriptions for 'Arts, Crafts, and Saving' and 'Men's Fashion'.",Notification & Communication Preferences
+Amazon_task-88,Navigate to my advertising preferences in my account and then select 'Delete my personal information from our ad systems'.,Advertising & Personalization Control
+Amazon_task-89,Navigate to my profile settings and change the profile for viewing to 'White'.,UI/UX Preferences
+Amazon_task-190,Navigate to advertising preferences in my account and then opt out of interest based ads.,Advertising & Personalization Control
+USAToday_task-36_ON,Navigate to my email preferences in my profile and ensure I am unsubscribed to all promotional emails,Notification & Communication Preferences
+USAToday_task-36_OFF,Navigate to my email preferences in my profile and ensure I am unsubscribed to all promotional emails,Notification & Communication Preferences
+USAToday_task-37_ON,"Navigate to my email preferences in my profile and enable emails for 'eNewspaper Daily' only, ensuring all other email categories are disabled.",Notification & Communication Preferences
+USAToday_task-37_OFF,"Navigate to my email preferences in my profile and enable emails for 'eNewspaper Daily' only, ensuring all other email categories are disabled.",Notification & Communication Preferences
+Steam_task-191_ON,"Navigate to store preferences in my account, and then cookies and browsing settings, and disable 'Valve's Content Customization Cookies' and 'Valve's Analytics Cookies'.",Cookie & Tracking Consent Management
+Steam_task-191_OFF,"Navigate to store preferences in my account, and then cookies and browsing settings, and disable 'Valve's Content Customization Cookies' and 'Valve's Analytics Cookies'.",Cookie & Tracking Consent Management
+Steam_task-192_ON,"Navigate to store preferences in my account, and then cookies and browsing settings. Under 'Third Party Media Sharing Cookies', enable 'YouTube' cookies, but disable 'Vimeo' and 'Sketchfab' cookies.",Cookie & Tracking Consent Management
+Steam_task-192_OFF,"Navigate to store preferences in my account, and then cookies and browsing settings. Under 'Third Party Media Sharing Cookies', enable 'YouTube' cookies, but disable 'Vimeo' and 'Sketchfab' cookies.",Cookie & Tracking Consent Management
+Steam_task-193_ON,"Navigate to store preferences in my account, and then cookies and browsing settings, and disable all cookies",Cookie & Tracking Consent Management
+Steam_task-193_OFF,"Navigate to store preferences in my account, and then cookies and browsing settings, and disable all cookies",Cookie & Tracking Consent Management
+Steam_task-194,"Navigate to store preferences in my account, and then 'Mature Content Filtering'. Disable all mature content for 'Community' sections (General Mature Content, Frequent Violence or Gore, Nudity), but keep them enabled for the 'Store'.",Social Safety & Content Moderation
+Steam_task-195,"Navigate to store preferences in my account, and then 'Mature Content Filtering'. Enable 'Frequent Nudity or Sexual Content' for the Store, but ensure 'Adult Only Sexual Content' remains disabled for both Store and Community.",Social Safety & Content Moderation
+Steam_task-196_ON,"Navigate to store preferences in my account, scroll to 'Community Content Preferences', and under 'Chat Filtering', select 'Allow strong profanity, but filter slurs' and ensure 'Do not filter text from my Steam Friends' is disabled.",Social Safety & Content Moderation
+Steam_task-196_OFF,"Navigate to store preferences in my account, scroll to 'Community Content Preferences', and under 'Chat Filtering', select 'Allow strong profanity, but filter slurs' and ensure 'Do not filter text from my Steam Friends' is disabled.",Social Safety & Content Moderation
+Steam_task-197_ON,"Navigate to store preferences in my account, scroll to 'Community Content Preferences', and under 'Additional Custom Filtered Words', add the words 'scam' and 'spoiler' to the 'Always filter these words' list.",Social Safety & Content Moderation
+Steam_task-197_OFF,"Navigate to store preferences in my account, scroll to 'Community Content Preferences', and under 'Additional Custom Filtered Words', add the words 'scam' and 'spoiler' to the 'Always filter these words' list.",Social Safety & Content Moderation
+Steam_task-198_ON,Navigate to my account details and then manage email preferences. Enable email notifications only for 'Steam Next Fest is beginning' and 'A Steam sponsored Theme fest is beginning'.,Notification & Communication Preferences
+Steam_task-198_OFF,Navigate to my account details and then manage email preferences. Enable email notifications only for 'Steam Next Fest is beginning' and 'A Steam sponsored Theme fest is beginning'.,Notification & Communication Preferences
+Steam_task-199,Navigate to my account details and then manage email preferences. Disable notifications for 'A seasonal promotion is beginning' and 'Game-specific event notifications'.,Notification & Communication Preferences
+Steam_task-200_ON,Navigate to my account details and then manage email preferences and 'Opt out of all email marketing communication'.,Notification & Communication Preferences
+Steam_task-200_OFF,Navigate to my account details and then manage email preferences and 'Opt out of all email marketing communication'.,Notification & Communication Preferences
+Moodle_task-205_ON,"Navigate to preferences, and then 'Message Preference', and restrict message requests from 'my contacts only'.",Social Safety & Content Moderation
+Moodle_task-205_OFF,"Navigate to preferences, and then 'Message Preference', and restrict message requests from 'my contacts only'.",Social Safety & Content Moderation
+Moodle_task-206_ON,"Navigate to preferences, and then under 'Notification preferences', change the preference of all system for 'welcome message for new course enrollments' and 'grade notifications' to 'Email', ensuring mobile and web notifications are disabled.",Notification & Communication Preferences
+Moodle_task-206_OFF,"Navigate to preferences, and then under 'Notification preferences', change the preference of all system for 'welcome message for new course enrollments' and 'grade notifications' to 'Email', ensuring mobile and web notifications are disabled.",Notification & Communication Preferences
+Moodle_task-209,"Navigate to my profile, then under Reports go to browser sessions, and log out of all devices logged in to my account.",Account Security & Access Control
+Pinterest_task-218,Access the profile icon and sign out of my Pinterest account,Account Security & Access Control
+Airbnb_task-219,Access the hamburger icon and sign out of my Airbnb account,Account Security & Access Control
+HuggingFace_task-220,Access the profile icon and sign out of my HuggingFace account,Account Security & Access Control
+Amazon_task-221,Access the profile icon and sign out of my Amazon account,Account Security & Access Control
+Duolingo_task-222,Access the meatball icon on the sidebar and sign out of my Duolingo account,Account Security & Access Control
+Wattpad_task-223_ON,Navigate to notification preferences in settings and disable all notifications for conversation replies,Notification & Communication Preferences
+Wattpad_task-223_OFF,Navigate to notification preferences in settings and disable all notifications for conversation replies,Notification & Communication Preferences
+Wattpad_task-224_ON,Navigate to notification preferences in settings and disable push notifications for conversation replies and enable push notifications for story published,Notification & Communication Preferences
+Wattpad_task-224_OFF,Navigate to notification preferences in settings and disable push notifications for conversation replies and enable push notifications for story published,Notification & Communication Preferences
+Wattpad_task-225_ON,Navigate to notification preferences in settings and enable push & email notifications for story published and only email notifications for coin promotions,Notification & Communication Preferences
+Wattpad_task-225_OFF,Navigate to notification preferences in settings and enable push & email notifications for story published and only email notifications for coin promotions,Notification & Communication Preferences
+Twitch_task-226,Navigate to 'Security and Privacy' in my account settings and remove the blocked user 'crazybuddy' from list of blocked users.,Social Safety & Content Moderation
+Twitch_task-227_ON,Navigate to 'Security and Privacy' in my account settings and enable option to block whispers from strangers and disable the option to hide the founder badge,Social Safety & Content Moderation
+Twitch_task-227_OFF,Navigate to 'Security and Privacy' in my account settings and enable option to block whispers from strangers and disable the option to hide the founder badge,Social Safety & Content Moderation
+Twitch_task-228_ON,Navigate to 'Security and Privacy' in my account settings and enable options to block receiving gifts from unfollowed channels and enable option to hide my gifts given count,Social Safety & Content Moderation
+Twitch_task-228_OFF,Navigate to 'Security and Privacy' in my account settings and enable options to block receiving gifts from unfollowed channels and enable option to hide my gifts given count,Social Safety & Content Moderation
+Twitch_task-230,Navigate to 'Security and Privacy' in my account settings and turn on options to ensure nobody can mention me on their stories and reshare my stories,Social Safety & Content Moderation
+Twitch_task-231,Navigate to 'Security and Privacy' in my account settings and turn on option to allow people I follow to share my clips in their stories,Social Safety & Content Moderation
+Twitch_task-232_ON,Navigate to 'Content Preferences' in my account settings and ensure all content with content classifications labels is blocked from my Twitch feed,Social Safety & Content Moderation
+Twitch_task-232_OFF,Navigate to 'Content Preferences' in my account settings and ensure all content with content classifications labels is blocked from my Twitch feed,Social Safety & Content Moderation
+Twitch_task-233_ON,Navigate to 'Content Preferences' in my account settings and enable options to hide and blur sexual themes from my Twitch feed,Social Safety & Content Moderation
+Twitch_task-233_OFF,Navigate to 'Content Preferences' in my account settings and enable options to hide and blur sexual themes from my Twitch feed,Social Safety & Content Moderation
