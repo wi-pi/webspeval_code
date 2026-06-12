@@ -2,7 +2,7 @@
 
 **Evaluating Web Agents on Website Security and Privacy Tasks** — artifact for the PETS 2026 paper.
 
-**Project website:** https://wiscprivacy.com/webspeval_website/
+**Project website:** https://wiscprivacy.com/webspeval
 
 WebSP-Eval measures how well LLM-powered web agents perform *website security and privacy
 tasks* (managing cookies, configuring privacy settings, revoking sessions, etc.) on **live
