@@ -4,6 +4,11 @@ The agent replays a recorded **login trace** to sign into each login-required si
 its tasks. We ship none of these (they would contain your credentials/session). Use the included
 Chrome extension to record your own.
 
+> 📹 **Example recording.** `login_traces/Login_trace_example.mp4` shows the full record flow
+> end-to-end — a (PII-redacted) Wolfram sign-in captured with the extension. The same extension and
+> the same steps record an **initial-state (`S0`) trace**; only what you do on the page differs
+> (sign in vs. set the page's stateful elements), so the video is a useful reference for both.
+
 ## 1. Load the extension
 
 1. Open `chrome://extensions`.

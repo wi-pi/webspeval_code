@@ -7,6 +7,7 @@
 # never commit them. The directory + its README is kept, contents are ignored.
 /login_traces/*
 !/login_traces/README.md
+!/login_traces/Login_trace_example.mp4
 **/screenshots/
 
 # --- chrome profiles / runtime browser state ---
