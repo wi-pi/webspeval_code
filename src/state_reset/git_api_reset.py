@@ -14,18 +14,22 @@ from dotenv import load_dotenv
 # Load environment variables from .env file, if present
 load_dotenv()
 
-# Retrieve credentials from environment
+# Retrieve credentials from environment. These are only needed for the GitHub API-based
+# state-reset tasks, so the check is deferred to first use (github_headers) instead of module
+# import -- importing state_reset must not require a GITHUB_TOKEN.
 gh_token = os.getenv("GITHUB_TOKEN")
 gh_username = os.getenv("GITHUB_USERNAME")
 
-# Validate environment variables at module load
-if not gh_token:
-    raise ValueError("GITHUB_TOKEN environment variable is required")
-if not gh_username:
-    raise ValueError("GITHUB_USERNAME environment variable is required")
+
+def _require_github_credentials() -> None:
+    if not gh_token:
+        raise ValueError("GITHUB_TOKEN environment variable is required")
+    if not gh_username:
+        raise ValueError("GITHUB_USERNAME environment variable is required")
 
 
 def github_headers() -> dict:
+    _require_github_credentials()
     return {
         "Authorization": f"Bearer {gh_token}",
         "Accept": "application/vnd.github+json",

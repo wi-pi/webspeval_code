@@ -69,7 +69,7 @@ pip install -r requirements.txt
 ```
 
 Then (full detail in [docs/INSTALL.md](docs/INSTALL.md) and
-[docs/ACCOUNT_SETUP.md](docs/ACCOUNT_SETUP.md)):
+[docs/ACCOUNT_SETUP.md](docs/ACCOUNT_SETUP.md)): (Only Google and Wolfram account are enough for the artifact evaluation)
 
 1. **`.env`** (blank template at the repo root): set `OPENROUTER_API_KEY` (from the portal) and
    your sock-puppet values `WEBSP_ACCOUNT_EMAIL` / `WEBSP_ACCOUNT_USERNAME` / `WEBSP_ACCOUNT_NAME`.

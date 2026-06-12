@@ -136,461 +136,264 @@ def get_web_element_rect(browser, fix_color=False):
         selected_function = "getRandomColor"
 
     js_script = """
+        let labels = [];
+
+        // 1. HELPER: Generate High-Contrast Colors
         function getRandomColor(index) {
+            // Use HSL for distinct, bright colors (avoiding darks/blacks)
             let hue = (index * 137.5) % 360;
             return `hsl(${hue}, 80%, 40%)`;
         }
-        function getFixedColor(index) { return '#000000'; }
+
+        function getFixedColor(index) {
+            var color = '#000000';
+            return color;
+        }
 
         function markPage() {
+            // A. CLEANUP: Remove existing markers to prevent interference
             document.querySelectorAll("div[data-ai-marker]").forEach(el => el.remove());
 
             const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
             const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
-            // Measure each element against its OWN document (so elements inside same-origin
-            // iframes are evaluated in their local coordinate system), then offset into the
-            // top page when drawing. gcs/vpW/vpH resolve style + viewport per ownerDocument.
-            function gcs(el) { return (el.ownerDocument.defaultView || window).getComputedStyle(el); }
-            function vpW(el) { const d = el.ownerDocument, w = d.defaultView || window;
-                return Math.max(d.documentElement.clientWidth || 0, w.innerWidth || 0); }
-            function vpH(el) { const d = el.ownerDocument, w = d.defaultView || window;
-                return Math.max(d.documentElement.clientHeight || 0, w.innerHeight || 0); }
-
-            // ---- Modal scoping: if a modal dialog is open, restrict candidates to its
-            // subtree so background page content (behind the overlay) is not marked.
-            function findActiveModal() {
-                const candidates = Array.from(document.querySelectorAll(
-                    '[aria-modal="true"], dialog[open], [role="dialog"], [role="alertdialog"]'
-                )).filter(el => {
-                    if (el.tagName === 'DIALOG' && !el.hasAttribute('open')) return false;
-                    if (el.getAttribute('aria-hidden') === 'true') return false;
-                    const s = window.getComputedStyle(el);
-                    if (s.display === 'none' || s.visibility === 'hidden' || s.opacity === '0') return false;
-                    const r = el.getBoundingClientRect();
-                    return r.width >= 80 && r.height >= 80;
-                });
-                if (candidates.length === 0) return null;
-                function zOf(el) {
-                    let cur = el, max = 0;
-                    while (cur && cur !== document.body) {
-                        const z = parseInt(window.getComputedStyle(cur).zIndex);
-                        if (!isNaN(z) && z > max) max = z;
-                        cur = cur.parentElement;
-                    }
-                    return max;
-                }
-                candidates.sort((a, b) => {
-                    const dz = zOf(b) - zOf(a);
-                    if (dz !== 0) return dz;
-                    return (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING) ? 1 : -1;
-                });
-                return candidates[0];
-            }
-
-            // Per-element offset from its own document's viewport to the TOP page viewport,
-            // accumulated through same-origin <iframe> boundaries (0,0 for top-document
-            // elements). Geometry is computed locally; this offset is added only when the
-            // marker rect is built so boxes land in the right place over the iframe.
-            const frameOffset = new Map();
-            function getAllElements(root, offX, offY, collected) {
+            // B. COLLECT: Get all elements (including Shadow DOM)
+            function getAllElements(root, collected = []) {
                 const elements = root.querySelectorAll('*');
                 for (const element of elements) {
                     collected.push(element);
-                    frameOffset.set(element, { x: offX, y: offY });
-                    if (element.shadowRoot) getAllElements(element.shadowRoot, offX, offY, collected);
-                    if (element.tagName === 'IFRAME') {
-                        let idoc = null;
-                        try { idoc = element.contentDocument; } catch (e) { idoc = null; }
-                        if (idoc && idoc.documentElement) {
-                            const ir = element.getBoundingClientRect();
-                            const ics = gcs(element);
-                            const bl = parseFloat(ics.borderLeftWidth) || 0;
-                            const bt = parseFloat(ics.borderTopWidth) || 0;
-                            const pl = parseFloat(ics.paddingLeft) || 0;
-                            const pt = parseFloat(ics.paddingTop) || 0;
-                            getAllElements(idoc, offX + ir.left + bl + pl, offY + ir.top + bt + pt, collected);
-                        }
+                    if (element.shadowRoot) {
+                        getAllElements(element.shadowRoot, collected);
                     }
+
                 }
                 return collected;
             }
+            const allElements = getAllElements(document);
 
-            const activeModal = findActiveModal();
-            const allElements = getAllElements(activeModal || document, 0, 0, []);
-
-            // ---- Custom toggle/checkbox widgets: a hidden <input type=checkbox|radio>
-            // controlled by a <label for=...> (or wrapping label). The label is the real
-            // click target. We:
-            //   1. Resolve each label-for-checkbox to its input and remember the label's rect.
-            //   2. Drop the label itself and all its descendants from the candidate list
-            //      so visual sub-parts (knobs, slider tracks) are not detected as separate
-            //      items at slightly offset positions.
-            const widgetRectByInput = new Map();   // input element -> rect to draw
-            const widgetSkip = new Set();          // elements inside/being the label
-
-            function resolveCheckboxLabel(label) {
-                if (!label || label.tagName !== 'LABEL') return null;
-                const forId = label.getAttribute('for');
-                if (forId) {
-                    const root = label.getRootNode();
-                    const target = (root.getElementById && root.getElementById(forId))
-                        || document.getElementById(forId);
-                    if (target && target.tagName === 'INPUT' &&
-                        ['checkbox','radio'].includes((target.getAttribute('type')||'').toLowerCase())) {
-                        return target;
-                    }
-                }
-                const inner = label.querySelector('input[type="checkbox"], input[type="radio"]');
-                return inner || null;
-            }
-
-            for (const el of allElements) {
-                if (el.tagName !== 'LABEL') continue;
-                const input = resolveCheckboxLabel(el);
-                if (!input) continue;
-
-                // Only remap to the label's rect when the input itself is invisible
-                // (custom-toggle pattern: hidden input + styled label/slider). For
-                // native visible checkboxes the input has its own square and the
-                // label is just associated text - leave the input alone so the bbox
-                // sits on the actual checkbox, not on the label text.
-                const inputRects = input.getClientRects();
-                const inputCs = gcs(input);
-                const inputVisible = inputRects.length > 0
-                    && inputRects[0].width >= 3 && inputRects[0].height >= 3
-                    && inputCs.display !== 'none' && inputCs.visibility !== 'hidden'
-                    && inputCs.opacity !== '0';
-                if (inputVisible) continue;
-
-                const r = el.getBoundingClientRect();
-                if (r.width < 3 || r.height < 3) continue;
-                widgetRectByInput.set(input, r);
-                widgetSkip.add(el);
-                // Skip label descendants (visual sub-parts like the slider span) but
-                // keep the input itself - it's the canonical interactive target and
-                // will be drawn at the label's rect. Wrapping-label patterns put the
-                // input inside the label, so we must exempt it explicitly.
-                el.querySelectorAll('*').forEach(d => {
-                    if (d !== input) widgetSkip.add(d);
-                });
-            }
-
-            // ---- Hidden native checkbox/radio inputs styled via a sibling/wrapper with
-            // NO <label> (e.g. Pinterest: <input type=checkbox> clipped to 0px next to a
-            // visible decorative <div> acting as the checkbox skin). Remap the input to the
-            // visible skin's rect so the toggle is detected, and skip the skin to avoid a
-            // duplicate. This pass is strictly additive: native visible checkboxes and
-            // label-controlled toggles (handled above) are skipped, so nothing that already
-            // worked changes.
-            function inputIsVisible(input) {
-                const rs = input.getClientRects();
-                const cs = gcs(input);
-                return rs.length > 0 && rs[0].width >= 3 && rs[0].height >= 3
-                    && cs.display !== 'none' && cs.visibility !== 'hidden' && cs.opacity !== '0';
-            }
-            const skinInteractiveRoles = ['button','link','checkbox','switch','radio','tab',
-                'menuitem','menuitemcheckbox','menuitemradio','combobox','listbox','option'];
-            for (const input of allElements) {
-                if (input.tagName !== 'INPUT') continue;
-                const itype = (input.getAttribute('type') || '').toLowerCase();
-                if (itype !== 'checkbox' && itype !== 'radio') continue;
-                if (widgetRectByInput.has(input)) continue;   // already mapped via a <label>
-                if (inputIsVisible(input)) continue;           // native visible checkbox - leave alone
-                const parent = input.parentElement;
-                if (!parent) continue;
-
-                // Decorative skin = a visible, checkbox-sized, NON-interactive element in the
-                // input's immediate container (the parent wrapper itself, or a sibling).
-                const skinCandidates = [parent, ...parent.querySelectorAll('*')].filter(node => {
-                    if (node === input) return false;
-                    const stag = node.tagName.toUpperCase();
-                    if (['A','BUTTON','INPUT','SELECT','TEXTAREA'].includes(stag)) return false;
-                    const srole = (node.getAttribute('role') || '').toLowerCase();
-                    if (skinInteractiveRoles.includes(srole)) return false;
-                    const cs = gcs(node);
-                    if (cs.display === 'none' || cs.visibility === 'hidden' || cs.opacity === '0') return false;
-                    const r = node.getBoundingClientRect();
-                    return r.width >= 6 && r.height >= 6 && r.width <= 80 && r.height <= 80;
-                });
-                if (!skinCandidates.length) continue;
-                // Prefer empty (purely decorative) skins over ones holding text; then smallest.
-                skinCandidates.sort((a, b) => {
-                    const at = (a.textContent || '').trim() === '' ? 0 : 1;
-                    const bt = (b.textContent || '').trim() === '' ? 0 : 1;
-                    if (at !== bt) return at - bt;
-                    const ra = a.getBoundingClientRect(), rb = b.getBoundingClientRect();
-                    return (ra.width * ra.height) - (rb.width * rb.height);
-                });
-                const skin = skinCandidates[0];
-                const sr = skin.getBoundingClientRect();
-                if (sr.width < 3 || sr.height < 3) continue;
-                widgetRectByInput.set(input, sr);
-                if (skin !== parent) {
-                    widgetSkip.add(skin);
-                    skin.querySelectorAll('*').forEach(d => widgetSkip.add(d));
-                }
-            }
-
-            // ---- Build candidate list
+            // C. FILTER: Identify Interactive & Visible Elements
             let items = allElements.map(element => {
-                if (widgetSkip.has(element)) return { include: false };
+                let rawRects = [...element.getClientRects()];
 
-                const tagName = element.tagName.toUpperCase();
-                const role = (element.getAttribute('role') || '').toLowerCase();
-                const type = (element.getAttribute('type') || '').toLowerCase();
-
-                let bb = null;
-
-                // Hidden checkbox/radio inputs: use the resolved label's rect.
-                if (widgetRectByInput.has(element)) {
-                    bb = widgetRectByInput.get(element);
-                } else {
-                    let rects = [...element.getClientRects()];
-                    // Semantic interactive elements with collapsed rects: try the
-                    // union of child rects so visually-laid-out wrappers get marked.
-                    // Covers semantic tags AND elements carrying an explicit interactive
-                    // role (e.g. <div role="checkbox"> whose checkmark child is absolutely
-                    // positioned, collapsing the parent's own rect to 0 - Steam toggles).
-                    const collapsibleRole = ['button','link','checkbox','switch','radio',
-                        'tab','menuitem','menuitemcheckbox','menuitemradio','combobox',
-                        'listbox','option'].includes(role);
-                    if ((['BUTTON','A','INPUT','SELECT','TEXTAREA'].includes(tagName) || collapsibleRole)
-                        && (rects.length === 0 || rects[0].width < 3 || rects[0].height < 3)) {
-                        const cbb = element.getBoundingClientRect();
-                        if (cbb.width >= 3 && cbb.height >= 3) {
-                            rects = [cbb];
+                // For semantic interactive elements with collapsed rects (width/height ~0),
+                // compute a bounding rect from their children instead.
+                const tagUpper = element.tagName.toUpperCase();
+                if (['BUTTON', 'A', 'INPUT', 'SELECT', 'TEXTAREA'].includes(tagUpper) && rawRects.length > 0) {
+                    const r = rawRects[0];
+                    if (r.width < 3 || r.height < 3) {
+                        const childBB = element.getBoundingClientRect();
+                        if (childBB.width >= 3 && childBB.height >= 3) {
+                            rawRects = [childBB];
                         } else {
-                            let l=Infinity, t=Infinity, r=-Infinity, b=-Infinity;
-                            element.querySelectorAll('*').forEach(c => {
-                                const cr = c.getBoundingClientRect();
+                            // Try computing union of all child rects
+                            let minL = Infinity, minT = Infinity, maxR = -Infinity, maxB = -Infinity;
+                            element.querySelectorAll('*').forEach(child => {
+                                const cr = child.getBoundingClientRect();
                                 if (cr.width > 0 && cr.height > 0) {
-                                    l = Math.min(l, cr.left); t = Math.min(t, cr.top);
-                                    r = Math.max(r, cr.right); b = Math.max(b, cr.bottom);
+                                    minL = Math.min(minL, cr.left);
+                                    minT = Math.min(minT, cr.top);
+                                    maxR = Math.max(maxR, cr.right);
+                                    maxB = Math.max(maxB, cr.bottom);
                                 }
                             });
-                            if (r > l && b > t) rects = [{left:l, top:t, right:r, bottom:b, width:r-l, height:b-t}];
-                        }
-                    }
-                    if (rects.length === 0) return { include: false };
-                    bb = rects[0];
-
-                    // Icon-only submit/button/image inputs (e.g. Amazon's magnifying-glass
-                    // search button) often have their visible click target rendered by a
-                    // wrapping span/div carrying an aria-label or a sprite/background-image.
-                    // The INPUT itself is sized smaller than the visible button. If the
-                    // parent provides the visual/semantic identity and is meaningfully
-                    // larger, draw the parent's rect instead.
-                    //
-                    // Conversely, hidden duplicate submits (e.g. Amazon's signed-in-user
-                    // "Agent Search" helper) have no visible identity at all - no aria-label,
-                    // no parent icon, and cursor:default. Drop those.
-                    if (tagName === 'INPUT' && ['submit','button','image'].includes(type)) {
-                        const elCursor = gcs(element).cursor;
-                        const elAria = element.getAttribute('aria-label');
-                        const parent = element.parentElement;
-                        const ps = parent ? gcs(parent) : null;
-                        const parentHasIcon = ps && ps.backgroundImage && ps.backgroundImage !== 'none';
-                        const parentHasAriaLabel = parent && !!parent.getAttribute('aria-label');
-
-                        if (!elAria && !parentHasAriaLabel && !parentHasIcon && elCursor !== 'pointer') {
-                            return { include: false };
-                        }
-                        if (parent && (parentHasIcon || parentHasAriaLabel)) {
-                            const pr = parent.getBoundingClientRect();
-                            if (pr.width >= 3 && pr.height >= 3
-                                && pr.width * pr.height > bb.width * bb.height * 1.1) {
-                                bb = pr;
+                            if (maxR > minL && maxB > minT) {
+                                rawRects = [{left: minL, top: minT, right: maxR, bottom: maxB,
+                                             width: maxR - minL, height: maxB - minT}];
                             }
                         }
                     }
                 }
 
-                // Basic geometry / viewport check
-                if (bb.width < 3 || bb.height < 3) return { include: false };
-                if (bb.left > vpW(element) || bb.top > vpH(element) || bb.right < 0 || bb.bottom < 0) return { include: false };
+                const rects = rawRects.filter(bb => {
+                    // 1. Basic Dimensions Check
+                    if (bb.width < 3 || bb.height < 3) return false;
+                    if (bb.left > vw || bb.top > vh || bb.right < 0 || bb.bottom < 0) return false;
 
-                // Empty decoration: non-semantic elements (span/div/etc.) with no text,
-                // no aria-label, no icon descendants, and no explicit interactive role
-                // are pure visual padding inside a clickable parent (e.g. inherited
-                // cursor:pointer). The semantic ancestor is the real click target.
-                if (!['A','BUTTON','INPUT','SELECT','TEXTAREA'].includes(tagName)
-                    && !['button','link','checkbox','switch','radio','tab','menuitem',
-                         'menuitemcheckbox','menuitemradio','combobox','listbox','option'].includes(role)
-                    && !(element.textContent || '').trim()
-                    && !element.getAttribute('aria-label')
-                    && !element.getAttribute('aria-labelledby')
-                    && !element.getAttribute('title')
-                    && !element.querySelector('svg, img')) {
-                    return { include: false };
-                }
+                    // 1.5. Skip invisible elements (except for switch/checkbox inputs which are often hidden)
+                    const elemStyle = window.getComputedStyle(element);
+                    const role = (element.getAttribute('role') || '').toLowerCase();
+                    const tagName = element.tagName.toUpperCase();
+                    const type = (element.getAttribute('type') || '').toLowerCase();
+                    const isHiddenInteractiveInput = tagName === 'INPUT' && (['switch', 'checkbox'].includes(role) || ['checkbox', 'radio'].includes(type));
 
-                // Visibility: skip browser-hidden elements (unless we're using a
-                // resolved widget rect, in which case the input's own display:none is fine).
-                if (!widgetRectByInput.has(element)) {
-                    const cs = gcs(element);
-                    if (cs.display === 'none' || cs.visibility === 'hidden' || cs.opacity === '0') {
-                        return { include: false };
+                    if (!isHiddenInteractiveInput && (elemStyle.opacity === '0' || elemStyle.visibility === 'hidden')) {
+                        return false;
                     }
-                    // elementFromPoint hit test against center + 4 corners. Skips elements
-                    // covered by an overlay (e.g. modal-backdrop'd page content). Coordinates
-                    // and elementFromPoint are local to the element's own document, so the
-                    // test works inside same-origin iframes too.
-                    const evw = vpW(element), evh = vpH(element);
-                    const edoc = element.ownerDocument;
-                    const padX = Math.min(5, bb.width / 4);
-                    const padY = Math.min(5, bb.height / 4);
+
+                    // 2. ROBUST VISIBILITY: Check Center AND Corners
+                    // This fixes the "Dropdown" issue where the center might be transparent/covered
+                    // Skip visibility test for semantic interactive elements
+                    if (['BUTTON', 'A', 'INPUT', 'TEXTAREA', 'SELECT'].includes(tagName)) {
+                        return true;  // Skip only the elementFromPoint test, not viewport check
+                    }
+
                     const points = [
-                        {x: bb.left + bb.width / 2, y: bb.top + bb.height / 2},
-                        {x: bb.left + padX,        y: bb.top + padY},
-                        {x: bb.right - padX,       y: bb.bottom - padY},
-                        {x: bb.left + padX,        y: bb.bottom - padY},
-                        {x: bb.right - padX,       y: bb.top + padY}
+                        {x: bb.left + bb.width / 2, y: bb.top + bb.height / 2}, // Center
+                        {x: bb.left + 5, y: bb.top + 5},                        // Top-Left
+                        {x: bb.right - 5, y: bb.bottom - 5}                     // Bottom-Right
                     ];
-                    const hit = points.some(p => {
-                        if (p.x < 0 || p.x > evw || p.y < 0 || p.y > evh) return false;
-                        const at = edoc.elementFromPoint(p.x, p.y);
-                        if (!at) return false;
-                        return at === element || element.contains(at) || at.contains(element) ||
-                               (at.shadowRoot && at.shadowRoot.contains(element));
+
+                    return points.some(p => {
+                        // Skip if point is outside viewport
+                        if (p.x < 0 || p.x > vw || p.y < 0 || p.y > vh) return false;
+
+                        let elAtPoint = document.elementFromPoint(p.x, p.y);
+                        if (!elAtPoint) return false;
+
+                        // Hit Test: Is it the element, a child, or inside the same Shadow DOM?
+                        return elAtPoint === element ||
+                               element.contains(elAtPoint) ||
+                               (elAtPoint.shadowRoot && elAtPoint.shadowRoot.contains(element));
                     });
-                    if (!hit) return { include: false };
-                }
+                }).map(bb => ({
+                    left: Math.max(0, bb.left),
+                    top: Math.max(0, bb.top),
+                    width: bb.width,
+                    height: bb.height
+                }));
 
-                // Interactivity check
-                const style = gcs(element);
-                const text = (element.textContent || '').trim().toLowerCase();
-                // Action-verb labels: catches buttons that lack role/cursor signaling.
-                // Excludes "on"/"off" - those are toggle status indicators, not buttons,
-                // and would NMS-suppress the actual toggle input next to them.
-                const buttonyText = /^(confirm|submit|accept|continue|save|apply|ok|close|cancel|reject|deny)/i.test(text)
-                                    && text.split(' ').length <= 5;
+                if (rects.length === 0) return { include: false };
+
+                // 3. INTERACTIVITY CHECK
+                const tagName = element.tagName.toUpperCase();
+                const role = (element.getAttribute('role') || '').toLowerCase();
+                const style = window.getComputedStyle(element);
+
+                // Heuristic: Is it clickable?
+                const textContent = (element.textContent || "").trim().toLowerCase();
+                const hasButtonText = /^(confirm|submit|accept|continue|save|apply|ok|close|cancel|reject|deny|on|off)/i.test(textContent);
+
                 const isInteractive =
-                    tagName === 'A' || tagName === 'BUTTON' || tagName === 'INPUT' ||
-                    tagName === 'TEXTAREA' || tagName === 'SELECT' || tagName.startsWith('CR-') ||
-                    (style.cursor === 'pointer' && style.pointerEvents !== 'none') ||
-                    element.onclick != null ||
-                    ['button','link','menuitem','menuitemcheckbox','menuitemradio','tab',
-                     'checkbox','switch','radio','combobox','listbox','option'].includes(role) ||
-                    buttonyText;
-                if (!isInteractive) return { include: false };
+                    (tagName === "A" || tagName === "BUTTON" || tagName === "INPUT" || tagName === "TEXTAREA" || tagName === "SELECT" || tagName.startsWith("CR-")) ||
+                    (style.cursor === "pointer" && style.pointerEvents !== 'none') ||
+                    (element.onclick != null) ||
+                    ['button', 'link', 'menuitem', 'tab', 'checkbox', 'switch', 'combobox', 'listbox', 'option'].includes(role) ||
+                    (hasButtonText && textContent.split(' ').length <= 5);
 
-                // Offset local (own-document) coords into the top page so the marker lands
-                // over the element even when it lives inside a same-origin iframe.
-                const off = frameOffset.get(element) || { x: 0, y: 0 };
-                const rect = {
-                    left: Math.max(0, bb.left) + off.x, top: Math.max(0, bb.top) + off.y,
-                    width: bb.width, height: bb.height
-                };
                 return {
-                    element: element, include: true,
-                    rects: [rect],
-                    area: rect.width * rect.height,
-                    text: (element.textContent || '').trim().replace(/\\s+/g, ' ')
+                    element: element,
+                    include: isInteractive,
+                    rects: rects,
+                    area: rects[0].width * rects[0].height,
+                    text: (element.textContent || "").trim().replace(/\\s+/g, ' ')
                 };
             }).filter(item => item.include);
 
-            // Containment resolution:
-            //   (a) If a semantic interactive element (a, button, input, etc., or with
-            //       an explicit interactive role) contains other items, those descendants
-            //       are decoration (cursor:pointer inherited onto a child <span> inside
-            //       a <button>, etc.) - drop them, keep the semantic parent.
-            //   (b) Otherwise (non-semantic wrappers like <div cursor:pointer> around
-            //       a real button), keep the leaf.
-            const semanticTags = new Set(['A','BUTTON','INPUT','SELECT','TEXTAREA']);
-            const semanticRoles = new Set(['button','link','checkbox','switch','radio','tab',
-                'combobox','listbox','option','menuitem','menuitemcheckbox','menuitemradio']);
-            function isSemanticInteractive(el) {
-                if (semanticTags.has(el.tagName.toUpperCase())) return true;
-                return semanticRoles.has((el.getAttribute('role') || '').toLowerCase());
-            }
-            const itemElements = new Set(items.map(it => it.element));
-            // Step (a): drop items whose ancestor is a semantic interactive also in items.
-            items = items.filter(item => {
-                let cur = item.element.parentElement;
-                while (cur) {
-                    if (itemElements.has(cur) && isSemanticInteractive(cur)) return false;
-                    cur = cur.parentElement;
-                }
-                return true;
+            // D. DEDUPLICATION: Leaf-Node Priority
+            // If Element A contains Element B, and both are interactive, KEEP B, REMOVE A.
+            // This fixes the "Multiple boxes on one button" issue.
+            items = items.filter(parent => {
+                const hasInteractiveChild = items.some(child =>
+                    parent.element !== child.element && parent.element.contains(child.element)
+                );
+                return !hasInteractiveChild;
             });
-            // Step (b): existing leaf-priority for non-semantic wrappers.
-            items = items.filter(parent => !items.some(child =>
-                parent.element !== child.element && parent.element.contains(child.element)
-            ));
 
-            // Non-max suppression: collapse heavily-overlapping or near-coincident boxes.
-            // Uses raw rects (no padding) - padding inflates small elements and incorrectly
-            // suppresses tightly-stacked items like vertical lists of native checkboxes.
-            // The center-proximity check (15px) already handles tight clusters.
+            // E. NON-MAX SUPPRESSION: Remove visually overlapping/tightly clustered boxes
+            // Targets the case where many elements pile on top of each other (e.g. icon toolbars)
+            // Keeps the smaller (more specific) element in each overlapping pair
             items.sort((a, b) => a.area - b.area);
-            const keep = new Array(items.length).fill(true);
+            const nmsKeep = new Array(items.length).fill(true);
+            const NMS_PAD = 5;
+
             for (let i = 0; i < items.length; i++) {
-                if (!keep[i]) continue;
-                const A = items[i].rects[0];
-                const aA = A.width * A.height;
-                const cxA = A.left + A.width / 2, cyA = A.top + A.height / 2;
+                if (!nmsKeep[i]) continue;
+                const bA = items[i].rects[0];
+                const aA = bA.width * bA.height;
+                const cxA = bA.left + bA.width / 2;
+                const cyA = bA.top + bA.height / 2;
+
                 for (let j = i + 1; j < items.length; j++) {
-                    if (!keep[j]) continue;
-                    const B = items[j].rects[0];
-                    const aB = B.width * B.height;
-                    const cxB = B.left + B.width / 2, cyB = B.top + B.height / 2;
-                    if (Math.hypot(cxA - cxB, cyA - cyB) < 15) { keep[j] = false; continue; }
-                    const iL = Math.max(A.left, B.left);
-                    const iT = Math.max(A.top, B.top);
-                    const iR = Math.min(A.left + A.width, B.left + B.width);
-                    const iB = Math.min(A.top + A.height, B.top + B.height);
+                    if (!nmsKeep[j]) continue;
+                    const bB = items[j].rects[0];
+                    const aB = bB.width * bB.height;
+
+                    // 1. Center proximity: nearly identical positions -> suppress larger
+                    const cxB = bB.left + bB.width / 2;
+                    const cyB = bB.top + bB.height / 2;
+                    const dist = Math.sqrt(Math.pow(cxA - cxB, 2) + Math.pow(cyA - cyB, 2));
+                    if (dist < 15) {
+                        nmsKeep[j] = false;
+                        continue;
+                    }
+
+                    // 2. Padded-box overlap to catch tightly packed clusters
+                    const iL = Math.max(bA.left - NMS_PAD, bB.left - NMS_PAD);
+                    const iT = Math.max(bA.top - NMS_PAD, bB.top - NMS_PAD);
+                    const iR = Math.min(bA.left + bA.width + NMS_PAD, bB.left + bB.width + NMS_PAD);
+                    const iB = Math.min(bA.top + bA.height + NMS_PAD, bB.top + bB.height + NMS_PAD);
                     if (iR <= iL || iB <= iT) continue;
-                    const inter = (iR - iL) * (iB - iT);
-                    if (inter / (aA + aB - inter) > 0.3) { keep[j] = false; continue; }
-                    if (inter / aA > 0.5) keep[j] = false;
+
+                    const interArea = (iR - iL) * (iB - iT);
+                    const iou = interArea / (aA + aB - interArea);
+                    if (iou > 0.3) {
+                        nmsKeep[j] = false;
+                        continue;
+                    }
+
+                    // 3. Containment: smaller box mostly inside larger -> suppress larger
+                    const containment = interArea / aA;
+                    if (containment > 0.5) {
+                        nmsKeep[j] = false;
+                    }
                 }
             }
-            items = items.filter((_, i) => keep[i]);
+            items = items.filter((_, i) => nmsKeep[i]);
 
-            // Draw markers. A native <dialog open> renders in the browser's top layer
-            // which is above the entire document regardless of z-index. Markers placed
-            // in document.body cannot appear above it. Append markers inside the dialog
-            // so they share the same top layer.
-            const markerParent = (activeModal && activeModal.tagName === 'DIALOG'
-                && activeModal.hasAttribute('open')) ? activeModal : document.body;
-            const labels = [];
+            // F. DRAW MARKERS
             items.forEach((item, index) => {
                 const bbox = item.rects[0];
-                const marker = document.createElement('div');
+                const marker = document.createElement("div");
                 const color = COLOR_FUNCTION(index);
 
-                const el = item.element;
-                const tag = el.tagName.toUpperCase();
-                const r = (el.getAttribute('role') || '').toLowerCase();
-                const t = (el.getAttribute('type') || '').toLowerCase();
-                const isToggle = (tag === 'INPUT' && (t === 'checkbox' || t === 'radio'))
-                              || ['checkbox','switch','radio'].includes(r);
+                // Check if element is a checkbox or switch (place label on side)
+                const element = item.element;
+                const tagName = element.tagName.toUpperCase();
+                const role = (element.getAttribute('role') || '').toLowerCase();
+                const type = (element.getAttribute('type') || '').toLowerCase();
+                const isCheckboxOrSwitch =
+                    (tagName === 'INPUT' && (type === 'checkbox' || type === 'radio')) ||
+                    (role === 'checkbox') ||
+                    (role === 'switch') ||
+                    (role === 'radio');
 
-                marker.setAttribute('data-ai-marker', 'true');
+                marker.setAttribute("data-ai-marker", "true"); // Tag for cleanup
                 Object.assign(marker.style, {
-                    position: 'fixed',
-                    left: bbox.left + 'px', top: bbox.top + 'px',
-                    width: bbox.width + 'px', height: bbox.height + 'px',
-                    outline: '2px solid ' + color,
-                    zIndex: '2147483647', pointerEvents: 'none', boxSizing: 'border-box'
+                    position: 'fixed', // Fixed ensures alignment with viewport coordinates
+                    left: bbox.left + 'px',
+                    top: bbox.top + 'px',
+                    width: bbox.width + 'px',
+                    height: bbox.height + 'px',
+                    outline: `2px solid ${color}`,
+                    zIndex: '2147483647', // Max Z-Index
+                    pointerEvents: 'none',
+                    boxSizing: 'border-box'
                 });
 
-                const tag_label = document.createElement('span');
-                tag_label.textContent = index;
-                // Default to placing the number above the box; if the box is
-                // too close to the top of the viewport (number would be clipped),
-                // place it just inside the top edge instead.
-                const placeAbove = !isToggle && bbox.top >= 18;
-                Object.assign(tag_label.style, {
-                    position: 'absolute', background: color, color: 'white',
-                    fontSize: '11px', fontWeight: 'bold', padding: '1px 4px',
-                    borderRadius: '2px', whiteSpace: 'nowrap',
-                    top: isToggle ? '0px' : (placeAbove ? '-18px' : '0px'),
-                    left: isToggle ? 'calc(-100% - 10px)' : '0px'
+                const label = document.createElement("span");
+                label.textContent = index;
+                Object.assign(label.style, {
+                    position: 'absolute',
+                    background: color,
+                    color: 'white',
+                    fontSize: '11px',
+                    fontWeight: 'bold',
+                    padding: '1px 4px',
+                    borderRadius: '2px',
+                    whiteSpace: 'nowrap'
                 });
-                marker.appendChild(tag_label);
-                markerParent.appendChild(marker);
+
+                // Position label on side for checkboxes/switches, on top for others
+                if (isCheckboxOrSwitch) {
+                    label.style.top = '0px';
+                    label.style.left = 'calc(-100% - 10px)';
+                } else {
+                    label.style.top = '-18px';
+                    label.style.left = '0px';
+                }
+
+                marker.appendChild(label);
+                document.body.appendChild(marker);
                 labels.push(marker);
             });
 

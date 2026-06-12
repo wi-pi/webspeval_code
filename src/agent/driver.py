@@ -32,7 +32,7 @@ def create_driver_options_uc(args, use_extension=False):
     # if not use_extension:
     #     options.add_argument('--disable-extensions')
     # else:
-    #     ext_dir = Path(__file__).parent / 'UsersFirst-annotation_v3'
+    #     ext_dir = Path(__file__).parent.parent.parent / 'extension'
     #     options.add_argument(f'--load-extension={ext_dir}')
 
 
@@ -105,7 +105,7 @@ def create_driver_options(args, profile_dir, use_extension=False):
     if not use_extension:
         options.add_argument('--disable-extensions')
     else:
-        ext_dir = Path(__file__).parent / 'UsersFirst-annotation_v3'
+        ext_dir = Path(__file__).parent.parent.parent / 'extension'
         options.add_argument(f'--load-extension={ext_dir}')
 
     options.add_experimental_option('prefs', {
@@ -163,8 +163,8 @@ def create_fresh_profile(args, captcha_setup=False):
     """Create a fresh temporary profile directory for a task."""
     from pathlib import Path
 
-    PARENT_DIR = Path(__file__).parent
-    
+    PARENT_DIR = Path(__file__).parent.parent  # src/ (driver.py lives in src/agent/)
+
     if captcha_setup:
         master_profile_dir = PARENT_DIR / "test_profile_captcha"
     elif not args.test_profile_dir_name:
@@ -280,7 +280,7 @@ def initialize_driver_for_taskid(args, task_id, profile_dir=None, use_extension=
         driver.set_script_timeout(120)
 
         # if use_extension: #no need for this we are loading it in the base test profile
-        #     ext_dir = Path(__file__).parent / 'UsersFirst-annotation_v3'
+        #     ext_dir = Path(__file__).parent.parent.parent / 'extension'
         #     _ = driver.webextension.install(path=str(ext_dir))
         #     print("Extension loaded successfully")
         
@@ -325,7 +325,7 @@ def initialize_driver_for_taskid(args, task_id, profile_dir=None, use_extension=
         driver.set_script_timeout(120)
         
         if use_extension:
-            ext_dir = Path(__file__).parent / 'UsersFirst-annotation_v3'
+            ext_dir = Path(__file__).parent.parent.parent / 'extension'
             _ = driver.webextension.install(path=str(ext_dir))
             print("Extension loaded successfully")
         

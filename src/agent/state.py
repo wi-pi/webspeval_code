@@ -85,7 +85,7 @@ def execute_state_reset(state_reset_ops, driver_task=None, task=None):
                     # Resolve path
                     replay_path = Path(click_file)
                     if not replay_path.is_absolute():
-                        replay_path = Path(__file__).parent.parent / replay_path
+                        replay_path = Path(__file__).parent.parent.parent / replay_path
                     
                     if not replay_path.exists():
                         logging.warning(f"Replay click file not found: {replay_path}")

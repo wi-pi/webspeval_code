@@ -6,7 +6,6 @@ Handles message formatting and API calls for each provider.
 import logging
 import time
 
-from google.genai import types
 
 def format_msg_claude(it, init_msg, pdf_obs, warn_obs, web_img_b64, web_text, tabs_info=None):
     """Format messages for Claude API with vision support and tab information."""
@@ -413,6 +412,7 @@ def call_gemini_api(args, gemini_client, messages):
     Returns:
         tuple: (prompt_tokens, completion_tokens, error_flag, response)
     """
+    from google.genai import types
 
     # Build generate content config
 

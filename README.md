@@ -17,6 +17,7 @@ webspeval_code/
 ├── src/                    # the web agent (built on WebVoyager) + replay engine
 │   ├── run_with_replay.py  #   main agent loop + CLI (run from repo root)
 │   ├── state_reset_check.py #  replay one S0 trace in ON/OFF to verify state reset
+│   ├── selenium_browser_run.py #  open Chrome on a profile to sign in (sock-puppet account)
 │   ├── api_utils.py prompts.py utils.py utils_webarena.py
 │   └── state_reset/        #   Selenium record-and-replay state-reset engine
 ├── extension/              # Chrome MV3 record-and-replay extension

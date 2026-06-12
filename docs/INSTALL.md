@@ -48,12 +48,35 @@ Provide two Chrome user-data profiles, each **signed into your sock-puppet Googl
 
 The agent copies a fresh temporary profile from these for each run.
 
+### Creating and signing in a profile
+
+Use the browser helper to open Chrome on a profile so you can sign in once — the signed-in state
+persists to that profile directory:
+
+```bash
+# opens Chrome using src/test_profile/ (with the recorder extension loaded)
+python src/selenium_browser_run.py --use_extension
+```
+
+It loads `src/test_profile/`, opens google.com, and waits — sign into your sock-puppet Google
+account (and any Google-SSO sites you'll use), then press Enter in the terminal to close. For the
+Moodle/captcha profile, run with undetected-chromedriver + stealth:
+
+```bash
+python src/selenium_browser_run.py --use_extension --test_profile_dir_name test_profile_captcha --captcha_mode
+```
+
+`--use_extension` loads the `extension/` recorder so you can also record traces in the same
+session; omit it to just sign in. Browser downloads default to a `Downloads/` folder in the current
+directory (i.e. the repo root when you run it from there); override with
+`--default_download_dir <path>`.
+
 ## Notification system (optional for Moodle)
 
 Long runs can hit reCAPTCHA / Cloudflare walls that need a manual solve. If you set
 `NTFY_TOPIC_URL` in `.env` to a full webhook URL (e.g. an ntfy.sh topic
 `https://ntfy.sh/<your-topic>`), the agent pushes an alert when it detects one and pauses for you
-to solve it. Leave it blank to disable. (Used by `src/utils.py` and `src/state_reset/utils.py`.)
+to solve it. Leave it blank to disable. (Used by `src/utils.py`.)
 
 ## Running
 

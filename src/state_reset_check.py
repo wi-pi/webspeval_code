@@ -142,7 +142,7 @@ if not args.use_extension:
     session_options.add_argument('--disable-extensions')
 else:
     # ext_dir = Path(__file__).parent / 'UsersFirst-annotation' / 'extension' / 'extension'
-    ext_dir = Path(__file__).parent / 'UsersFirst-annotation_v3'
+    ext_dir = Path(__file__).parent.parent / 'extension'
     session_options.add_argument(f'--load-extension={ext_dir}')
 
 session_options.add_argument('--no-sandbox')

@@ -7,8 +7,10 @@ accounts with non-real, unverifiable details) and record your own login traces.
 ## 1. Create a primary Google account
 
 Most sites authenticate via **Google SSO**. Create one sock-puppet Google account and use it for
-Single Sign-On wherever a site offers it. Sign your Chrome profiles into this account (see
-[INSTALL.md](INSTALL.md) → *Chrome profiles*).
+Single Sign-On wherever a site offers it. Creating it follows the normal Google account sign-up
+process (https://accounts.google.com/signup) — use throwaway, non-real details. Sign your Chrome
+profiles into this account (see [INSTALL.md](INSTALL.md) → *Chrome profiles*; you can use
+`python src/selenium_browser_run.py --use_extension` to open the profile and sign in).
 
 ## 2. Set your account identity in `.env`
 
@@ -24,7 +26,15 @@ WEBSP_ACCOUNT_NAME=Your Name             # display name (only if a trace needs i
 
 For the **login-required sites** below, create an account (via Google SSO or email+password as
 indicated) and record a login trace with the extension (see [RECORDING_GUIDE.md](RECORDING_GUIDE.md)).
-`ext = yes` means the original login flow was recorded through the extension.
+The **`ext`** column mirrors the dataset's `login_with_extension` flag: `yes` means that **while
+running the task**, the login step replays the login trace with the recorder extension loaded (some
+sites need its element indexing for the login to replay reliably); `–` runs the login without it.
+It does not change how you record the trace — always record with the extension.
+
+To record a login trace, run `python src/selenium_browser_run.py --use_extension` (opens Chrome
+with the recorder loaded), go to the site's **Login URL** from the table, start a recording in the
+extension popup, perform the login steps, then stop and save the trace (see
+[RECORDING_GUIDE.md](RECORDING_GUIDE.md)).
 
 | Website | Auth type | Login URL | ext |
 |---|---|---|---|
