@@ -16,6 +16,7 @@ extension. The automated judge is added under `judge/`.
 webspeval_code/
 ├── src/                    # the web agent (built on WebVoyager) + replay engine
 │   ├── run_with_replay.py  #   main agent loop + CLI (run from repo root)
+│   ├── state_reset_check.py #  replay one S0 trace in ON/OFF to verify state reset
 │   ├── api_utils.py prompts.py utils.py utils_webarena.py
 │   └── state_reset/        #   Selenium record-and-replay state-reset engine
 ├── extension/              # Chrome MV3 record-and-replay extension
@@ -79,7 +80,10 @@ Optional captcha/bot-wall push alerts via `NTFY_TOPIC_URL` (see [docs/INSTALL.md
 ## Reproducibility caveats
 
 - **Live sites drift.** Selectors, labels, and layouts change over time; the replay engine uses
-  multi-tier fallbacks but cannot guarantee against site redesigns.
+  multi-tier fallbacks but cannot guarantee against site redesigns. You can replay a single `S0`
+  trace in ON/OFF states to check it still reproduces on the live site:
+  `python src/state_reset_check.py --templatized_trace --session_json dataset/state_traces/<task>/<session>/session-*.json`
+  (see [docs/RECORD_AND_REPLAY_TOOL.md](docs/RECORD_AND_REPLAY_TOOL.md)).
 - **Region matters.** Cookie/privacy UIs differ by jurisdiction (GDPR/CCPA), so results can vary
   by location.
 - **Models evolve.** Some backbones/judges may be deprecated; substitute an available model via

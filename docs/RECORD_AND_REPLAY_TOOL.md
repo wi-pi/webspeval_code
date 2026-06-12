@@ -71,7 +71,33 @@ the `ON` and `OFF` initial-state variants used in the dataset.
 changes), interaction dedup (~500 ms window), DOM-change clearing + WebSP re-indexing after
 navigation, and popup detection after iframe interactions.
 
-## 3. PII templatization
+## 3. Verifying a trace replays (`src/state_reset_check.py`)
+
+`src/state_reset_check.py` replays a **single** recorded trace in both `ON` and `OFF` states so you
+can visually confirm the engine still reproduces the initial state on the live site — useful after a
+site UI change, or to sanity-check a freshly recorded `S0` trace. It calls the same `replay_events`
+the agent uses (no duplicated locator logic), and is run from the repo root:
+
+```bash
+# a shipped (templatized) trace — fills {{WEBSP_ACCOUNT_*}} from .env
+python src/state_reset_check.py --templatized_trace \
+  --session_json dataset/state_traces/Wolfram_task-7/<session-folder>/session-<...>.json
+
+# your own recording (no placeholders)
+python src/state_reset_check.py --session_json path/to/your/session-<...>.json
+```
+
+It opens the page and forces every toggle ON, then OFF, leaving the browser open briefly each time
+so you can observe the result. Key flags:
+
+- `--session_json` *(required)* — path (absolute or relative to the repo root) to one
+  `session-*.json` trace.
+- `--templatized_trace` — to substitute `{{WEBSP_ACCOUNT_*}}` from `.env`; use for the shipped
+  `dataset/state_traces`, omit for your own recordings.
+- `--state_mode on|off|both` (default `both`) — which state(s) to force.
+- `--test_profile_dir_name` (default `test_profile`) — the `src/` Chrome profile to use.
+
+## 4. PII templatization
 
 The shipped `S0` traces in `dataset/state_traces/` have the sock-puppet identity replaced with
 `{{WEBSP_ACCOUNT_EMAIL}}` / `{{WEBSP_ACCOUNT_USERNAME}}` / `{{WEBSP_ACCOUNT_NAME}}`. At load time
@@ -79,14 +105,15 @@ The shipped `S0` traces in `dataset/state_traces/` have the sock-puppet identity
 fallback text locators carry your account's values. Unset variables are left as literal
 placeholders; third-party emails captured incidentally from page content are `[redacted]`.
 
-## 4. Key files
+## 5. Key files
 
 - Extension: `extension/{manifest,background,content,popup}.*`
 - Replay engine: `src/state_reset/extension_reset.py`
   (`replay_events`, `load_json_file`, element-finding + state-enforcement helpers)
 - State-reset dispatch + agent loop: `src/run_with_replay.py` (`execute_state_reset`, the agent loop)
+- Verify a trace replays: `src/state_reset_check.py` (replays one trace ON/OFF; reuses `replay_events`)
 
-## 5. Known limitations
+## 6. Known limitations
 
 Cross-origin iframe contents are inaccessible (browser security); WebSP indices and selector paths
 are viewport-specific (replay at a different size may miss elements); async content that loads
