@@ -1937,6 +1937,8 @@ def replay_events(driver, events, set_checked_state=None, skip_disabled_clicks=F
     """
     # Track accumulated DOM changes from all previous events
     accumulated_dom_changes = []
+    # Count events that hard-error during replay; reported to callers (replay still runs every event).
+    failed_events = 0
     if refresh_before_start:
         driver.refresh()
         time.sleep(3)
@@ -2439,6 +2441,7 @@ def replay_events(driver, events, set_checked_state=None, skip_disabled_clicks=F
                     time.sleep(1)
                 
         except Exception as e:
+            failed_events += 1
             print(f"  ✗ Error processing {event_type} event: {type(e).__name__}: {str(e)}")
             print(f"     Traceback: {traceback.format_exc()}")
             continue
@@ -2446,3 +2449,6 @@ def replay_events(driver, events, set_checked_state=None, skip_disabled_clicks=F
     print("Extension state reset completed!")
     print("Waiting 10 seconds to observe the state...")
     time.sleep(10)
+    # Lightweight outcome signal for callers (execute_login / execute_state_reset). Counts events
+    # that hard-errored; the replay always runs every event and is never aborted.
+    return {"total": len(events), "failed": failed_events}

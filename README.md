@@ -30,7 +30,7 @@ webspeval_code/
 │   └── state_traces/                     # recorded initial-state (S0) traces (JSON, PII-templatized)
 ├── login_traces/           # YOU record these (not shipped) — see docs/RECORDING_GUIDE.md
 ├── judge/                  # automated MLLM-as-a-judge (added separately)
-├── docs/                   # INSTALL, ACCOUNT_SETUP, RECORDING_GUIDE, ARCHITECTURE
+├── docs/                   # INSTALL, ACCOUNT_SETUP, RECORDING_GUIDE, RECORD_AND_REPLAY_TOOL
 ├── .env                    # blank template — fill with your keys/account (see docs/INSTALL.md)
 ├── requirements.txt  LICENSE-code  LICENSE-dataset
 ```
@@ -58,6 +58,7 @@ webspeval_code/
    ```bash
    python src/run_with_replay.py \
      --test_file dataset/tasks_without_navigation.jsonl \
+     --model_type gemini \
      --api_model gemini-2.5-pro \
      --output_dir outputs/
    ```
@@ -94,7 +95,7 @@ Optional captcha/bot-wall push alerts via `NTFY_TOPIC_URL` (see [docs/INSTALL.md
 
 This artifact is **dual-licensed**:
 
-- **Code** — everything under `src/` and `extension/` — is licensed under the
+- **Code** — everything under `src/`, `extension/`, `judge/`, and `tools/` — is licensed under the
   **Apache License 2.0** (see [LICENSE-code](LICENSE-code)).
 - **Dataset and recorded artifacts** — everything under `dataset/` (task prompts,
   initial-state `S0` traces, ground-truth actions, and the UI-element / categorization

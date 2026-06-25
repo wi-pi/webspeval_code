@@ -137,6 +137,52 @@ AWS_S3_BUCKET = os.environ.get("AWS_S3_BUCKET", "")
 
 
 
+def validate_setup(args, tasks):
+    """Fail fast on missing Chrome profiles or unresolved login traces before any run starts."""
+    src_dir = os.path.dirname(os.path.abspath(__file__))   # src/
+    repo_root = os.path.dirname(src_dir)
+    errors = []
+
+    # (a) Required Chrome master profiles (same resolution create_fresh_profile uses).
+    needed_profiles = set()
+    for task in tasks:
+        if task.get('captcha_setup', False):
+            needed_profiles.add(os.path.join(src_dir, 'test_profile_captcha'))
+        elif args.test_profile_dir_name:
+            needed_profiles.add(os.path.join(src_dir, args.test_profile_dir_name))
+        else:
+            needed_profiles.add(os.path.join(src_dir, 'test_profile'))
+    for profile in sorted(needed_profiles):
+        if not os.path.isdir(profile):
+            errors.append(
+                f"Chrome profile not found: {profile}\n"
+                f"      -> create it with `python src/selenium_browser_run.py --use_extension` and "
+                f"sign in to your sock-puppet account (see docs/ACCOUNT_SETUP.md)."
+            )
+
+    # (b) Login traces for login-required tasks.
+    for task in tasks:
+        if not task.get('login'):
+            continue
+        login_file = task.get('login_click_file')
+        if not login_file or (isinstance(login_file, str) and login_file.startswith('<LOGIN_FILE_')):
+            errors.append(
+                f"Task {task.get('id')}: login_click_file is unresolved ({login_file!r}).\n"
+                f"      -> record a login trace and register it via dataset/login_files.csv + "
+                f"`python tools/fill_login_files.py` (see docs/RECORDING_GUIDE.md)."
+            )
+            continue
+        resolved = login_file if os.path.isabs(login_file) else os.path.join(repo_root, login_file)
+        if not os.path.exists(resolved):
+            errors.append(f"Task {task.get('id')}: login trace file not found: {resolved}")
+
+    if errors:
+        raise SystemExit(
+            "Setup incomplete -- resolve the following before running:\n\n    "
+            + "\n\n    ".join(errors)
+        )
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--test_file', type=str, default='data/test.json')
@@ -377,6 +423,10 @@ def main():
     random.shuffle(tasks)
     print(f"Tasks shuffled randomly")
 
+    # Fail fast on incomplete setup (missing Chrome profiles / unresolved login traces) before
+    # launching Chrome or writing any per-task outputs.
+    validate_setup(args, tasks)
+
     # Create progress bar
     progress_bar = tqdm(tasks, desc="Processing tasks", unit="task")
     
@@ -401,9 +451,17 @@ def main():
         state_reset_ops = task.get('state_reset_ops')
         if state_reset_ops:
             reset_type = state_reset_ops.get('type')
+            # NOTE: `hf_access_token` was only used during initial experiments; no task in the final
+            # paper/dataset uses it.
             if reset_type in ['api', 'hf_access_token']:
                 logging.info(f"Executing {reset_type} state reset before driver creation for task {task['id']}")
-                execute_state_reset(state_reset_ops, driver_task=None, task=task)
+                reset_ok = execute_state_reset(state_reset_ops, driver_task=None, task=task)
+                if not reset_ok:
+                    logging.error(
+                        f"{reset_type} state reset failed for task {task['id']} -- skipping task; the "
+                        f"initial state could not be established, so the run would be invalid."
+                    )
+                    continue
         
         # we need to perform the reset state for logout_inactive before we login to the driver for the task. 
         if task_type=='logout_inactive':
@@ -420,7 +478,18 @@ def main():
         
         # Execute login if login_click_file is specified in task JSON
         if task.get('login'):
-            execute_login(driver_task, task, web_url=task.get('web'))
+            login_ok = execute_login(driver_task, task, web_url=task.get('web'))
+            if not login_ok:
+                logging.error(
+                    f"Login failed for task {task['id']} -- skipping task. Check that login_click_file "
+                    f"is a recorded trace (not a <LOGIN_FILE_*> placeholder) and that it replays on the live site."
+                )
+                try:
+                    driver_task.quit()
+                except Exception:
+                    pass
+                cleanup_temp_profile(profile_dir)
+                continue
             print("Login completed!")
             print("Waiting 5 seconds to observe the state...")
             time.sleep(5)
@@ -471,12 +540,28 @@ def main():
             print("State reset operations:")
             print(state_reset_ops)
             reset_type = state_reset_ops.get('type')
+            # NOTE: `cookies` and `history` resets are intentionally skipped. Every task runs on a
+            # fresh temporary Chrome profile copied from the master test_profile (see
+            # create_fresh_profile), so cookie state automatically reverts to the baseline
+            # captured in that profile at the start of each task -- an explicit reset is unnecessary.
+            #history is handled on the server side by the website automatically.
             if reset_type in ['cookies', 'history']:
                 logging.info(f"Skipping state reset for task {task['id']}: task type {reset_type}")
                 
             elif reset_type in ['extension']:
                 logging.info(f"Executing {reset_type} state reset for task {task['id']}")
-                execute_state_reset(state_reset_ops, driver_task=driver_task, task=task)
+                reset_ok = execute_state_reset(state_reset_ops, driver_task=driver_task, task=task)
+                if not reset_ok:
+                    logging.error(
+                        f"State reset (extension) failed for task {task['id']} -- skipping task; the "
+                        f"initial state could not be established, so the run would be invalid."
+                    )
+                    try:
+                        driver_task.quit()
+                    except Exception:
+                        pass
+                    cleanup_temp_profile(profile_dir)
+                    continue
                
                 
                 logging.info("Extension state reset completed, restarting driver with same profile...")

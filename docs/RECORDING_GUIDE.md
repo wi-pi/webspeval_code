@@ -59,4 +59,4 @@ placeholder, `<LOGIN_FILE_{site}>` (e.g. `<LOGIN_FILE_Wolfram>`). To plug in you
 - You can also use the extension to (re-)record **initial-state (`S0`)** traces if a site's UI has
   changed and a shipped trace no longer replays; export and point the relevant `replay_click_file`
   at your new recording.
-- See [ARCHITECTURE.md](ARCHITECTURE.md) for what the extension captures and how replay matches it.
+- See [RECORD_AND_REPLAY_TOOL.md](RECORD_AND_REPLAY_TOOL.md) for what the extension captures and how replay matches it.

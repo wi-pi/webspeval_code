@@ -8,6 +8,9 @@
   - Captcha tasks (Moodle): use `undetected-chromedriver`, pinned in `src/run_with_replay.py` to
     Chrome major version **144** (`uc.Chrome(..., version_main=144)`). Match your installed Chrome
     major version or edit that value. (We used version 144 for running tasks in the paper)
+- **ffmpeg** *(optional — captcha/Moodle tasks only)*: the audio-captcha solver decodes audio via
+  `pydub` / `SpeechRecognition`, which need `ffmpeg` on your `PATH` (`brew install ffmpeg` or
+  `apt-get install ffmpeg`). Not required for the functional test or any non-captcha task.
 
 ## Python dependencies
 
@@ -17,10 +20,10 @@ conda activate webspeval
 pip install -r requirements.txt
 ```
 
-Key pins: `selenium==4.15.2`, `pillow==10.1.0`. Also installed: `undetected-chromedriver`,
-`selenium-stealth`, `webdriver-manager`, `python-dotenv`, and the model SDKs
-(`openai`, `anthropic`, `google-genai`, `azure-ai-inference`/`azure-identity`/`azure-core`),
-plus `huggingface_hub`, `datasets`, `boto3`, `tqdm`, `numpy`, `httpx`.
+All dependencies are **pinned** in `requirements.txt` — the browser stack (`selenium`,
+`undetected-chromedriver`, `selenium-stealth`, `webdriver-manager`), `pillow`, `python-dotenv`, the
+model SDKs (`openai`, `anthropic`, `google-genai`, `azure-ai-inference`/`azure-identity`/
+`azure-core`), and `huggingface_hub`, `datasets`, `boto3`, `tqdm`, `numpy`, `httpx`.
 
 ## Environment (`.env`)
 
@@ -86,11 +89,13 @@ to solve it. Leave it blank to disable. (Used by `src/utils.py`.)
 ```bash
 python src/run_with_replay.py \
   --test_file dataset/tasks_without_navigation.jsonl \
+  --model_type gemini \
   --api_model gemini-2.5-pro \
   --output_dir outputs/
 ```
 
-Valid `--api_model` values:
+`--model_type` selects the provider family — `gpt` (default), `claude`, or `gemini` — and **must
+match the `--api_model`** you pass. Valid `--api_model` values:
 
 - Gemini: `gemini-2.5-flash`, `gemini-2.5-pro`, `gemini-3-pro-preview`, `gemini-3.1-pro-preview`, `gemma-3-27b-it`
 - Claude: `claude-sonnet-4-5@20250929`, `claude-haiku-4-5@20251001`

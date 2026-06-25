@@ -151,13 +151,19 @@ def execute_state_reset(state_reset_ops, driver_task=None, task=None):
                     
                     # Execute replay for this function call
                     logging.info(f"Executing replay events from function call {func_idx + 1}/{len(function_calls)}")
-                    replay_events(
+                    replay_result = replay_events(
                         driver_task,
                         events,
                         set_checked_state=kwargs.get('set_checked_state', True),
                         skip_disabled_clicks=kwargs.get('skip_disabled_clicks', False),
                         refresh_before_start=kwargs.get('refresh_before_start', True)
                     )
+                    if replay_result and replay_result.get('failed'):
+                        logging.warning(
+                            f"State-reset replay for task {task_id} (call {func_idx + 1}/{len(function_calls)}): "
+                            f"{replay_result['failed']}/{replay_result['total']} events failed "
+                            f"(continuing -- the task still runs)."
+                        )
                     logging.info(f"Replay completed for function call {func_idx + 1}/{len(function_calls)}")
                     
                     # Add a small delay between function calls if there are multiple
@@ -173,14 +179,16 @@ def execute_state_reset(state_reset_ops, driver_task=None, task=None):
         
         elif reset_type == 'api':
             # Execute API functions (no driver needed)
+            all_ok = True
             for func_call in function_calls:
                 func_name = func_call.get('function')
                 kwargs = func_call.get('kwargs', {})
-                
+
                 if func_name not in api_function_map:
                     logging.warning(f"Unknown API function: {func_name} (task {task_id})")
+                    all_ok = False
                     continue
-                
+
                 try:
                     logging.info(f"Executing API function: {func_name} for task {task_id}")
                     api_function_map[func_name](**kwargs)
@@ -188,8 +196,9 @@ def execute_state_reset(state_reset_ops, driver_task=None, task=None):
                 except Exception as e:
                     logging.error(f"Error executing API function {func_name} for task {task_id}: {e}")
                     logging.exception(e)
-            
-            return True
+                    all_ok = False
+
+            return all_ok
 
         elif reset_type == 'hf_access_token':
             # Expect a function_call like:
@@ -224,10 +233,11 @@ def execute_state_reset(state_reset_ops, driver_task=None, task=None):
         
         elif reset_type == 'history':
             # Execute history reset (uses its own driver)
+            all_ok = True
             for func_call in function_calls:
                 func_name = func_call.get('function')
                 kwargs = func_call.get('kwargs', {})
-                
+
                 if func_name == 'reset_history':
                     try:
                         logging.info(f"Executing history reset (task {task_id})")
@@ -236,10 +246,12 @@ def execute_state_reset(state_reset_ops, driver_task=None, task=None):
                     except Exception as e:
                         logging.error(f"Error during history reset for task {task_id}: {e}")
                         logging.exception(e)
+                        all_ok = False
                 else:
                     logging.warning(f"Unknown history function: {func_name} (task {task_id})")
-            
-            return True
+                    all_ok = False
+
+            return all_ok
         
         elif reset_type == 'cookies':
             if not driver_task:
@@ -247,16 +259,18 @@ def execute_state_reset(state_reset_ops, driver_task=None, task=None):
                 return False
             
             # Execute cookies reset for each function call
+            all_ok = True
             for func_call in function_calls:
                 func_name = func_call.get('function')
                 kwargs = func_call.get('kwargs', {})
-                
+
                 if func_name == 'reset_cookies':
                     website_url = kwargs.get('website_url')
                     if not website_url:
                         logging.warning(f"website_url required for cookies reset (task {task_id})")
+                        all_ok = False
                         continue
-                    
+
                     try:
                         logging.info(f"Resetting cookies for {website_url} (task {task_id})")
                         reset_cookies(website_url=website_url, driver=driver_task)
@@ -264,10 +278,12 @@ def execute_state_reset(state_reset_ops, driver_task=None, task=None):
                     except Exception as e:
                         logging.error(f"Error during cookies reset for task {task_id}: {e}")
                         logging.exception(e)
+                        all_ok = False
                 else:
                     logging.warning(f"Unknown cookies function: {func_name} (task {task_id})")
-            
-            return True
+                    all_ok = False
+
+            return all_ok
         
         else:
             logging.warning(f"Unknown state reset type: {reset_type} (task {task_id})")

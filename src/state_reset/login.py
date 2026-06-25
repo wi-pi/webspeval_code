@@ -87,14 +87,20 @@ def execute_login(driver_task, task, web_url=None):
                     return False
         
         # Replay login events
-        replay_events(
+        replay_result = replay_events(
             driver_task,
             events,
             set_checked_state=True,
             skip_disabled_clicks=False,
             refresh_before_start=True
         )
-        
+        if replay_result and replay_result.get('failed'):
+            logging.warning(
+                f"Login replay for task {task.get('id', 'unknown')}: "
+                f"{replay_result['failed']}/{replay_result['total']} events failed "
+                f"(continuing -- the task still runs)."
+            )
+
         logging.info(f"Login replay completed for task {task.get('id', 'unknown')}")
 
         # Navigate to the task website in a new tab and refresh to persist login state
