@@ -86,6 +86,19 @@ options with no import errors.
 
 ## Functional Test
 
+<!-- Artifact-review update (added for the rebuttal): a one-command alternative,
+     setup_for_artifact_eval.sh, is now offered IN ADDITION TO the original manual command below.
+     The previous manual instructions are unchanged; reviewers may use EITHER path, and both run the
+     same Wolfram_task-7 ON/OFF functional test. -->
+
+You can run the functional test **either** way — both produce the same result:
+
+- **(A) One command (easiest):** after providing the prerequisites (`.env` with `OPENROUTER_API_KEY`
+  + `WEBSP_ACCOUNT_EMAIL`, the `src/test_profile/` Chrome profile, and the Wolfram login trace), run
+  `bash setup_for_artifact_eval.sh`. It creates the conda env, installs the pinned dependencies,
+  registers the login trace, and runs the functional test below.
+- **(B) Manual:** follow the Setup steps above, then run the command below.
+
 Run from the repo root. `dataset/artifact_test.jsonl` holds `Wolfram_task-7_ON` and
 `Wolfram_task-7_OFF` — the *same* task run from two opposite initial states
 (`set_checked_state` true vs false), showing the replay engine sets the start state
