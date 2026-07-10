@@ -55,6 +55,8 @@ This is not a human-subjects study (no participants, no IRB).
 
 Public GitHub repository: `https://github.com/wi-pi/webspeval_code` (evaluate the latest `main` commit). 
 
+Archived on Zenodo: [doi:10.5281/zenodo.21292894](https://doi.org/10.5281/zenodo.21292894).
+
 Project website:
 https://wiscprivacy.com/webspeval.
 
